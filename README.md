@@ -1,5 +1,5 @@
 ### **Please note:**
-I am often asked by companies who hire me to sign Non-Disclosure Agreements which restrict me from publishing code samples to my GitHub account. I do of course have MANY code samples beyond the contents of this public repository. Should you wish to see any of them, please [get in touch with me](mailto:martin@martinburford.co.uk).
+I am often asked by companies who hire me to sign Non-Disclosure Agreements which restrict me from publishing code samples to my GitHub account. I do of course have MANY code samples beyond the contents of this public repository. Should you wish to see anything beyond what this repository contains (such as some of my more recent React and Redux code), please [get in touch with me](mailto:martin@martinburford.co.uk).
 
 # Overview
 
