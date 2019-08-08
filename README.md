@@ -201,7 +201,13 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 
 I worked on 2 fairly similar projects during my 4 months at Profero. Both were extremely rich (in functionality) responsive front-end websites, built to work across desktop, mobile and tablet using a combination of HTML4/5, CSS 2/3 and JavaScript. The first site was designed and built as a full-screen immersive user experience, whereas the second was restricted and governed by a Sharepoint set of templates, running at fixed-width dimensions. Both were built 100% by me from scratch through to completion. The full-screen site required the building of a complete timelining JavaScript framework, allowing for a Flash-esque timeline and queuing mechanism, along with being dynamic in its ability to render in 1 of 4 different languages. The fixed-width site was more of a scroll site, albeit with gesture based alternatives for mobile and tablet switched in at appropriate times.
 
-### AKQA - Nike [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2011-10-2011-12%20-%20AKQA%20(Nike))
-- - -
+<br />
+
+![AKQA](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/akqa.png "AKQA")
+
+**Project title:** Nike
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2011-10-2011-12%20-%20AKQA%20(Nike))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2011-10-2011-12-akqa/nike/index.html)
 
 I worked at AKQA on a large project for one of their biggest clients, Nike, focusing on a complex mapping implementation. This involved latitudinal and longitudinal projections to enable dynamic tile loading via cached webservices. The main reason for this was because the mapping application was expected to receive around 100,000+ marker points, which quite obviously couldn't all be added to a single map instance at once. I wrote all the JavaScript through a number of custom Nike namespaces to allow a huge number of configurable variations of just how (and more importantly, when) different geolocational datasets were appended to the map.
