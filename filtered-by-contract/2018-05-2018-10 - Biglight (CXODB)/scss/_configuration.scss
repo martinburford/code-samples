@@ -1,0 +1,176 @@
+// File: /assets/scss/utilities/_configuration.scss
+// Author: Martin Burford (martin@martinburford.co.uk)
+
+// Button configuration
+
+$configuration: (
+  "global": (
+    "accordion": (
+      "fade-duration": 250ms
+    ),
+    "button": (
+      "fade-duration": 250ms,
+      "floating-size": 48
+    ),
+    "datepicker": (
+      "border": #cccccc,
+      "day-background": #f5f5f5,
+      "day-week-text-colour": #666666,
+      "disabled": #999999,
+      "input-background": #f9f9f9,
+      "start-range": #6cb31d,
+      "vertical-offset": 2px
+    ),
+    "hoverbox": (
+      "fade-duration": 250ms
+    ),
+    "overlay": (
+      "degrees": 315deg,
+      "fade-duration": 250ms,
+      "icon-size": 64,
+      "percentage-scale": 90%,
+      "vertical-negative-offset": -50px
+    ),
+    "tooltip": (
+      "fade-duration": 250ms,
+      "keyline": #cccccc
+    )
+  ),
+  "dashboard": (
+    "brand-selector": (
+      "fade-duration": 250ms
+    ),
+    "dashboard": ( // There is a dashboard component within the dashboard page, hence this nesting
+      "fade-duration": 200ms,
+      "priorities": (
+        "high": #c00000,
+        "medium": #ed7d31,
+        "low": #71ad47
+      ),
+      "row-height": 60,
+      "rows-per-page": 12
+    ),
+    "dot-menu": (
+      "fade-duration": 250ms
+    ),
+    "filter-bar": (
+      "fade-duration": 250ms
+    ),
+    "header": (
+      "fade-duration": 250ms
+    ),
+    "pagination": (
+      "fade-duration": 250ms
+    ),
+    "search-bar": (
+      "fade-duration": 250ms,
+      "initial-textbox-background": #f6f6f6,
+      "spinner-duration": 1000ms
+    ),
+    "ui-filters": (
+      "fade-duration": 250ms,
+      "separator": #dedede
+    ),
+  ),
+  "forms": (
+    "delete-device": #c00000,
+    "device-splits": (
+      "delete": #c00000,
+      "fade-duration": 250ms,
+      "keyline": #cccccc
+    ),
+    "element-error": #c00000,
+    "element-keyline": #cccccc,
+    "fade-duration": 250ms,
+    "file-upload": (
+      "background": #fafafa,
+      "delete": #c00000,
+      "fade-duration": 250ms,
+      "keyline": #cccccc
+    ),
+    "focus-glow": #bdd7ee,
+    "footer-links": (
+      "fade-duration": 250ms
+    ),
+    "form-info": (
+      "error": #c00000,
+      "move-duration": 250ms,
+      "success": #375623
+    ),
+    "gradient-base-colour": #f1f1f1,
+    "header": (
+      "fade-duration": 250ms
+    ),
+    "impact-effort": (
+      "disabled": #cccccc,
+      "keyline": #cccccc
+    ),
+    "radio-group": (
+      "background": #fafafa,
+      "text-colour": #677480
+    ),
+    "results": (
+      "border": #dedede,
+      "heading-background": #efefef
+    ),
+    "test-name": (
+      "keyline": #cccccc
+    ),
+    "textarea": (
+      "background": #fafafa,
+      "text-colour": #677480
+    ),
+    "textbox": (
+      "background": #fafafa,
+      "text-colour": #677480
+    )
+  ),
+  "login": (
+    "form": (
+      "fade-duration": 250ms
+    )
+  ),
+  "overview": (
+    "fade-duration": 250ms,
+    "box-toggle": (
+      "fade-duration": 250ms
+    ),
+    "split-bubble": (
+      "allowable-devices": 10,
+      "inactive-blue": #4a90e2
+    )
+  ),
+  "password-reset": (
+    "link-sent": (
+      "degrees": 315deg,
+      "fade-duration": 250ms
+    )
+  ),
+  "users": (
+    "fade-duration": 250ms,
+    "hover-duration": 25ms
+  ),
+  "variations": (
+    "fade-duration": 250ms,
+    "circle-bar": (
+      "base-bar": #cccccc,
+      "fade-duration": 200ms,
+      "initial-background": #f6f6f6
+    ),
+    "icon-bar": (
+      "fade-duration": 250ms
+    ),
+    "rte": (
+      "fade-duration": 250ms
+    ),
+    "summary": (
+      "fade-duration": 250ms,
+    ),
+    "thumbnail-gallery": (
+      "fade-duration": 250ms,
+    ),
+    "variant-scroller": (
+      "fade-duration": 250ms
+    )
+  )
+);

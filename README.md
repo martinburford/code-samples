@@ -1,2 +1,149 @@
-# code-samples
-Mansion House (view) I was hired via Mansion House Consulting, for one of the UKs main high street banks, to bring to life a conceptual project, in the form of a fully working prototype. The project was an XHR driven interface, integrated alongside a fully functional API, built to be responsive across a number of breakpoints. Once the prototype was completed and the concept was successfully proven to the relevant business units, it was handed over to an existing development team to drive the longer-term piece of work forward.
+<span style="color:red">I am often asked by companies who hire me to sign Non-Disclosure Agreements which restrict me from publishing code samples to my GitHub. I do of course have many code samples beyond the contents of this public repository. Should you wish to see any, please [get in touch with me](mailto:martin@martinburford.co.uk).</span>
+
+# Overview
+
+This repository includes a few code samples from some projects I've been involved in over the past 5 years or so. 
+
+I've been a Front-End Developer for close to 20 years. Technology has changed a huge amount in this time, and currently, the languages that underpin the market are going through a huge transformation. This is why I've only included a few code samples, and only from the past few years. I don't feel there is much value in providing code samples from 10+ years ago, as technology has changed, and my own coding style/efficiency has also changed enormously.
+
+Within the samples provided in this repository, I've included what I see as a reasonable cross-section of the work I am often involved in. It is however only a small illustration of the type of work I have done. I've worked on over 100 websites in my career, ranging from white-label platforms, through to multi-lingual sites, arabic sites, right-to-left reading sites, device-only sites, responsive web development, single-page sites, real-time websocket sites. The list goes on and on!
+
+It's a little challenging to classify code samples so that they are available in an easy to digest format. I see it as being valuable to have made them available in 2 different ways:
+
+# 1. Filtered by language
+
+The code samples provided contain examples coded in the following languages:
+
+* **Custom jQuery plugins** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/custom-jquery-plugins)
+* **Grunt** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/grunt)
+* **Gulp** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/gulp)
+* **HTML** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/html)
+* **JavaScript** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/javascript)
+* **JSON** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/json)
+* **NodeJS** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/node-js)
+* **PHP** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/php)
+* **Pug templates** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/pug-templates)
+* **SCSS** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/scss)
+* **Test scripts** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/test-scripts)
+
+In the case of all of these files, a specific file naming convention has been used:
+
+> [dates-of-contract]-[client]-[project-name]____[filename]
+
+For example:
+
+> 2014-08-2015-08-barclays-design-language____Gruntfile.js
+
+Due to files being stored in a flat file hierarchy (eg: all JavaScript files from multiple contracts), I felt it was necessary to provide some way of ordering the files by date. In doing this, it's easy for anyone viewing this repository to view the most recent files, knowing that they were indeed coded most recently.
+
+### Custom jQuery plugins [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/custom-jquery-plugins)
+- - -
+
+It's rare that I'll get asked to code anything in jQuery nowadays. However, a few years ago, I was hired for a few contracts where it was the "in" technology, and was asked to create some fairly bespoke features for a number of websites. Due to the nature of these features, jQuery plugins lent themselves quite nicely to the desired output.
+
+### Grunt [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/grunt)
+- - -
+
+I've included a couple of Gruntfile.js scripts, as well as an extensive helpers file I wrote as part of one recent contract.
+
+### Gulp [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/gulp)
+- - -
+
+As part of the work of re-building my online portfolio, I took the opportunity to learn Gulp. I already knew my way around Grunt, so I initially wrote all required build tasks using Grunt. Once this was complete, I then re-wrote the build tasks using Gulp.
+
+### HTML [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/html)
+- - -
+
+It's a question I'm often asked by recruiters. How is your HTML? Well, quite honestly, if you can't code HTML, you can't code! I provide this file to show anyone who cares to see that my HTML output is nice and tidy. Admittedly, the file(s) included here are generated by templates. But hey, I always build files to be templated in static HTML first.
+
+### JavaScript [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/javascript)
+- - -
+
+As mentioned earlier, the JavaScript world is evolving so rapidly at the moment, I would suggest the best way to see the type I'm coding is always to look at the more recent files (in terms of dates) within this section. As a contractor, I code with the language I am told to use. So, there are a few jQuery files here. However, I would say me preference is always to code in native JavaScript, and build things up from there where necessary.
+
+### JSON [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/json)
+- - -
+
+JSON isn't a language per-se, it's just a data format. For my recently re-written online portfolio, Node, Express, Browserify and Pug templates build static HTML pages via the use of JSON files. One of the JSON files from that site is included within this section, just to illustrate that I am comfortable using JSON.
+
+### Node JS [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/node-js)
+- - -
+
+I wouldn't necessarily call myself a NodeJS developer, however I do like to write the odd piece of NodeJS when I need to do some clever things with data, and more often than not, the file system. I'm continually reading up on Node JS, with the hope that a contract in the future will allow me to get commercial exposure and experience in it.
+
+### PHP [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/php)
+- - -
+
+Every now and then, I'll work on a project where an API isn't yet created, but the front-end code I create has a dependency on API data being provided, in order to fulfil certain functional components. Whilst I can (and often do) handle this via stubbed JSON data, I have in the past written dummy PHP proxies to send data to a receiving front-end codebase. One such example of when I did this is included within this section. PHP is not a language I'm overly familiar with. However, as with any language, whenever I need to use it, it often doesn't take too long to get my head around how it works.
+
+### Pug templates [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/pug-templates)
+- - -
+
+In a few of my more recent contracts, Pug templating (previously Jade) has been used, in order to generate HTML files from a combination of template files and data files (often JSON or YAML). My online portfolio works this way too. To demonstrate that I'm comfortable with Pug templates, I've included a few of the templates I've written within this section.
+
+### SCSS [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/scss)
+- - -
+
+More often than not in contracts these days, SASS is the de-facto requirement from CSS pre-processing. I would consider myself very comfortable with SASS, and I equally find it a fantastic tool for the work I do. I've provided a few files within this section. One file is coded to meet strict sass linting rules (in terms of inheritence and nesting). There is also a simple mixins file provided too.
+
+### Test scripts [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/test-scripts)
+- - -
+
+A big requirement that is constantly being asked for in roles I'm approached about is Test Driven Development (TDD). Within this section, I've included a test file I wrote for a header component I wrote. It's actually quite an interesting test, as it's affected by run-time execution. Sinon was used in the example provided to cater for this requirement.
+
+# 2. Filtered by contract
+
+### Biglight - CXODB [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2018-05-2018-10%20-%20Biglight%20(CXODB))
+- - -
+
+Biglight hired me as the only Front-End Developer to work on an internal project for them, which would be used for managing test campaigns across all of their brands. Prior to the existence of this, the system in place was in need of updating as it involved data being kept in multiple spreadsheets, and was therefore not the easiest to work with. The new system was a completely greenfield project, whereby myself and a single back-end Developer worked on creating a new platform for the business which would replace in its entirety the existing system. It was also a requirement that clients would be granted access to the tests, so a set of rules were built into what was created to allow for both read and write priviliedges across a multi-tiered user hierarchy. From a tech stack perspective, Biglight are a Microsoft house, so there was a requirement to use .net Core for the back-end. The front-end that I wrote was very much written in a way whereby the project was responsive to a users input. This was achieved by implementing a RESTful API on the back-end with multiple touchpoints between the front and back-end. Upon delivery of the finished project, there were around 20 different endpoints, catering for all of the data transmission. This covered complete user management, a free-text search engine, an interactive dashboard, saving tests as PDF routine, the creation of complete tests and their subsequent editing along with MANY more features.
+
+### Bond & Coyne - Pearson [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-08-2017-11%20-%20Bond%20%26%20Coyne%20(Pearson))
+- - -
+
+I spent a few months at Bond & Coyne, working on a website build for their largest client. The project I worked on was a single page (fully responsive) site and was built from scratch using a mixture of HTML, JavaScript and Sass. In the main, the site was built to compliment an offline brochure, however there were a few sections to the site which extended well beyond this. One such example was a data visualization feature, which was built to represent 2 different datasets with a total of a little over 175 million records. I had to write quite a few NodeJS scripts to manipulate the data into a viable format for web consumption. The creative demands on the project were extensive, leading to a number of unorthodox but fully compliant solutions that I had to build during the contract. This project was delivered on time, on budget, and the client, as well as Bond & Coyne were delighted with the end result.
+
+### Personal Portfolio [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio)
+- - -
+
+My portfolio was completely re-written in May/June 2017, written using Node, Express and Pug.
+
+### Sapient Nitro - Good News Feed [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2016-12-2016-12%20-%20Sapient%20Nitro%20(Good%20News%20Feed))
+- - -
+
+I was hired by Sapient to work on the front-end element of an internal Christmas project. The timeframes were extremely tight, and the hours were long. In working alongside a couple of very talented developers, and a supporting team of designers and UX staff, we managed to deliver something pretty amazing, taking into account the time we had available. The concept was to allow a user to submit URLs, which proved that 2016 wasn't all bad news, and that some of the things that happened over the course of the year were incredible and heart-warming. URLs provided were then scraped, tidied up a bit, and adapted into a more digestible format for the site we were building. The rendered output was a very rich interface, fully responsive, with animations primarily becoming active as elements of the page came into view. I built features such as advanced lazyloading, all custom animations, infinite page scrolling/loading, URL submission, Captcha validation, along with many more.
+
+### Trinity Mirror - Chameleon [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2015-08-2016-11%20-%20Trinity%20Mirror%20(Chameleon))
+- - -
+
+I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sites), helping with the overall architecture and development of the new digital platform for a company with monthly traffic levels in the tens of millions. The development teams technical stack comprised of full native JavaScript using Express on Node, alongside the templating language of Jade, which was used to translate the back-end data layer into both front-end components and pages. In addition, some of the other technologies used were Grunt, Karma, Mocha, Jade, Browserify, SASS. The list goes on. The project was spread across 10 teams of 10 individuals each, where 2 week sprints, inclusive of 2 releases per week were implemented in an Agile way.
+
+### Barclays
+- - -
+
+I worked at Barclays on a front and back-end component library, built via a combination of custom templates and a JSON configuration engine. My responsibility related to the complete ownership of the JavaScript controller and the interactive functionality of all individual components. In addition to that, I also wrote the projects entire set of GruntJS automation scripts, enabling full sites (consisting of hundreds of pages) to be compiled in a matter of seconds. For the 12 months I spent at Barclays, I played a lead role in the team overseeing all aspects of the overall front-end development.
+
+* **Account Opening** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Account%20Opening))
+* **Design Language** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Design%20Language))
+
+### Trinity Mirror
+- - -
+
+I was originally hired by Trinity Mirror to bring to life several complex prototypes in order establish the feasibility of a number of new technologies, in respect of Trinity Mirrors existing content. After completing these prototypes, one such piece of work I built was so well received by the business that budget was allocated for the technologies I had written to be harnessed for a much larger football based project. Partnering with Opta, who perform statistical analysis on the Barclays Premier League, I wrote a real-time consumption framework of their data to allow Trinity Mirror to show live updates of the entire league during match days. After this work was completed, I extended the code to work for the 2014 football World Cup. The framework was coded to work on desktop browsers, tablets and mobile devices. In addition to this, a cross-section of other work I built during my time at Trinity Mirror included an entire JSON driven data visualization framework, canvas-based real-time heatmaps, particle fireworks, circular navigation systems, mobile friendly touch sensitive draggable voting plugins and a vast number of (websocket based) real-time JavaScript plugins, such as live football league tables, live graphs and live blog feeds.
+
+* **Animated Gauges** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Animated%20Gauges))
+* **Data Visualization** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Data%20Visualization))
+* **Heatmaps** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Heatmaps))
+* **Particle fireworks** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Particle%20fireworks))
+* **Premier League** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Premier%20League))
+* **Vote slider** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Vote%20Slider))
+
+### Profero - Accenture [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2012-12-2013-03%20-%20Profero%20(Accenture))
+- - -
+
+I worked on 2 fairly similar projects during my 4 months at Profero. Both were extremely rich (in functionality) responsive front-end websites, built to work across desktop, mobile and tablet using a combination of HTML4/5, CSS 2/3 and JavaScript. The first site was designed and built as a full-screen immersive user experience, whereas the second was restricted and governed by a Sharepoint set of templates, running at fixed-width dimensions. Both were built 100% by me from scratch through to completion. The full-screen site required the building of a complete timelining JavaScript framework, allowing for a Flash-esque timeline and queuing mechanism, along with being dynamic in its ability to render in 1 of 4 different languages. The fixed-width site was more of a scroll site, albeit with gesture based alternatives for mobile and tablet switched in at appropriate times.
+
+### AKQA - Nike [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2011-10-2011-12%20-%20AKQA%20(Nike))
+- - -
+
+I worked at AKQA on a large project for one of their biggest clients, Nike, focusing on a complex mapping implementation. This involved latitudinal and longitudinal projections to enable dynamic tile loading via cached webservices. The main reason for this was because the mapping application was expected to receive around 100,000+ marker points, which quite obviously couldn't all be added to a single map instance at once. I wrote all the JavaScript through a number of custom Nike namespaces to allow a huge number of configurable variations of just how (and more importantly, when) different geolocational datasets were appended to the map.

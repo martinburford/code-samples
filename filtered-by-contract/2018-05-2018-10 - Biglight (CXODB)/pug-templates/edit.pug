@@ -1,0 +1,621 @@
+//- File: /dev/views/final/edit.pug
+//- Author: Martin Burford (martin@martinburford.co.uk)
+
+extends ../layout.pug
+
+//- Form element component files
+include ../_components/final/global/date-picker.pug
+include ../_components/final/global/dropdown.pug
+include ../_components/final/forms/file-upload.pug
+include ../_components/final/forms/impact-effort.pug
+include ../_components/final/forms/outcome.pug
+include ../_components/final/forms/test-name.pug
+include ../_components/final/forms/textarea.pug
+include ../_components/final/forms/textbox.pug
+
+block styles
+
+  link(rel="stylesheet", href="/assets/css/app.min.css" media="all")
+  link(rel="stylesheet", href="/assets/css/app-global.min.css" media="all")
+  link(rel="stylesheet", href="/assets/css/app-forms.min.css" media="all")
+
+block bodyContent
+
+  .page-forms
+    .grid-12
+      .row
+        .column-12
+
+          //- Header
+          include ../_components/final/forms/header.pug
+          +generate-header-markup({
+            location: "GB"
+          })
+
+
+          //- Jump links
+          include ../_components/final/forms/jump-links.pug
+          +generate-jump-links-markup()
+
+      main(data-experiment-id="123")
+
+        //- Overview section
+
+        .row
+          .column-12
+            section(data-anchor-id="overview")
+              h2.forms__section-title= "Overview"
+              div.section__content
+
+                .row
+                  .column-12
+
+                    //- Dropdown (single): Team
+                    .form-element(data-type="dropdown", data-mandatory)
+                      label.form-element__label(for="team")= "Team"
+                      +generate-dropdown-markup({
+                        id: "team",
+                        customSelectEvent: 'dropdown.activateGroup',
+                        searchHidden: true,
+                        trigger: true, 
+                        options: [
+                          { text: "Please select", value: 0, selected: true },
+                          { text: "Team 1", value: "1" },
+                          { text: "Team 2", value: "2" },
+                          { text: "Team 3 (Biglight groups)", value: "3" },
+                          { text: "Team 4", value: "4" },
+                          { text: "Team 5", value: "5" }
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Team"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (single): Group
+                    .form-element(data-type="dropdown", data-mandatory)
+                      label.form-element__label(for="group")= "Group"
+                      +generate-dropdown-markup({
+                        id: "group",
+                        bindToFormEvents: true,
+                        customSelectEvent: 'dropdown.activateBrand',
+                        disabled: true,
+                        searchHidden: true,
+                        trigger: true, 
+                        options: [
+                          { text: "Please select", value: 0, selected: true },
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Group"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (single): Brand
+                    .form-element(data-type="dropdown", data-mandatory)
+                      label.form-element__label(for="brand")= "Brand"
+                      +generate-dropdown-markup({
+                        id: "brand", 
+                        attachShortCodes: true,
+                        bindToFormEvents: true,
+                        customSelectEvent: 'dropdown.brandSelected',
+                        disabled: true,
+                        searchHidden: true,
+                        trigger: true, 
+                        options: [
+                          { text: "Please select", value: 0, selected: true, "data-short-code": "" },
+                          { text: "Ann Summers", value: 1, selected: false, "data-short-code": "ASM" }
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Brand"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (single): Origin
+                    .form-element(data-type="dropdown", data-mandatory)
+                      label.form-element__label(for="origin")= "Origin"
+                      +generate-dropdown-markup({
+                        id: "origin",
+                        bindToFormEvents: true,
+                        searchHidden: true,
+                        trigger: true, 
+                        options: [
+                          { text: "Please select", value: null },
+                          { text: "Previous experiment", value: "1", selected: true },
+                          { text: "Opportunity audit", value: "2" },
+                          { text: "Usability session", value: "3" },
+                          { text: "Client request", value: "4" },
+                          { text: "Heatmap sessions", value: "5" }
+                        ]
+                      })
+                      a.add-new-item(href="#")= "Add new Origin"
+                      div.form-element__error-message
+                        p= "Please provide a value for Origin"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (multiple): Theme
+                    .form-element(data-type="dropdown", data-mandatory)
+                      label.form-element__label(for="theme")= "Theme"
+                      +generate-dropdown-markup({
+                        id: "theme", 
+                        bindToFormEvents: true,
+                        multiple: true,
+                        placeholder: "Please select at least one theme", 
+                        options: [
+                          { text: "Conversion", value: "1", selected: true },
+                          { text: "E-mail signup", value: "2", selected: true },
+                          { text: "User journey", value: "3", selected: true },
+                          { text: "Basket", value: "4" },
+                          { text: "Sitewide", value: "5" },
+                          { text: "Search", value: "6" }
+                        ]
+                      })
+                      a.add-new-item(href="#")= "Add new Theme"
+                      div.form-element__error-message
+                        p= "Please provide a value for Theme"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (multiple): Site area
+                    .form-element(data-type="dropdown", data-mandatory)
+                      label.form-element__label(for="siteArea")= "Site area"
+                      +generate-dropdown-markup({
+                        id: "siteArea", 
+                        bindToFormEvents: true,
+                        multiple: true,
+                        placeholder: "Please select at least one area", 
+                        options: [
+                          { text: "Header", value: "4", selected: true },
+                          { text: "PDP", value: "5" },
+                          { text: "Checkout", value: "6" },
+                          { text: "PLP", value: "7" },
+                          { text: "Basket", value: "8" },
+                          { text: "Merchandising", value: "9" },
+                          { text: "General", value: "10" },
+                          { text: "HP", value: "11" },
+                          { text: "Navigation", value: "12" },
+                          { text: "Search", value: "13" }
+                        ]
+                      })
+                      a.add-new-item(href="#")= "Add new Site area"
+                      div.form-element__error-message
+                        p= "Please provide a value for Site area"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (multiple): Device
+                    .form-element(data-type="dropdown", data-mandatory)
+                      label.form-element__label(for="device")= "Device"
+                      +generate-dropdown-markup({
+                        id: "device", 
+                        bindToFormEvents: true,
+                        customSelectEvent: 'dropdown.addRemoveDevice',
+                        multiple: true,
+                        placeholder: "Please select at least one device", 
+                        options: [
+                          { text: "Mobile", value: "1" },
+                          { text: "Tablet", value: "2" },
+                          { text: "Desktop", value: "3" }
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Device"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (multiple): Location
+                    .form-element(data-type="dropdown")
+                      label.form-element__label(for="location")= "Location"
+                      +generate-dropdown-markup({
+                        id: "location", 
+                        bindToFormEvents: true,
+                        customSelectEvent: 'dropdown.locationSelected',
+                        multiple: true,
+                        placeholder: "Please select at least one location", 
+                        options: [
+                          { text: "Austria", value: "17" },
+                          { text: "Belgium", value: "24" },
+                          { text: "Denmark", value: "64" },
+                          { text: "France", value: "79" },
+                          { text: "Germany", value: "86" },
+                          { text: "Italy", value: "112" },
+                          { text: "Luxembourg", value: "132" },
+                          { text: "Netherlands", value: "158" },
+                          { text: "United Kingdom", value: "236", selected: true }
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Location"
+
+                .row
+                  .column-12
+
+                    //- Test Name
+                    +generate-test-name-markup({
+                      id: "",
+                      isInErrorState: false
+                    })
+
+                .row
+                  .column-12
+
+                    //- Textarea: Problem statement
+                    .form-element(data-type="textarea", data-mandatory)
+                      label.form-element__label(for="problemStatement")= "Problem statement"
+                      +generate-textarea-markup({
+                        id: "problemStatement",
+                        value: "Martins problem statement"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Problem statement"
+
+                .row
+                  .column-12
+
+                    //- Textarea: Hypothesis statement
+                    .form-element(data-type="textarea")
+                      label.form-element__label(for="hypothesisStatement")= "Hypothesis statement"
+                      +generate-textarea-markup({
+                        id: "hypothesisStatement",
+                        value: "Hypothesis statement"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Hypothesis statement"
+
+                .row
+                  .column-12
+
+                    //- Textbox: Target URLs
+                    .form-element(data-type="textbox")
+                      label.form-element__label(for="targetUrls")= "Target URLs"
+                      +generate-textbox-markup({
+                        id: "targetUrls",
+                        value: "Martins target URLs"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Target URLs"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (multiple): Primary Metric
+                    .form-element(data-type="dropdown")
+                      label.form-element__label(for="primaryMetric")= "Primary Metric"
+                      +generate-dropdown-markup({
+                        id: "primaryMetric", 
+                        bindToFormEvents: true,
+                        customSelectEvent: 'dropdown.primaryMetricSelected',
+                        placeholder: "Please select one Primary Metric", 
+                        options: [
+                          { text: "Please select", value: "0" },
+                          { text: "Primary Metric 1", value: "1", selected: true },
+                          { text: "Primary Metric 2", value: "2" },
+                          { text: "Primary Metric 3", value: "3" },
+                          { text: "Primary Metric 4", value: "4" },
+                          { text: "Primary Metric 5", value: "5" }
+                        ],
+                        searchHidden: true
+                      })
+                      a.add-new-item(href="#")= "Add new Primary Metric"
+                      div.form-element__error-message
+                        p= "Please provide a value for Primary Metric"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (multiple): Secondary Metric
+                    .form-element(data-type="dropdown")
+                      label.form-element__label(for="secondaryMetrics")= "Secondary Metrics"
+                      +generate-dropdown-markup({
+                        id: "secondaryMetrics",
+                        bindToFormEvents: true,
+                        customSelectEvent: 'dropdown.secondaryMetricSelected',
+                        multiple: true,
+                        placeholder: "Please select at least one Secondary Metric", 
+                        options: [
+                          { text: "Secondary Metric 1", value: "1-MB", selected: true },
+                          { text: "Secondary Metric 2", value: "2-MB", selected: true },
+                          { text: "Secondary Metric 3", value: "3-MB", selected: true },
+                          { text: "Secondary Metric 4", value: "4-MB", selected: true },
+                          { text: "Secondary Metric 5", value: "5-MB", selected: true }
+                        ]
+                      })
+                      a.add-new-item(href="#")= "Add new Secondary Metric"
+                      div.form-element__error-message
+                        p= "Please provide a value for Secondary Metric"
+
+                .row
+                  .column-12
+
+                    //- Datepicker: Planned start date
+                    .form-element(data-type="date-picker")
+                      label.form-element__label(for="plannedStartDate")= "Planned start date"
+                      +generate-date-picker-markup("plannedStartDate")
+                      div.form-element__error-message
+                        p= "Please provide a value for Planned start date"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (single): Planned duration
+                    .form-element(data-type="dropdown")
+                      label.form-element__label(for="plannedDuration")= "Planned duration"
+                      +generate-dropdown-markup({
+                        id: "plannedDuration", 
+                        searchHidden: true,
+                        trigger: true, 
+                        options: [
+                          { text: "Please select", value: null },
+                          { text: "1 day", value: "1", selected: true },
+                          { text: "2 days", value: "2" },
+                          { text: "3 days", value: "3" },
+                          { text: "4 days", value: "4" },
+                          { text: "5 days", value: "5" }
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Planned duration"
+
+                .row
+                  .column-12
+
+                    //- Datepicker: Start date
+                    .form-element(data-type="date-picker")
+                      label.form-element__label(for="startDate")= "Start date"
+                      +generate-date-picker-markup("startDate", "01/08/2018")
+                      div.form-element__error-message
+                        p= "Please provide a value for Start date"
+
+                .row
+                  .column-12
+
+                    //- Dropdown (single): Duration
+                    .form-element(data-type="dropdown")
+                      label.form-element__label(for="duration")= "Duration"
+                      +generate-dropdown-markup({
+                        id: "duration", 
+                        searchHidden: true,
+                        trigger: true, 
+                        options: [
+                          { text: "Please select", value: null },
+                          { text: "1 day", value: "1", selected: true },
+                          { text: "2 days", value: "2" },
+                          { text: "3 days", value: "3" },
+                          { text: "4 days", value: "4" },
+                          { text: "5 days", value: "5" }
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Duration"
+
+                .row
+                  .column-12
+
+                    //- Impact/Effort
+                    +generate-impact-effort-markup()
+
+                .row
+                  .column-12
+
+                    //- Dropdown (single): Priority
+                    .form-element(data-type="dropdown")
+                      label.form-element__label(for="priority")= "Priority"
+                      +generate-dropdown-markup({
+                        id: "priority", 
+                        searchHidden: true,
+                        trigger: true, 
+                        options: [
+                          { text: "Please select", value: null },
+                          { text: "High", value: "1", selected: true },
+                          { text: "Medium", value: "2" },
+                          { text: "Low", value: "3" }
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Priority"
+
+                .row
+                  .column-12
+
+                    //- Textbox: Workbook link
+                    .form-element(data-type="textbox")
+                      label.form-element__label(for="workbookLink")= "Workbook link"
+                      +generate-textbox-markup({
+                        id: "workbookLink",
+                        value: "Martins workbook link"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Workbook link"
+
+                .row
+                  .column-12
+
+                    //- Textbox: Target audience
+                    .form-element(data-type="textbox")
+                      label.form-element__label(for="targetAudience")= "Target audience"
+                      +generate-textbox-markup({
+                        id: "targetAudience",
+                        value: "Martins target audience"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Target audience"
+
+                .row
+                  .column-12
+
+                    //- Textarea: Points of attention
+                    .form-element(data-type="textarea")
+                      label.form-element__label(for="pointsOfAttention")= "Points of attention"
+                      +generate-textarea-markup({
+                        id: "pointsOfAttention",
+                        value: "Martins points of attention"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Points of attention"
+
+                .row
+                  .column-12
+
+                    //- Textbox: Segment
+                    .form-element(data-type="textbox")
+                      label.form-element__label(for="segment")= "Segment"
+                      +generate-textbox-markup({
+                        id: "segment",
+                        value: "Martins segment"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Segment"
+
+                .row
+                  .column-12
+
+                    //- Textarea: Control dynamic behaviour
+                    .form-element(data-type="textarea")
+                      label.form-element__label(for="controlDynamicBehaviour")= "Control dynamic behaviour"
+                      +generate-textarea-markup({
+                        id: "controlDynamicBehaviour",
+                        value: "Martins control dynamic behaviour"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Control dynamic behaviour"
+
+                .row
+                  .column-12
+
+                    //- Textarea: Control functional behaviour
+                    .form-element(data-type="textarea")
+                      label.form-element__label(for="controlFunctionalBehaviour")= "Control functional behaviour"
+                      +generate-textarea-markup({
+                        id: "controlFunctionalBehaviour",
+                        value: "Martins control functional behaviour"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Control functional behaviour"
+
+                .row
+                  .column-12
+
+                    //- Textbox: QA link
+                    .form-element(data-type="textbox")
+                      label.form-element__label(for="qaLink")= "QA link"
+                      +generate-textbox-markup({
+                        id: "qaLink",
+                        value: "Martins QA link"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for QA link"
+
+        //- Variations section
+
+        .row
+          .column-12
+            section(data-anchor-id="variations", data-elements-total="0")
+              h2.forms__section-title= "Variations"
+              div.section__content
+              
+                p.section__introduction= "No devices have been added yet. Please add these via the 'Devices' dropdown list above."
+
+        //- Results section
+
+        .row
+          .column-12
+            section(data-anchor-id="results" data-elements-total="0")
+              h2.forms__section-title= "Results"
+              div.section__content
+
+                .row
+                  .column-12
+
+                    //- Dropdown (single): Win
+                    .form-element(data-type="dropdown")
+                      label.form-element__label(for="win")= "Win"
+                      +generate-dropdown-markup({
+                        id: "win", 
+                        searchHidden: true,
+                        trigger: true, 
+                        options: [
+                          { text: "Please select", value: null, selected: true },
+                          { text: "Win", value: "1" },
+                          { text: "No win", value: "0" }
+                        ]
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Win"
+
+                .row
+                  .column-12
+
+                    //- Textarea: Results summary
+                    .form-element(data-type="textarea")
+                      label.form-element__label(for="resultsSummary")= "Results summary"
+                      +generate-textarea-markup({
+                        id: "resultsSummary"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Results summary"
+
+                div.section__content--results
+                  p.section__introduction= "No results available."
+
+                .row
+                  .column-12
+
+                    //- Textarea: Results detail
+                    .form-element(data-type="textarea")
+                      label.form-element__label(for="resultsDetail")= "Results detail"
+                      +generate-textarea-markup({
+                        id: "resultsDetail"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Results detail"
+
+                .row
+                  .column-12
+
+                    //- Textarea: Results recommendations
+                    .form-element(data-type="textarea")
+                      label.form-element__label(for="resultsRecommendations")= "Results recommendations"
+                      +generate-textarea-markup({
+                        id: "resultsRecommendations"
+                      })
+                      div.form-element__error-message
+                        p= "Please provide a value for Results recommendations"
+
+                .row
+                  .column-12
+
+                    //- Generate the HTML code for Outcome
+                    +generate-outcome-markup()
+
+      .row
+        .column-12
+
+          //- Footer links
+          include ../_components/final/forms/edit/footer-links.pug
+          +generate-footer-links-markup()
+
+  //- Form Info
+  include ../_components/final/forms/form-info.pug
+  +generate-form-info-markup(false)
+
+  //- Test statuses
+  include ../_components/final/forms/test-statuses.pug
+  +generate-test-statuses-markup()
+
+  //- Hoverbox (logout)
+  include ../_components/final/global/hoverbox-logout.pug
+  +generate-hoverbox-logout-markup()
+
+block scripts
+
+  script(src='/assets/scripts/app-global.min.js')
+  script(src='/assets/scripts/app-forms.min.js')

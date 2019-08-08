@@ -1,0 +1,184 @@
+// File: /assets/scss/utilities/_variables.scss
+// Author: Martin Burford (martin@martinburford.co.uk)
+
+@import "_functions";
+
+// Nested colour definitions
+
+$colours: (
+  "global": (
+    "black": #000000,
+    "locked-page-headings": #f6f6f6,
+    "white": #ffffff
+  ),
+  "primary": (
+    "blue-accent": #4468f8,
+    "navy-blue": #01172c,
+    "ocean-blue": #3c4d95,
+    "silver": #e5e7e9,
+    "violet": #a1b3fb,
+    "white": #ffffff
+  ),
+  "status": (
+    "blue": #4468f8,
+    "blue-gradient-opposite": #3c4d95,
+    "green": #18816a,
+    "green-gradient-opposite": #105452,
+    "magenta": #d5295b,
+    "magenta-gradient-opposite": #853068
+  ),
+  "text": (
+    "black": #222222,
+    "grey": #677480,
+    "white": #ffffff
+  ),
+  "button": (
+    "primary": (
+      "hover": #3c4d95,
+      "inactive": #4368f8,
+      "white": (
+        "hover": #4368f8
+      )
+    ),
+    "secondary": (
+      "border": #4368f8,
+      "hover": #4368f8,
+      "ianctive": #ffffff,
+      "text": #4368f8
+    )
+  )
+);
+
+// Colour gradients
+
+$gradient-colours: (
+  "blue": (
+    "original": map-deep-get($colours, "status", "blue"),
+    "gradient-opposite": map-deep-get($colours, "status", "blue-gradient-opposite")
+  ),
+  "green": (
+    "original": map-deep-get($colours, "status", "green"),
+    "gradient-opposite": map-deep-get($colours, "status", "green-gradient-opposite")
+  ),
+  "magenta": (
+    "original": map-deep-get($colours, "status", "magenta"),
+    "gradient-opposite": map-deep-get($colours, "status", "magenta-gradient-opposite")
+  )
+);
+
+// Font glyph codes for all site icons
+
+$icons: (
+  "complementary": (
+    add: "\e900",
+    download: "\e901",
+    remove: "\e902",
+    tick: "\e903",
+    upload: "\e904"
+  ),
+  "decorative": (
+    hypothesis: "\e900",
+    outcome: "\e901",
+    problem: "\e902",
+    recommendations: "\e903",
+    results: "\e904",
+    results-summary: "\e905"
+  ),
+  "global": (
+    arrow-down: "\e900",
+    arrow-left: "\e901",
+    arrow-right: "\e902",
+    arrow-up: "\e903",
+    calendar: "\e904",
+    contract: "\e905",
+    dash: "\e906",
+    dot-menu: "\e907",
+    expand: "\e908",
+    external-link: "\e909",
+    grid-view: "\e90a",
+    list-view: "\e90b",
+    notch: "\e90c",
+    search: "\e90d",
+    view: "\e9ce",
+    view-disabled: "\e9d1"
+  ),
+  "interactive": (
+    arrows: "\e900",
+    bin: "\e901",
+    calendar: "\e902",
+    close: '\e903',
+    collapse: "\e904",
+    copy: "\e905",
+    document-tick: "\e906",
+    document: "\e907",
+    edit: "\e908",
+    email-new: "\e909",
+    email: "\e90a",
+    expand: "\e90b",
+    filters: "\e90c",
+    forward: "\e90d",
+    hidden: "\e90e",
+    hypothesis: "\e90f",
+    laptop: "\e910",
+    lightbulb: "\e911",
+    link: "\e912",
+    mobile: "\e913",
+    molecules: "\e914",
+    padlock: "\e915",
+    points-attention: "\e916",
+    problem: "\e917",
+    settings: "\e918",
+    share-cicular: "\e919",
+    share: "\e91a",
+    tablet: "\e91b",
+    transfer: "\e91c",
+    user: "\e91d",
+    view: "\e91e"
+  ),
+  "modal": (
+    attention: "\e900",
+    cancel: "\e901",
+    hypothesis: "\e902",
+    info: "\e903",
+    padlock: "\e904",
+    problem: "\e905",
+    transfer: "\e906"
+  )
+);
+
+// Fonts
+
+// Roboto
+
+$roboto-300-light: 'roboto-300-light';
+$roboto-300-light-italic: 'roboto-300-light-italic';
+$roboto-400-regular: 'roboto-400-regular';
+$roboto-400-regular-italic: 'roboto-400-regular-italic';
+$roboto-500-medium: 'roboto-500-medium';
+$roboto-500-medium-italic: 'roboto-500-medium-italic';
+$roboto-700-bold: 'roboto-700-bold';
+$roboto-700-bold-italic: 'roboto-700-bold-italic';
+$roboto-800-extra-bold: 'roboto-800-extra-bold';
+$roboto-800-extra-bold-italic: 'roboto-800-extra-bold-italic';
+
+// Roboto Condensed
+
+$roboto-condensed-300-light: 'roboto-condensed-300-light';
+$roboto-condensed-300-light-italic: 'roboto-condensed-300-light-italic';
+$roboto-condensed-400-regular: 'roboto-condensed-400-regular';
+$roboto-condensed-400-regular-italic: 'roboto-condensed-400-regular-italic';
+$roboto-condensed-700-bold: 'roboto-condensed-700-bold';
+$roboto-condensed-700-bold-italic: 'roboto-condensed-700-bold-italic';
+
+// Source Sans Pro
+
+$source-sans-pro-300-light: 'source-sans-pro-300-light';
+$source-sans-pro-300-light-italic: 'source-sans-pro-300-light-italic';
+$source-sans-pro-400-regular: 'source-sans-pro-400-regular';
+$source-sans-pro-400-regular-italic: 'source-sans-pro-400-regular-italic';
+$source-sans-pro-600-semi-bold: 'source-sans-pro-600-semi-bold';
+$source-sans-pro-600-semi-bold-italic: 'source-sans-pro-600-semi-bold-italic';
+$source-sans-pro-700-bold: 'source-sans-pro-700-bold';
+$source-sans-pro-700-bold-italic: 'source-sans-pro-700-bold-italic';
+$source-sans-pro-800-extra-bold: 'source-sans-pro-800-extra-bold';
+$source-sans-pro-800-extra-bold-italic: 'source-sans-pro-800-extra-bold-italic';
