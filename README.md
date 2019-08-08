@@ -93,7 +93,8 @@ A big requirement that is constantly being asked for in roles I'm approached abo
 
 # 2. Filtered by contract
 
-![Biglight](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/biglight.png "Biglight")
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/biglight.png" width="300" alt="Biglight">
+<br />
 
 ### **Project title:** CXODB
 
