@@ -190,6 +190,12 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2016-12-2016-12%20-%20Sapient%20Nitro%20(Good%20News%20Feed))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2016-12-2016-12-sapient-nitro/good-news-feed/index.html)
 
+### **Sample project screens**
+
+| Screen 1 |
+| :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2016-12-2016-12-sapient-nitro/screens/thumbnails/desktop/01-homepage.png" width="200" /> |
+
 ### **Technologies used:** 
 
 CSS3, HTML5, icoMoon, NPM, JSON, Namespacing, Native JavaScript, OO JavaScript, Responsive front-end
