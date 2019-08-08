@@ -223,7 +223,7 @@ I worked on 2 fairly similar projects during my 4 months at Profero. Both were e
 - - -
 <br />
 
-<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/akqa.png" width="300" alt="AKQA">
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/akqa.png" width="150" alt="AKQA">
 <br />
 
 **Project title:** Nike
