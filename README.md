@@ -190,8 +190,14 @@ I worked at Barclays on a front and back-end component library, built via a comb
 
 I was originally hired by Trinity Mirror to bring to life several complex prototypes in order establish the feasibility of a number of new technologies, in respect of Trinity Mirrors existing content. After completing these prototypes, one such piece of work I built was so well received by the business that budget was allocated for the technologies I had written to be harnessed for a much larger football based project. Partnering with Opta, who perform statistical analysis on the Barclays Premier League, I wrote a real-time consumption framework of their data to allow Trinity Mirror to show live updates of the entire league during match days. After this work was completed, I extended the code to work for the 2014 football World Cup. The framework was coded to work on desktop browsers, tablets and mobile devices. In addition to this, a cross-section of other work I built during my time at Trinity Mirror included an entire JSON driven data visualization framework, canvas-based real-time heatmaps, particle fireworks, circular navigation systems, mobile friendly touch sensitive draggable voting plugins and a vast number of (websocket based) real-time JavaScript plugins, such as live football league tables, live graphs and live blog feeds.
 
-### Profero - Accenture [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2012-12-2013-03%20-%20Profero%20(Accenture))
-- - -
+<br />
+
+![Profero](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/profero.png "Profero")
+
+**Project title:** Accenture
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2012-12-2013-03%20-%20Profero%20(Accenture))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2012-12-2013-03-profero/accenture/index.html)
 
 I worked on 2 fairly similar projects during my 4 months at Profero. Both were extremely rich (in functionality) responsive front-end websites, built to work across desktop, mobile and tablet using a combination of HTML4/5, CSS 2/3 and JavaScript. The first site was designed and built as a full-screen immersive user experience, whereas the second was restricted and governed by a Sharepoint set of templates, running at fixed-width dimensions. Both were built 100% by me from scratch through to completion. The full-screen site required the building of a complete timelining JavaScript framework, allowing for a Flash-esque timeline and queuing mechanism, along with being dynamic in its ability to render in 1 of 4 different languages. The fixed-width site was more of a scroll site, albeit with gesture based alternatives for mobile and tablet switched in at appropriate times.
 
