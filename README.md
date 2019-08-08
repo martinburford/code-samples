@@ -94,7 +94,6 @@ A big requirement that is constantly being asked for in roles I'm approached abo
 # 2. Filtered by contract
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/biglight.png" width="300" alt="Biglight">
-<br />
 
 ### **Project title:** CXODB
 
@@ -111,7 +110,6 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/bond-and-coyne.png" width="300" alt="Bond & Coyne">
-<br />
 
 ### **Project title:** Pearson
 
@@ -128,7 +126,6 @@ Babel, Browserify, CSS3, ES6, Grunt, HTML5, icoMoon, JSON, Native JavaScript, No
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/martin-burford.png" width="300" alt="Personal portfolio">
-<br />
 
 ### **Project title:** Personal Portfolio
 
@@ -141,7 +138,6 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/sapient-nitro.png" width="300" alt="Sapient Nitro">
-<br />
 
 ### **Project title:** Good News Feed
 
@@ -158,7 +154,6 @@ CSS3, HTML5, icoMoon, NPM, JSON, Namespacing, Native JavaScript, OO JavaScript, 
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png" width="300" alt="Trinity Mirror">
-<br />
 
 ### **Project title:** Chameleon
 
@@ -175,7 +170,6 @@ Chai, CSS3, eScenic, Express, Grunt, HTML5, icoMoon, Jade templating, JSON, Karm
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/barclays.png" width="300" alt="Barclays">
-<br />
 
 ### **Project title:** Account Opening
 
@@ -196,7 +190,6 @@ CSS3, Grunt, HTML5, jQuery, JSON, Lo-dash, Namespacing, OO JavaScript, Responsiv
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png" width="300" alt="Trinity Mirror">
-<br />
 
 ### **Project title:** Animated Gauges
 
@@ -237,7 +230,6 @@ Adapt.js, amCharts, CSS2/3, HTML4/5, jQuery, JSON, Lo-dash,  Namespacing, OO Jav
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/profero.png" width="300" alt="Profero">
-<br />
 
 ### **Project title:** Accenture
 
@@ -250,7 +242,6 @@ I worked on 2 fairly similar projects during my 4 months at Profero. Both were e
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/akqa.png" width="150" alt="AKQA">
-<br />
 
 ### **Project title:** Nike
 
