@@ -1,0 +1,2 @@
+# code-samples
+Mansion House (view) I was hired via Mansion House Consulting, for one of the UKs main high street banks, to bring to life a conceptual project, in the form of a fully working prototype. The project was an XHR driven interface, integrated alongside a fully functional API, built to be responsive across a number of breakpoints. Once the prototype was completed and the concept was successfully proven to the relevant business units, it was handed over to an existing development team to drive the longer-term piece of work forward.
