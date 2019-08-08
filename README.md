@@ -128,18 +128,9 @@ A big requirement that is constantly being asked for in roles I'm approached abo
 
 Biglight hired me as the only Front-End Developer to work on an internal project for them, which would be used for managing test campaigns across all of their brands. Prior to the existence of this, the system in place was in need of updating as it involved data being kept in multiple spreadsheets, and was therefore not the easiest to work with. The new system was a completely greenfield project, whereby myself and a single back-end Developer worked on creating a new platform for the business which would replace in its entirety the existing system. It was also a requirement that clients would be granted access to the tests, so a set of rules were built into what was created to allow for both read and write priviliedges across a multi-tiered user hierarchy. From a tech stack perspective, Biglight are a Microsoft house, so there was a requirement to use .net Core for the back-end. The front-end that I wrote was very much written in a way whereby the project was responsive to a users input. This was achieved by implementing a RESTful API on the back-end with multiple touchpoints between the front and back-end. Upon delivery of the finished project, there were around 20 different endpoints, catering for all of the data transmission. This covered complete user management, a free-text search engine, an interactive dashboard, saving tests as PDF routine, the creation of complete tests and their subsequent editing along with MANY more features.
 
-### **Sample screens**
-<div>
-    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" align="left" width="200" />
-    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" align="left" width="200"/>
-    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" align="left" width="200"/>
-    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" align="left" width="200"/>
-</div>
-<br /><br /><br /><br /><br /><br /><br />
+### **Sample project screens**
 
-### **Sample screens**
-
-|          |          |          |          |
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
 | :------: | :------: | :------: | :------: |
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" width="200"/> |
 
