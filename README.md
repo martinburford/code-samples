@@ -102,8 +102,6 @@ A big requirement that is constantly being asked for in roles I'm approached abo
 
 Biglight hired me as the only Front-End Developer to work on an internal project for them, which would be used for managing test campaigns across all of their brands. Prior to the existence of this, the system in place was in need of updating as it involved data being kept in multiple spreadsheets, and was therefore not the easiest to work with. The new system was a completely greenfield project, whereby myself and a single back-end Developer worked on creating a new platform for the business which would replace in its entirety the existing system. It was also a requirement that clients would be granted access to the tests, so a set of rules were built into what was created to allow for both read and write priviliedges across a multi-tiered user hierarchy. From a tech stack perspective, Biglight are a Microsoft house, so there was a requirement to use .net Core for the back-end. The front-end that I wrote was very much written in a way whereby the project was responsive to a users input. This was achieved by implementing a RESTful API on the back-end with multiple touchpoints between the front and back-end. Upon delivery of the finished project, there were around 20 different endpoints, catering for all of the data transmission. This covered complete user management, a free-text search engine, an interactive dashboard, saving tests as PDF routine, the creation of complete tests and their subsequent editing along with MANY more features.
 
-<br />
-
 - - -
 <br />
 
@@ -115,8 +113,6 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 - [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2017-08-2017-11-bond-and-coyne/pearson/index.html)
 
 I spent a few months at Bond & Coyne, working on a website build for their largest client. The project I worked on was a single page (fully responsive) site and was built from scratch using a mixture of HTML, JavaScript and Sass. In the main, the site was built to compliment an offline brochure, however there were a few sections to the site which extended well beyond this. One such example was a data visualization feature, which was built to represent 2 different datasets with a total of a little over 175 million records. I had to write quite a few NodeJS scripts to manipulate the data into a viable format for web consumption. The creative demands on the project were extensive, leading to a number of unorthodox but fully compliant solutions that I had to build during the contract. This project was delivered on time, on budget, and the client, as well as Bond & Coyne were delighted with the end result.
-
-<br />
 
 - - -
 <br />
@@ -130,8 +126,6 @@ I spent a few months at Bond & Coyne, working on a website build for their large
 
 My portfolio was completely re-written in May/June 2017, written using Node, Express and Pug.
 
-<br />
-
 - - -
 <br />
 
@@ -144,8 +138,6 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 
 I was hired by Sapient to work on the front-end element of an internal Christmas project. The timeframes were extremely tight, and the hours were long. In working alongside a couple of very talented developers, and a supporting team of designers and UX staff, we managed to deliver something pretty amazing, taking into account the time we had available. The concept was to allow a user to submit URLs, which proved that 2016 wasn't all bad news, and that some of the things that happened over the course of the year were incredible and heart-warming. URLs provided were then scraped, tidied up a bit, and adapted into a more digestible format for the site we were building. The rendered output was a very rich interface, fully responsive, with animations primarily becoming active as elements of the page came into view. I built features such as advanced lazyloading, all custom animations, infinite page scrolling/loading, URL submission, Captcha validation, along with many more.
 
-<br />
-
 - - -
 <br />
 
@@ -157,8 +149,6 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 - [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2015-08-2016-11-trinity-mirror/chameleon/index.html)
 
 I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sites), helping with the overall architecture and development of the new digital platform for a company with monthly traffic levels in the tens of millions. The development teams technical stack comprised of full native JavaScript using Express on Node, alongside the templating language of Jade, which was used to translate the back-end data layer into both front-end components and pages. In addition, some of the other technologies used were Grunt, Karma, Mocha, Jade, Browserify, SASS. The list goes on. The project was spread across 10 teams of 10 individuals each, where 2 week sprints, inclusive of 2 releases per week were implemented in an Agile way.
-
-<br />
 
 - - -
 <br />
@@ -175,8 +165,6 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Design%20Language))
 
 I worked at Barclays on a front and back-end component library, built via a combination of custom templates and a JSON configuration engine. My responsibility related to the complete ownership of the JavaScript controller and the interactive functionality of all individual components. In addition to that, I also wrote the projects entire set of GruntJS automation scripts, enabling full sites (consisting of hundreds of pages) to be compiled in a matter of seconds. For the 12 months I spent at Barclays, I played a lead role in the team overseeing all aspects of the overall front-end development.
-
-<br />
 
 - - -
 <br />
@@ -214,8 +202,6 @@ I worked at Barclays on a front and back-end component library, built via a comb
 
 I was originally hired by Trinity Mirror to bring to life several complex prototypes in order establish the feasibility of a number of new technologies, in respect of Trinity Mirrors existing content. After completing these prototypes, one such piece of work I built was so well received by the business that budget was allocated for the technologies I had written to be harnessed for a much larger football based project. Partnering with Opta, who perform statistical analysis on the Barclays Premier League, I wrote a real-time consumption framework of their data to allow Trinity Mirror to show live updates of the entire league during match days. After this work was completed, I extended the code to work for the 2014 football World Cup. The framework was coded to work on desktop browsers, tablets and mobile devices. In addition to this, a cross-section of other work I built during my time at Trinity Mirror included an entire JSON driven data visualization framework, canvas-based real-time heatmaps, particle fireworks, circular navigation systems, mobile friendly touch sensitive draggable voting plugins and a vast number of (websocket based) real-time JavaScript plugins, such as live football league tables, live graphs and live blog feeds.
 
-<br />
-
 - - -
 <br />
 
@@ -227,8 +213,6 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 - [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2012-12-2013-03-profero/accenture/index.html)
 
 I worked on 2 fairly similar projects during my 4 months at Profero. Both were extremely rich (in functionality) responsive front-end websites, built to work across desktop, mobile and tablet using a combination of HTML4/5, CSS 2/3 and JavaScript. The first site was designed and built as a full-screen immersive user experience, whereas the second was restricted and governed by a Sharepoint set of templates, running at fixed-width dimensions. Both were built 100% by me from scratch through to completion. The full-screen site required the building of a complete timelining JavaScript framework, allowing for a Flash-esque timeline and queuing mechanism, along with being dynamic in its ability to render in 1 of 4 different languages. The fixed-width site was more of a scroll site, albeit with gesture based alternatives for mobile and tablet switched in at appropriate times.
-
-<br />
 
 - - -
 <br />
