@@ -165,12 +165,18 @@ Babel, Browserify, CSS3, ES6, Grunt, HTML5, icoMoon, JSON, Native JavaScript, No
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/martin-burford.png" width="300" alt="Personal portfolio">
 
+My portfolio was completely re-written in May/June 2017, written using Node, Express and Pug.
+
 ### **Project title:** Personal Portfolio
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio)
 - [View portfolio gallery](http://www.martinburford.co.uk)
 
-My portfolio was completely re-written in May/June 2017, written using Node, Express and Pug.
+### **Sample project screens**
+
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
+| :------: | :------: | :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-05-2017-06-martin-burford/screens/thumbnails/desktop/02-listings.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-05-2017-06-martin-burford/screens/thumbnails/desktop/03-mobile-thumbnails.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-05-2017-06-martin-burford/screens/thumbnails/desktop/04-sidebar-visible.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-05-2017-06-martin-burford/screens/thumbnails/desktop/07-cv.png" width="200"/> |
 
 - - -
 <br />
