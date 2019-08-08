@@ -140,7 +140,7 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 | Screen 1 | Screen 2 |
 | :------: | :------: |
-<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" align="left" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" align="left" width="200"/> |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/> |
 
 ### **Technologies used:** 
 
