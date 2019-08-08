@@ -130,12 +130,17 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 ### **Sample screens**
 <div>
-    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" align="left" width="220" />
-    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" align="left" width="220"/>
-    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" align="left" width="220"/>
-    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" align="left" width="220"/>
+    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" align="left" width="200" />
+    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" align="left" width="200"/>
+    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" align="left" width="200"/>
+    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" align="left" width="200"/>
 </div>
-<br style="clear:both" />
+<br /><br /><br /><br /><br /><br /><br />
+<br /><br /><br /><br /><br /><br /><br />
+
+| Screen 1 | Screen 2 |
+| :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" align="left" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" align="left" width="200"/> |
 
 ### **Technologies used:** 
 
