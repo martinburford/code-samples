@@ -128,8 +128,6 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2018-05-2018-10%20-%20Biglight%20(CXODB))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2018-05-2018-10-biglight/cxodb/index.html)
 
-### **Sample project screens**
-
 | Screen 1 | Screen 2 | Screen 3 | Screen 4 |
 | :------: | :------: | :------: | :------: |
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" width="200"/> |
@@ -149,8 +147,6 @@ I spent a few months at Bond & Coyne, working on a website build for their large
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-08-2017-11%20-%20Bond%20%26%20Coyne%20(Pearson))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2017-08-2017-11-bond-and-coyne/pearson/index.html)
-
-### **Sample project screens**
 
 | Screen 1 | Screen 2 | Screen 3 | Screen 4 |
 | :------: | :------: | :------: | :------: |
@@ -172,8 +168,6 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio)
 - [View portfolio gallery](http://www.martinburford.co.uk)
 
-### **Sample project screens**
-
 | Screen 1 | Screen 2 | Screen 3 | Screen 4 |
 | :------: | :------: | :------: | :------: |
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-05-2017-06-martin-burford/screens/thumbnails/desktop/02-listings.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-05-2017-06-martin-burford/screens/thumbnails/desktop/03-mobile-thumbnails.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-05-2017-06-martin-burford/screens/thumbnails/desktop/04-sidebar-visible.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-05-2017-06-martin-burford/screens/thumbnails/desktop/07-cv.png" width="200"/> |
@@ -189,8 +183,6 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2016-12-2016-12%20-%20Sapient%20Nitro%20(Good%20News%20Feed))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2016-12-2016-12-sapient-nitro/good-news-feed/index.html)
-
-### **Sample project screens**
 
 | Screen 1 |
 | :------: |
@@ -212,8 +204,6 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2015-08-2016-11%20-%20Trinity%20Mirror%20(Chameleon))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2015-08-2016-11-trinity-mirror/chameleon/index.html)
 
-### **Sample project screens**
-
 | Screen 1 | Screen 2 | Screen 3 | Screen 4 |
 | :------: | :------: | :------: | :------: |
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2015-08-2016-11-trinity-mirror/screens/thumbnails/desktop/01-mirror-sport-homepage.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2015-08-2016-11-trinity-mirror/screens/thumbnails/desktop/04-get-reading-section-page.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2015-08-2016-11-trinity-mirror/screens/thumbnails/desktop/05-glasgow-live-section-page.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2015-08-2016-11-trinity-mirror/screens/thumbnails/desktop/06-manchester-evening-news-section-page.png" width="200"/> |
@@ -233,8 +223,6 @@ I worked at Barclays on a front and back-end component library, built via a comb
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Account%20Opening))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2014-08-2015-08-barclays/account-opening/index.html)
-
-### **Sample project screens**
 
 | Screen 1 | Screen 2 | Screen 3 | Screen 4 |
 | :------: | :------: | :------: | :------: |
@@ -260,20 +248,36 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Animated%20Gauges))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/animated-gauges/index.html)
 
+| Screen 1 |
+| :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/animated-gauges/screens/thumbnails/desktop/01-animated-gauges.png" width="200" /> |
+
 ### **Project title:** Data Visualization
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Data%20Visualization))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/data-visualization/index.html)
+
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
+| :------: | :------: | :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/data-visualization/screens/thumbnails/desktop/01-bar-graph.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/data-visualization/screens/thumbnails/desktop/03-donut-chart.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/data-visualization/screens/thumbnails/desktop/06-scatter-chart.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/data-visualization/screens/thumbnails/desktop/10-arsenal-vs-liverpool.png" width="200"/> |
 
 ### **Project title:** Heatmaps
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Heatmaps))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/heatmaps/index.html)
 
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
+| :------: | :------: | :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/heatmaps/screens/thumbnails/desktop/02-player-vertical.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/heatmaps/screens/thumbnails/desktop/04-team-horizontal.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/heatmaps/screens/thumbnails/desktop/05-team-vertical.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/heatmaps/screens/thumbnails/desktop/06-team-small.png" width="200"/> |
+
 ### **Project title:** Particle fireworks
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Particle%20fireworks))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/particle-fireworks/index.html)
+
+| Screen 1 |
+| :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/particle-fireworks/screens/thumbnails/desktop/01-particle-fireworks.png" width="200" /> |
 
 ### **Project title:** Premier League
 
@@ -283,6 +287,11 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Vote%20Slider))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/vote-slider/index.html)
+
+
+| Screen 1 |
+| :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2013-07-2014-08-trinity-mirror/vote-slider/screens/thumbnails/desktop/01-vote-slider.png" width="200" /> |
 
 ### **Technologies used:** 
 
@@ -300,6 +309,10 @@ I worked on 2 fairly similar projects during my 4 months at Profero. Both were e
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2012-12-2013-03%20-%20Profero%20(Accenture))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2012-12-2013-03-profero/accenture/index.html)
 
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
+| :------: | :------: | :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2012-12-2013-03-profero/accenture/screens/thumbnails/desktop/01-homepage.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2012-12-2013-03-profero/accenture/screens/thumbnails/desktop/02-homepage-revealed.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2012-12-2013-03-profero/accenture/screens/thumbnails/desktop/03-relationships-at-scale.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2012-12-2013-03-profero/accenture/screens/thumbnails/desktop/04-relationships-at-scale-reverse.png" width="200"/> |
+
 - - -
 <br />
 
@@ -311,3 +324,7 @@ I worked at AKQA on a large project for one of their biggest clients, Nike, focu
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2011-10-2011-12%20-%20AKQA%20(Nike))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2011-10-2011-12-akqa/nike/index.html)
+
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
+| :------: | :------: | :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2011-10-2011-12-akqa/screens/thumbnails/desktop/01-zoom-level-04.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2011-10-2011-12-akqa/screens/thumbnails/desktop/05-zoom-level-08.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2011-10-2011-12-akqa/screens/thumbnails/desktop/08-zoom-level-11.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2011-10-2011-12-akqa/screens/thumbnails/desktop/13-zoom-level-16.png" width="200"/> |
