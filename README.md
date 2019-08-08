@@ -14,6 +14,8 @@ It's a little challenging to classify code samples so that they are available in
 
 The code samples provided contain examples coded in the following languages:
 
+* [Custom jQuery plugins](#Custom-jQuery-plugins)
+
 * **Custom jQuery plugins** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/custom-jquery-plugins)
 * **Grunt** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/grunt)
 * **Gulp** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/gulp)
