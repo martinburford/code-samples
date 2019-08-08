@@ -106,6 +106,8 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 ![Bond & Coyne](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/bond-and-coyne.png "Bond & Coyne")
 
+## **Project title:** Pearson
+
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-08-2017-11%20-%20Bond%20%26%20Coyne%20(Pearson))
 - [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2017-08-2017-11-bond-and-coyne/pearson/index.html)
 
