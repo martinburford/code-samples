@@ -1,14 +1,18 @@
-<span style="color:red">I am often asked by companies who hire me to sign Non-Disclosure Agreements which restrict me from publishing code samples to my GitHub. I do of course have many code samples beyond the contents of this public repository. Should you wish to see any, please [get in touch with me](mailto:martin@martinburford.co.uk).</span>
+### **Please note:**
+I am often asked by companies who hire me to sign Non-Disclosure Agreements which restrict me from publishing code samples to my GitHub account. I do of course have MANY code samples beyond the contents of this public repository. Should you wish to see any of them, please [get in touch with me](mailto:martin@martinburford.co.uk).
 
 # Overview
 
-This repository includes a few code samples from some projects I've been involved in over the past 5 years or so. 
+This repository includes a selection of code samples from some projects I've been involved in over the past 5 years or so. 
 
-I've been a Front-End Developer for close to 20 years. Technology has changed a huge amount in this time, and currently, the languages that underpin the market are going through a huge transformation. This is why I've only included a few code samples, and only from the past few years. I don't feel there is much value in providing code samples from 10+ years ago, as technology has changed, and my own coding style/efficiency has also changed enormously.
+I've been a Front-End Developer for a little over 20 years. Technology has changed a huge amount in this time, and currently, the languages that underpin the market are going through a huge transformation. This is why I've only included a few code samples, and only from the past few years. I don't feel there is much value in providing code samples from 10+ years ago, as technology has changed, and my own coding style/efficiency has also changed enormously.
 
-Within the samples provided in this repository, I've included what I see as a reasonable cross-section of the work I am often involved in. It is however only a small illustration of the type of work I have done. I've worked on over 100 websites in my career, ranging from white-label platforms, through to multi-lingual sites, arabic sites, right-to-left reading sites, device-only sites, responsive web development, single-page sites, real-time websocket sites. The list goes on and on!
+Within the samples provided in this repository, I've included what I see as a reasonable cross-section of the work I am often involved in. It is however only a small illustration of the type of work I have done. I've worked on over 150 websites in my career, ranging from white-label platforms, through to multi-lingual sites, arabic sites, right-to-left reading sites, device-only sites, responsive web development, single-page applications, real-time websocket sites. The list goes on and on!
 
-It's a little challenging to classify code samples so that they are available in an easy to digest format. I see it as being valuable to have made them available in 2 different ways:
+It's a little challenging to classify code samples so that they are available in an easy to digest format. I have therefore made them available in 2 different ways:
+
+* [Filtered by language](#Filtered-by-language)
+* [Filtered by contract](#Filtered-by-contract)
 
 # 1. Filtered by language
 
