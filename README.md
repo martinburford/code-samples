@@ -118,8 +118,14 @@ I spent a few months at Bond & Coyne, working on a website build for their large
 
 My portfolio was completely re-written in May/June 2017, written using Node, Express and Pug.
 
-### Sapient Nitro - Good News Feed [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2016-12-2016-12%20-%20Sapient%20Nitro%20(Good%20News%20Feed))
-- - -
+<br />
+
+![Sapient Nitro](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/sapient-nitro.png "Sapient Nitro")
+
+## **Project title:** Good News Feed
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2016-12-2016-12%20-%20Sapient%20Nitro%20(Good%20News%20Feed))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2016-12-2016-12-sapient-nitro/good-news-feed/index.html)
 
 I was hired by Sapient to work on the front-end element of an internal Christmas project. The timeframes were extremely tight, and the hours were long. In working alongside a couple of very talented developers, and a supporting team of designers and UX staff, we managed to deliver something pretty amazing, taking into account the time we had available. The concept was to allow a user to submit URLs, which proved that 2016 wasn't all bad news, and that some of the things that happened over the course of the year were incredible and heart-warming. URLs provided were then scraped, tidied up a bit, and adapted into a more digestible format for the site we were building. The rendered output was a very rich interface, fully responsive, with animations primarily becoming active as elements of the page came into view. I built features such as advanced lazyloading, all custom animations, infinite page scrolling/loading, URL submission, Captcha validation, along with many more.
 
