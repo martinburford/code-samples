@@ -150,6 +150,12 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 I spent a few months at Bond & Coyne, working on a website build for their largest client. The project I worked on was a single page (fully responsive) site and was built from scratch using a mixture of HTML, JavaScript and Sass. In the main, the site was built to compliment an offline brochure, however there were a few sections to the site which extended well beyond this. One such example was a data visualization feature, which was built to represent 2 different datasets with a total of a little over 175 million records. I had to write quite a few NodeJS scripts to manipulate the data into a viable format for web consumption. The creative demands on the project were extensive, leading to a number of unorthodox but fully compliant solutions that I had to build during the contract. This project was delivered on time, on budget, and the client, as well as Bond & Coyne were delighted with the end result.
 
+### **Sample project screens**
+
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
+| :------: | :------: | :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/01-homepage.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/02-flyout-navigation.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/04-occupations.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/05-explore-the-trends-urbanization.png" width="200"/> |
+
 ### **Technologies used:** 
 
 Babel, Browserify, CSS3, ES6, Grunt, HTML5, icoMoon, JSON, Native JavaScript, Node, NPM, OO JavaScript, Responsive front-end, SASS
