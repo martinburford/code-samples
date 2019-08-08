@@ -212,6 +212,12 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2015-08-2016-11%20-%20Trinity%20Mirror%20(Chameleon))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2015-08-2016-11-trinity-mirror/chameleon/index.html)
 
+### **Sample project screens**
+
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
+| :------: | :------: | :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2015-08-2016-11-trinity-mirror/screens/thumbnails/desktop/01-mirror-sport-homepage.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2015-08-2016-11-trinity-mirror/screens/thumbnails/desktop/04-get-reading-section-page.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2015-08-2016-11-trinity-mirror/screens/thumbnails/desktop/05-glasgow-live-section-page.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2015-08-2016-11-trinity-mirror/screens/thumbnails/desktop/06-manchester-evening-news-section-page.png" width="200"/> |
+
 ### **Technologies used:** 
 
 Chai, CSS3, eScenic, Express, Grunt, HTML5, icoMoon, Jade templating, JSON, Karma, Mocha, Node, NPM (private and public), Multi-branding, Namespacing, Native JavaScript, OO JavaScript, PhantomJS, Responsive front-end, SASS, Sinon
