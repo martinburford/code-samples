@@ -104,6 +104,9 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 <br />
 
+- - -
+<br />
+
 ![Bond & Coyne](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/bond-and-coyne.png "Bond & Coyne")
 
 **Project title:** Pearson
@@ -113,11 +116,23 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 I spent a few months at Bond & Coyne, working on a website build for their largest client. The project I worked on was a single page (fully responsive) site and was built from scratch using a mixture of HTML, JavaScript and Sass. In the main, the site was built to compliment an offline brochure, however there were a few sections to the site which extended well beyond this. One such example was a data visualization feature, which was built to represent 2 different datasets with a total of a little over 175 million records. I had to write quite a few NodeJS scripts to manipulate the data into a viable format for web consumption. The creative demands on the project were extensive, leading to a number of unorthodox but fully compliant solutions that I had to build during the contract. This project was delivered on time, on budget, and the client, as well as Bond & Coyne were delighted with the end result.
 
-### Personal Portfolio [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio)
+<br />
+
 - - -
+<br />
+
+![Martin Burford](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/martin-burford.png "Martin Burford")
+
+**Project title:** Personal Portfolio
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio)
+- [View portfolio link](http://www.martinburford.co.uk)
 
 My portfolio was completely re-written in May/June 2017, written using Node, Express and Pug.
 
+<br />
+
+- - -
 <br />
 
 ![Sapient Nitro](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/sapient-nitro.png "Sapient Nitro")
@@ -131,6 +146,9 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 
 <br />
 
+- - -
+<br />
+
 ![Trinity Mirror](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png "Trinity Mirror")
 
 **Project title:** Chameleon
@@ -140,6 +158,9 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 
 I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sites), helping with the overall architecture and development of the new digital platform for a company with monthly traffic levels in the tens of millions. The development teams technical stack comprised of full native JavaScript using Express on Node, alongside the templating language of Jade, which was used to translate the back-end data layer into both front-end components and pages. In addition, some of the other technologies used were Grunt, Karma, Mocha, Jade, Browserify, SASS. The list goes on. The project was spread across 10 teams of 10 individuals each, where 2 week sprints, inclusive of 2 releases per week were implemented in an Agile way.
 
+<br />
+
+- - -
 <br />
 
 ![Barclays](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/barclays.png "Barclays")
@@ -155,6 +176,9 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 
 I worked at Barclays on a front and back-end component library, built via a combination of custom templates and a JSON configuration engine. My responsibility related to the complete ownership of the JavaScript controller and the interactive functionality of all individual components. In addition to that, I also wrote the projects entire set of GruntJS automation scripts, enabling full sites (consisting of hundreds of pages) to be compiled in a matter of seconds. For the 12 months I spent at Barclays, I played a lead role in the team overseeing all aspects of the overall front-end development.
 
+<br />
+
+- - -
 <br />
 
 ![Trinity Mirror](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png "Trinity Mirror")
@@ -192,6 +216,9 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 
 <br />
 
+- - -
+<br />
+
 ![Profero](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/profero.png "Profero")
 
 **Project title:** Accenture
@@ -201,6 +228,9 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 
 I worked on 2 fairly similar projects during my 4 months at Profero. Both were extremely rich (in functionality) responsive front-end websites, built to work across desktop, mobile and tablet using a combination of HTML4/5, CSS 2/3 and JavaScript. The first site was designed and built as a full-screen immersive user experience, whereas the second was restricted and governed by a Sharepoint set of templates, running at fixed-width dimensions. Both were built 100% by me from scratch through to completion. The full-screen site required the building of a complete timelining JavaScript framework, allowing for a Flash-esque timeline and queuing mechanism, along with being dynamic in its ability to render in 1 of 4 different languages. The fixed-width site was more of a scroll site, albeit with gesture based alternatives for mobile and tablet switched in at appropriate times.
 
+<br />
+
+- - -
 <br />
 
 ![AKQA](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/akqa.png "AKQA")
