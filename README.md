@@ -14,7 +14,7 @@ It's a little challenging to classify code samples so that they are available in
 * [Filtered by language](#Filtered-by-language)
 * [Filtered by contract](#Filtered-by-contract)
 
-# 1. Filtered by language
+# Filtered by language
 
 The code samples provided contain examples coded in the following languages:
 
@@ -117,7 +117,7 @@ A big requirement that is constantly being asked for in roles I'm approached abo
 
 [Click here to view **Test scripts** code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/test-scripts)
 
-# 2. Filtered by contract
+# Filtered by contract
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/biglight.png" width="300" alt="Biglight">
 
