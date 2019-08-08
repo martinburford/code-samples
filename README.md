@@ -95,7 +95,7 @@ A big requirement that is constantly being asked for in roles I'm approached abo
 
 ![Biglight](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/biglight.png "Biglight")
 
-## **Project title:** CXODB
+**Project title:** CXODB
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2018-05-2018-10%20-%20Biglight%20(CXODB))
 - [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2018-05-2018-10-biglight/cxodb/index.html)
@@ -106,7 +106,7 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 ![Bond & Coyne](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/bond-and-coyne.png "Bond & Coyne")
 
-## **Project title:** Pearson
+**Project title:** Pearson
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-08-2017-11%20-%20Bond%20%26%20Coyne%20(Pearson))
 - [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2017-08-2017-11-bond-and-coyne/pearson/index.html)
@@ -122,7 +122,7 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 
 ![Sapient Nitro](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/sapient-nitro.png "Sapient Nitro")
 
-## **Project title:** Good News Feed
+**Project title:** Good News Feed
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2016-12-2016-12%20-%20Sapient%20Nitro%20(Good%20News%20Feed))
 - [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2016-12-2016-12-sapient-nitro/good-news-feed/index.html)
@@ -133,20 +133,27 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 
 ![Trinity Mirror](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png "Trinity Mirror")
 
-## **Project title:** Chameleon
+**Project title:** Chameleon
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2015-08-2016-11%20-%20Trinity%20Mirror%20(Chameleon))
 - [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2015-08-2016-11-trinity-mirror/chameleon/index.html)
 
 I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sites), helping with the overall architecture and development of the new digital platform for a company with monthly traffic levels in the tens of millions. The development teams technical stack comprised of full native JavaScript using Express on Node, alongside the templating language of Jade, which was used to translate the back-end data layer into both front-end components and pages. In addition, some of the other technologies used were Grunt, Karma, Mocha, Jade, Browserify, SASS. The list goes on. The project was spread across 10 teams of 10 individuals each, where 2 week sprints, inclusive of 2 releases per week were implemented in an Agile way.
 
-### Barclays
-- - -
+<br />
+
+![Barclays](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/barclays.png "Barclays")
+
+**Project title:** Account Opening
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Account%20Opening))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2014-08-2015-08-barclays/account-opening/index.html)
+
+**Project title:** Design Language
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Design%20Language))
 
 I worked at Barclays on a front and back-end component library, built via a combination of custom templates and a JSON configuration engine. My responsibility related to the complete ownership of the JavaScript controller and the interactive functionality of all individual components. In addition to that, I also wrote the projects entire set of GruntJS automation scripts, enabling full sites (consisting of hundreds of pages) to be compiled in a matter of seconds. For the 12 months I spent at Barclays, I played a lead role in the team overseeing all aspects of the overall front-end development.
-
-* **Account Opening** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Account%20Opening))
-* **Design Language** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Design%20Language))
 
 ### Trinity Mirror
 - - -
