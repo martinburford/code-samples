@@ -129,8 +129,14 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 
 I was hired by Sapient to work on the front-end element of an internal Christmas project. The timeframes were extremely tight, and the hours were long. In working alongside a couple of very talented developers, and a supporting team of designers and UX staff, we managed to deliver something pretty amazing, taking into account the time we had available. The concept was to allow a user to submit URLs, which proved that 2016 wasn't all bad news, and that some of the things that happened over the course of the year were incredible and heart-warming. URLs provided were then scraped, tidied up a bit, and adapted into a more digestible format for the site we were building. The rendered output was a very rich interface, fully responsive, with animations primarily becoming active as elements of the page came into view. I built features such as advanced lazyloading, all custom animations, infinite page scrolling/loading, URL submission, Captcha validation, along with many more.
 
-### Trinity Mirror - Chameleon [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2015-08-2016-11%20-%20Trinity%20Mirror%20(Chameleon))
-- - -
+<br />
+
+![Trinity Mirror](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png "Trinity Mirror")
+
+## **Project title:** Chameleon
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2015-08-2016-11%20-%20Trinity%20Mirror%20(Chameleon))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2015-08-2016-11-trinity-mirror/chameleon/index.html)
 
 I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sites), helping with the overall architecture and development of the new digital platform for a company with monthly traffic levels in the tens of millions. The development teams technical stack comprised of full native JavaScript using Express on Node, alongside the templating language of Jade, which was used to translate the back-end data layer into both front-end components and pages. In addition, some of the other technologies used were Grunt, Karma, Mocha, Jade, Browserify, SASS. The list goes on. The project was spread across 10 teams of 10 individuals each, where 2 week sprints, inclusive of 2 releases per week were implemented in an Agile way.
 
