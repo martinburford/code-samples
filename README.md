@@ -20,7 +20,7 @@ The code samples provided contain examples coded in the following languages:
 * [HTML](#HTML)
 * [JavaScript](#JavaScript)
 * [JSON](#JSON)
-* [NodeJS](#NodeJS)
+* [NodeJS](#Node-JS)
 * [PHP](#PHP)
 * [Pug templates](#Pug-templates)
 * [SCSS](#SCSS)
