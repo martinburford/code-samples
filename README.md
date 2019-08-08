@@ -234,6 +234,12 @@ I worked at Barclays on a front and back-end component library, built via a comb
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Account%20Opening))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2014-08-2015-08-barclays/account-opening/index.html)
 
+### **Sample project screens**
+
+| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
+| :------: | :------: | :------: | :------: |
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2014-08-2015-08-barclays/screens/thumbnails/desktop/01-apply.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2014-08-2015-08-barclays/screens/thumbnails/desktop/07-cant-offer-account-type.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2014-08-2015-08-barclays/screens/thumbnails/desktop/15-thankyou.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2014-08-2015-08-barclays/screens/thumbnails/desktop/17-search-local-branches.png" width="200"/> |
+
 ### **Project title:** Design Language
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2014-08-2015-08%20-%20Barclays%20(Design%20Language))
