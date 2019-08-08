@@ -38,7 +38,7 @@ For example:
 
 Due to files being stored in a flat file hierarchy (eg: all JavaScript files from multiple contracts), I felt it was necessary to provide some way of ordering the files by date. In doing this, it's easy for anyone viewing this repository to view the most recent files, knowing that they were indeed coded most recently.
 
-### Custom jQuery plugins [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/custom-jquery-plugins)
+### Custom jQuery plugins
 - - -
 
 It's rare that I'll get asked to code anything in jQuery nowadays. However, a few years ago, I was hired for a few contracts where it was the "in" technology, and was asked to create some fairly bespoke features for a number of websites. Due to the nature of these features, jQuery plugins lent themselves quite nicely to the desired output.
