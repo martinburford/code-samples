@@ -118,7 +118,8 @@ I spent a few months at Bond & Coyne, working on a website build for their large
 - - -
 <br />
 
-![Martin Burford](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/martin-burford.png "Martin Burford")
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/martin-burford.png" width="300" alt="Personal portfolio">
+<br />
 
 **Project title:** Personal Portfolio
 
