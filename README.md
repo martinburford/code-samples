@@ -155,17 +155,40 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 
 I worked at Barclays on a front and back-end component library, built via a combination of custom templates and a JSON configuration engine. My responsibility related to the complete ownership of the JavaScript controller and the interactive functionality of all individual components. In addition to that, I also wrote the projects entire set of GruntJS automation scripts, enabling full sites (consisting of hundreds of pages) to be compiled in a matter of seconds. For the 12 months I spent at Barclays, I played a lead role in the team overseeing all aspects of the overall front-end development.
 
-### Trinity Mirror
-- - -
+<br />
+
+![Trinity Mirror](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png "Trinity Mirror")
+
+**Project title:** Animated Gauges
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Animated%20Gauges))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/animated-gauges/index.html)
+
+**Project title:** Data Visualization
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Data%20Visualization))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/data-visualization/index.html)
+
+**Project title:** Heatmaps
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Heatmaps))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/heatmaps/index.html)
+
+**Project title:** Particle fireworks
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Particle%20fireworks))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/particle-fireworks/index.html)
+
+**Project title:** Premier League
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Premier%20League))
+
+**Project title:** Vote slider
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Vote%20Slider))
+- [View portfolio link](http://www.martinburford.co.uk/portfolio/gallery/2013-07-2014-08-trinity-mirror/vote-slider/index.html)
 
 I was originally hired by Trinity Mirror to bring to life several complex prototypes in order establish the feasibility of a number of new technologies, in respect of Trinity Mirrors existing content. After completing these prototypes, one such piece of work I built was so well received by the business that budget was allocated for the technologies I had written to be harnessed for a much larger football based project. Partnering with Opta, who perform statistical analysis on the Barclays Premier League, I wrote a real-time consumption framework of their data to allow Trinity Mirror to show live updates of the entire league during match days. After this work was completed, I extended the code to work for the 2014 football World Cup. The framework was coded to work on desktop browsers, tablets and mobile devices. In addition to this, a cross-section of other work I built during my time at Trinity Mirror included an entire JSON driven data visualization framework, canvas-based real-time heatmaps, particle fireworks, circular navigation systems, mobile friendly touch sensitive draggable voting plugins and a vast number of (websocket based) real-time JavaScript plugins, such as live football league tables, live graphs and live blog feeds.
-
-* **Animated Gauges** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Animated%20Gauges))
-* **Data Visualization** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Data%20Visualization))
-* **Heatmaps** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Heatmaps))
-* **Particle fireworks** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Particle%20fireworks))
-* **Premier League** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Premier%20League))
-* **Vote slider** [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror%20(Vote%20Slider))
 
 ### Profero - Accenture [(view)](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2012-12-2013-03%20-%20Profero%20(Accenture))
 - - -
