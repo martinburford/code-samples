@@ -130,7 +130,8 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 - - -
 <br />
 
-![Sapient Nitro](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/sapient-nitro.png "Sapient Nitro")
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/sapient-nitro.png" width="300" alt="Sapient Nitro">
+<br />
 
 **Project title:** Good News Feed
 
@@ -142,7 +143,8 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 - - -
 <br />
 
-![Trinity Mirror](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png "Trinity Mirror")
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png" width="300" alt="Trinity Mirror">
+<br />
 
 **Project title:** Chameleon
 
@@ -154,7 +156,8 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 - - -
 <br />
 
-![Barclays](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/barclays.png "Barclays")
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/barclays.png" width="300" alt="Barclays">
+<br />
 
 **Project title:** Account Opening
 
@@ -170,7 +173,8 @@ I worked at Barclays on a front and back-end component library, built via a comb
 - - -
 <br />
 
-![Trinity Mirror](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png "Trinity Mirror")
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/trinity-mirror.png" width="300" alt="Trinity Mirror">
+<br />
 
 **Project title:** Animated Gauges
 
@@ -206,7 +210,8 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 - - -
 <br />
 
-![Profero](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/profero.png "Profero")
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/profero.png" width="300" alt="Profero">
+<br />
 
 **Project title:** Accenture
 
@@ -218,7 +223,8 @@ I worked on 2 fairly similar projects during my 4 months at Profero. Both were e
 - - -
 <br />
 
-![AKQA](http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/akqa.png "AKQA")
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/akqa.png" width="300" alt="AKQA">
+<br />
 
 **Project title:** Nike
 
