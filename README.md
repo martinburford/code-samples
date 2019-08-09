@@ -129,8 +129,8 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2018-05-2018-10-biglight/cxodb/index.html)
 
 <p>
-    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" /></kbd>&nbsp;
-    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" /></kbd>
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/></kbd>
     <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" width="200"/></kbd>&nbsp;
     <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" width="200"/></kbd>
 </p>
