@@ -129,9 +129,9 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2018-05-2018-10-biglight/cxodb/index.html)
 
 <p>
-    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" /></kbd>
-    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/></kbd>
-    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" width="200"/></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" /></kbd>&nbsp;&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/></kbd>&nbsp;&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" width="200"/></kbd>&nbsp;&nbsp;
     <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" width="200"/></kbd>
 </p>
 
@@ -151,9 +151,12 @@ I spent a few months at Bond & Coyne, working on a website build for their large
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-08-2017-11%20-%20Bond%20%26%20Coyne%20(Pearson))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2017-08-2017-11-bond-and-coyne/pearson/index.html)
 
-| Screen 1 | Screen 2 | Screen 3 | Screen 4 |
-| :------: | :------: | :------: | :------: |
-<img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/01-homepage.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/02-flyout-navigation.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/04-occupations.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/05-explore-the-trends-urbanization.png" width="200"/> |
+<p>
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/01-homepage.png" width="200" /></kbd>&nbsp;&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/02-flyout-navigation.png" width="200"/></kbd>&nbsp;&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/04-occupations.png" width="200"/></kbd>&nbsp;&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-08-2017-11-bond-and-coyne/screens/thumbnails/desktop/05-explore-the-trends-urbanization.png" width="200"/></kbd>
+</p>
 
 ### **Technologies used:** 
 
