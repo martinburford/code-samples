@@ -128,6 +128,15 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 - [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2018-05-2018-10%20-%20Biglight%20(CXODB))
 - [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2018-05-2018-10-biglight/cxodb/index.html)
 
+<p style="float:left">
+    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" />&nbsp;
+    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/>&nbsp;
+    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" width="200"/>&nbsp;
+    <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" width="200"/>
+</p>
+
+<br /><br /><br /><br /><br /><br /><br /><br />
+
 | Screen 1 | Screen 2 | Screen 3 | Screen 4 |
 | :------: | :------: | :------: | :------: |
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/01-login.png" width="200" /> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/04-dashboard.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/08-dashboard-filters-visible.png" width="200"/> | <img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-05-2018-10-biglight/screens/thumbnails/desktop/11-test-edit-with-errors.png" width="200"/> |
