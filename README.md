@@ -92,6 +92,13 @@ JSX components (in my mind) shouldn't ever contain that much code, as code abstr
 [Click here to view **JSX component** code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/jsx-component)
 
 - - -
+### **JSX page**
+
+There are SO many ways to code pages within React. As a contractor, sometimes I follow the method already put in place by previous Developers, and other times it will be down to me to determine how best to structure things. In this case, my choice of coding structure would largely come down to the technical requirements of the project. As more JSX code samples are added to this section, I'll ensure that a wide range of techniques as to how I put React JSX pages together are demonstrated.
+
+[Click here to view **JSX page** code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/jsx-page)
+
+- - -
 ### **Node JS**
 
 I wouldn't necessarily call myself a NodeJS developer, however I do like to write the odd piece of NodeJS when I need to do some clever things with data, and more often than not, the file system. I'm continually reading up on Node JS, with the hope that a contract in the future will allow me to get commercial exposure and experience in it.
