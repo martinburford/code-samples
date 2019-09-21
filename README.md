@@ -24,6 +24,8 @@ The code samples provided contain examples coded in the following languages:
 * [HTML](#HTML)
 * [JavaScript](#JavaScript)
 * [JSON](#JSON)
+* [JSX component](#JSX-component)
+* [JSX page](#JSX-page)
 * [NodeJS](#Node-JS)
 * [PHP](#PHP)
 * [Pug templates](#Pug-templates)
@@ -81,6 +83,13 @@ As mentioned earlier, the JavaScript world is evolving so rapidly at the moment,
 JSON isn't a language per-se, it's just a data format. For my recently re-written online portfolio, Node, Express, Browserify and Pug templates build static HTML pages via the use of JSON files. One of the JSON files from that site is included within this section, just to illustrate that I am comfortable using JSON.
 
 [Click here to view **JSON** code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/json)
+
+- - -
+### **JSX compponent**
+
+JSX components (in my mind) shouldn't ever contain that much code, as code abstraction is a hugely important part of coding in a tidy and efficient way. That said, there are times when a little more code is required within component files. I've tried to include a varied cross-section of files, demonstrating different ways in which I construct React component files.
+
+[Click here to view **JSX component** code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/jsx-component)
 
 - - -
 ### **Node JS**
