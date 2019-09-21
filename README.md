@@ -85,7 +85,7 @@ JSON isn't a language per-se, it's just a data format. For my recently re-writte
 [Click here to view **JSON** code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-language/json)
 
 - - -
-### **JSX compponent**
+### **JSX component**
 
 JSX components (in my mind) shouldn't ever contain that much code, as code abstraction is a hugely important part of coding in a tidy and efficient way. That said, there are times when a little more code is required within component files. I've tried to include a varied cross-section of files, demonstrating different ways in which I construct React component files.
 
