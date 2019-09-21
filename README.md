@@ -135,6 +135,31 @@ A big requirement that is constantly being asked for in roles I'm approached abo
 
 # Filtered by contract
 
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/rehab.png" width="300" alt="Rehab">
+
+**September 2019 - September 2019 2018**
+
+I spent close to a month at Rehab, helping out on a project which provided walkthroughs of a clients product that revolved around Crypto Currency. The deliverable was a single page React/Redux application which could be used primarily at trade shows. The application allows potential clients to see entire user journeys, and by entering real-world data, could use a mock instance of the platform to see how their organisation could benefit from the services offered by the product. One particularly nice feature I wrote in this project was an extremely comprehensive KeyReplacement component which allowed static keys in any part of the application (including large JSON files) to be replaced with dynamic values from a collection of Redux reducers. In addition to many other key types, this involved a number of specific Crypto algorithms embedded deep into the clients product suite.
+
+### **Project title:** Ripple
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2019-09-2019-09%20-%20Rehab%20(Ripple))
+- [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2019-09-2019-09-rehab/ripple/index.html)
+
+<p>
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2019-09-2019-09-rehab/screens/thumbnails/desktop/01-setup-screen.png" width="200" /></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2019-09-2019-09-rehab/screens/thumbnails/desktop/07-flippable-card-json-debug.png" width="200"/></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2019-09-2019-09-rehab/screens/thumbnails/desktop/09-ledgers-3-wide.png" width="200"/></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2019-09-2019-09-rehab/screens/thumbnails/desktop/12-side-navigation.png" width="200"/></kbd>
+</p>
+
+### **Technologies used:** 
+
+Axios, Babel, BEM, ES6, Flexbox, HTML, JSON, NPM, React, Redux, Routing, SASS, Webpack
+
+- - -
+<br />
+
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/biglight.png" width="300" alt="Biglight">
 
 **May 2018 - October 2018**
