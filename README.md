@@ -137,7 +137,7 @@ A big requirement that is constantly being asked for in roles I'm approached abo
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/rehab.png" width="300" alt="Rehab">
 
-**September 2019 - September 2019 2018**
+**September 2019 - September 2019**
 
 I spent close to a month at Rehab, helping out on a project which provided walkthroughs of a clients product that revolved around Crypto Currency. The deliverable was a single page React/Redux application which could be used primarily at trade shows. The application allows potential clients to see entire user journeys, and by entering real-world data, could use a mock instance of the platform to see how their organisation could benefit from the services offered by the product. One particularly nice feature I wrote in this project was an extremely comprehensive KeyReplacement component which allowed static keys in any part of the application (including large JSON files) to be replaced with dynamic values from a collection of Redux reducers. In addition to many other key types, this involved a number of specific Crypto algorithms embedded deep into the clients product suite.
 
