@@ -1,0 +1,164 @@
+// File: _progress-stepper.scss
+// Author: Martin Burford (martin@martinburford.co.uk)
+
+// Variables
+$progress-stepper-active-highlight: map-deep-get($components-config, 'forms', 'progress-stepper', 'active-highlight');
+$progress-stepper-background: map-deep-get($components-config, 'forms', 'progress-stepper', 'background');
+$progress-stepper-inactive-highlight: map-deep-get($components-config, 'forms', 'progress-stepper', 'inactive-highlight');
+
+.progress-stepper {
+  background: $progress-stepper-background;
+  margin-bottom: calculate-rem(16px);
+  padding: calculate-rem(32px) 0;
+
+  &__list {
+    counter-reset: section;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+    width: auto;
+
+    &__item {
+      color: $progress-stepper-inactive-highlight;
+      flex: 1;
+      font-size: $font-size-sm;
+      list-style-type: none;
+      padding: calculate-rem(25px) calculate-rem(8px) 0;
+      position: relative;
+
+      span {
+        @include border-radius(50%);
+        align-items: center;
+        background: $progress-stepper-background;
+        border: calculate-rem(2px) solid $progress-stepper-inactive-highlight;
+        color: $progress-stepper-inactive-highlight;
+        counter-increment: section;
+        content: counter(section);
+        display: flex;
+        height: calculate-rem(32px);
+        justify-content: center;
+        left: calc(50% - 16px);
+        padding: 0 calculate-rem(5px);
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: calculate-rem(32px);
+        z-index: $zindex-bottom + 1;
+      }
+
+      // md up
+      @include media-breakpoint-up(md) {
+        span {
+          height: calculate-rem(48px);
+          left: calc(50% - 24px);
+          width: calculate-rem(48px);
+        }
+      } // md up
+
+      strong {
+        display: none;
+        font-weight: $font-weight-light;
+        padding-top: calculate-rem(32px);
+      }
+
+      // md up
+      @include media-breakpoint-up(md) {
+        strong {
+          display: block;
+          padding-top: calculate-rem(48px);
+        }
+      } // md up
+
+      &:before,
+      &:after {
+        background: $progress-stepper-inactive-highlight;
+        content: '';
+        height: calculate-rem(1px);
+        position: absolute;
+        top: calculate-rem(16px);
+        width: 50%;
+        z-index: $zindex-bottom;
+      }
+
+      // md up
+      @include media-breakpoint-up(md) {
+        &:before,
+        &:after {
+          top: calculate-rem(24px);
+        }
+      } // md up
+
+      &:before {
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+      }
+
+      &:first-child:before,
+      &:last-child:after {
+        display: none;
+      }
+
+      &--complete {
+        color: $progress-stepper-active-highlight;
+
+        span {
+          background: $progress-stepper-active-highlight;
+          border-color: $progress-stepper-active-highlight;
+          color: $progress-stepper-active-highlight;
+          display: block;
+          font-size: 0;
+        
+          &:before {
+            @include css-svg-icon('ico-check-2');
+            height: calculate-rem(8px);
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: calculate-rem(12px);
+          }
+
+          // md up
+          @include media-breakpoint-up(md) {
+            &:before {
+              height: calculate-rem(16px);
+              width: calculate-rem(24px);
+            }
+          } // md up
+        }
+
+        &:before,
+        &:after {
+          background: $progress-stepper-active-highlight;
+        }
+      }
+
+      &--current {
+        &:before {
+          background: $progress-stepper-active-highlight;
+        }
+
+        span {
+          border-color: $progress-stepper-active-highlight;
+          color: $progress-stepper-active-highlight;
+        }
+
+        strong {
+          color: $progress-stepper-active-highlight;
+        }
+      }
+    }
+
+    // md up
+    @include media-breakpoint-up(md) {
+      &__item {
+        max-width: calculate-rem(200px);
+      }
+    } // md up
+  }
+}

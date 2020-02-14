@@ -1,0 +1,294 @@
+// File: _estimate-calculator.scss
+// Author: Martin Burford (martin@martinburford.co.uk)
+
+.estimate-calculator {
+  background: color('dark-blue');
+  color: color('white');
+  padding: 0;
+
+  // md up
+  @include media-breakpoint-up(xl) {
+    text-align: center;
+  } // md up
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__heading {
+    @include font-size-line-height($type: 'heading', $size: 'h4');
+    color: color('white');
+    font-family: $font-regular;
+    margin-bottom: 0;
+    padding: calculate-rem(32px) calculate-rem(20px) calculate-rem(32px) calculate-rem(80px);
+    position: relative;
+
+    // md up
+    @include media-breakpoint-up(xl) {
+      display: inline-block;
+      padding-left: calculate-rem(60px);
+    } // md up
+
+    &:before {
+      @include css-svg-icon('icon_estimator', color('white'));
+      height: calculate-rem(40px);
+      left: calculate-rem(20px);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: calculate-rem(40px);
+
+      // md up
+      @include media-breakpoint-up(xl) {
+        left: 0;
+      } // md up
+    }
+  }
+
+  &__inner {
+    // md up
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+    } // md up
+
+    &.row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__tooltip {
+    margin-bottom: calculate-rem(16px);
+    padding-right: calculate-rem(25px);
+    text-align: right;
+    width: 100%;
+
+    &-link {
+      color: color('white');
+      display: inline-block;
+      padding-left: calculate-rem(30px);
+      position: relative;
+      text-decoration: none;
+
+      &:before {
+        @include css-svg-icon('ico-help', color('white'));
+        display: block;
+        height: calculate-rem(20px);
+        left: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: calculate-rem(20px);
+      }
+
+      &:hover {
+        color: inherit;
+        text-decoration: inherit;
+      }
+    }
+
+    &-content {
+      display: none;
+    }
+  }
+
+  &__footer {
+    align-items: center;
+    border-top: calculate-rem(1px) solid color('mid-blue');
+    padding-bottom: calculate-rem(24px);
+    padding-top: calculate-rem(24px);
+
+    // md up
+    @include media-breakpoint-up(xl) {
+      display: flex;  
+      justify-content: center;
+      min-height: calculate-rem(100px);
+    } // md up
+
+    .container {
+      margin-left: calculate-rem(25px);
+      margin-right: calculate-rem(25px);
+      text-align: left;
+      width: calc(100% - 50px);
+
+      // md up
+      @include media-breakpoint-up(xl) {
+        margin-right: calculate-rem(25px);
+        width: calc(75% - 50px);  
+      } // md up
+    }
+
+    .button {
+      margin-left: calculate-rem(25px);
+      margin-top: calculate-rem(20px);
+      width: calc(25% - 25px);
+
+      // md up
+      @include media-breakpoint-up(xl) {
+        margin-left: auto;  
+        margin-right: calculate-rem(25px);
+        margin-top: 0;
+      } // md up
+    }
+
+    // Overrides from other components inheritence
+    .row {
+      margin: 0;
+    }
+
+    .col-12 {
+      padding: 0;
+    }
+
+    .form-element {
+      margin-bottom: 0;
+    }
+  }
+
+  // Overrides from other components inheritence
+  .form-element {
+    &.select {
+      color: gray('600');
+    }
+
+    &__label {
+      color: color('white');
+      font-family: $font-regular;
+    }
+  }
+
+  [data-related-tooltip] {
+    color: color('white');
+    text-decoration: none;
+
+    &:before {
+      @include css-svg-icon('ico-help', color('white'));
+    }
+
+    &:after {
+      @include css-svg-icon('cta_close_2', color('white'));
+    }
+  }
+
+  .tooltip-container {
+    margin-left: calculate-rem(10px);
+    margin-right: calculate-rem(10px);
+
+    &:before {
+      content: none;
+    }
+
+    &:after {
+      display: none;
+    }
+
+    .tooltip {
+      @include box-sizing;
+      @include border-radius(calculate-rem(5px));
+      background: rgba(color('white'), 0.75);
+
+      * {
+        color: color('dark-blue');
+      }
+    }
+
+    p,
+    ul {
+      margin-bottom: 0;
+    }
+
+    .row {
+      margin: 0;
+    }
+
+    .col-12 {
+      padding: 0;
+    }
+  }
+
+  .tooltip__inner {
+    @include box-sizing;
+    padding: calculate-rem(10px);
+  }
+
+  .tooltip__close {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 0;
+  }
+
+  .checkbox {
+    padding-left: 0;
+  }
+}
+
+// Embedded errors are unique to Estimate Calculator, hence their location within this component file
+.embedded-error {
+  position: relative;
+
+  &__message {
+    @include box-sizing;
+    @include border-bottom-radius(calculate-rem(5px));
+    background: color('white');
+    border: calculate-rem(1px) solid gray('400');
+    color: color('mid-blue');
+    font-size: calculate-rem(12px);
+    left: 0;
+    padding: calculate-rem(24px) calculate-rem(24px) calculate-rem(24px) calculate-rem(80px);
+    position: absolute;
+    top: calculate-rem(47px); // 50px minus 3px to ensure border-radius corners are completely overlapped
+    width: 100%;
+    z-index: 1;
+
+    // md up
+    @include media-breakpoint-up(xl) {
+      font-size: calculate-rem(14px);
+      padding: calculate-rem(24px) calculate-rem(24px) calculate-rem(24px) calculate-rem(118px);
+    } // md up
+
+    p {
+      margin-bottom: 0;
+      margin-top: calculate-rem(16px);
+    }
+
+    a {
+      color: color('red');
+      display: block;
+      margin-top: calculate-rem(16px);
+    }
+  }
+
+  &__icon {
+    color: color('red');
+    height: calculate-rem(32px);
+    left: calculate-rem(24px);
+    position: absolute;
+    top: calculate-rem(24px);
+    width: calculate-rem(32px);
+
+    // md up
+    @include media-breakpoint-up(xl) {
+      height: calculate-rem(64px);
+      width: calculate-rem(64px);
+    } // md up
+  }
+
+  &__heading {
+    @include font-size-line-height($type: 'body', $size: 'body1');
+    color: color('dark-blue');
+  }
+
+  &__sub-heading {
+    @include font-size-line-height($type: 'body', $size: 'body3');
+  }
+}
+
+// Temporary styles for Choices.js refresh links
+.choices-js-refresh {
+  color: color('orange');
+  display: block;
+  margin-bottom: calculate-rem(10px);
+}

@@ -1,0 +1,329 @@
+// File: _tooltip.scss
+// Author: Martin Burford (martin@martinburford.co.uk)
+
+// Custom scrollbars
+.custom-scroller {
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 10px;
+  }
+}
+
+.custom-scroller {
+  &::-webkit-scrollbar-track {    
+    -webkit-box-shadow: inset 0 0 6px rgba($black, 0.3); 
+    border-radius: 5px;
+  }
+}
+
+.custom-scroller {
+  &::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba($black, 0.5); 
+    border-radius: 5px;
+    background: rgba($gray-400, 0.8); 
+  }   
+}
+
+.custom-scroller {
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba($gray-400, 0.4); 
+  }
+}
+
+// Variables
+$tooltip-toggle-animation: map-deep-get($components-config, 'forms', 'tooltip', 'fade');
+
+[data-related-tooltip] {
+  color: color('blue');
+  display: inline-block;
+  margin-top: calculate-rem(10px);
+  padding-left: calculate-rem(26px);
+  position: relative;
+
+  &:hover,
+  &:active {
+    color: transparentize(color('blue'), .20);
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    transition: opacity $tooltip-toggle-animation ease-in-out;
+    will-change: opacity;
+  }
+
+  &:before {
+    @include css-svg-icon('ico-help-blue');
+    height: calculate-rem(20px);
+    left: 0;
+    opacity: 1;   
+    top: calculate-rem(2px);
+    width: calculate-rem(20px);
+  }
+
+  &:after {
+    @include css-svg-icon('cta_close_2');
+    height: calculate-rem(16px);
+    left: calculate-rem(2px);
+    opacity: 0;
+    top: calculate-rem(4px);
+    width: calculate-rem(16px);
+  }
+
+  &.active {
+    color: color('dark-blue');
+    text-decoration: none;
+    &:before {
+      opacity: 0;
+    }
+
+    &:after {
+      opacity: 1;
+    }
+
+    span:after {
+      bottom: calculate-rem(-17px);
+      opacity: 1;
+    }
+  }
+
+  span {
+    content: '';
+    display: block;
+    position: relative;
+
+    &:after {
+      @include css-svg-icon('ico-top-notch', $dark-blue);
+      bottom: calculate-rem(-28px);
+      height: calculate-rem(12px);
+      left: calculate-rem(-39px);
+      opacity: 0;
+      position: absolute;
+      transition: bottom $tooltip-toggle-animation ease-in-out, opacity $tooltip-toggle-animation ease-in-out;
+      width: calculate-rem(46px);
+      will-change: bottom, opacity;
+    }
+  }
+}
+
+.tooltip-container {
+  position: relative;
+
+  &:before {
+    background: color('dark-blue');
+    content: '';
+    display: block;
+    height: 100%;
+    left: -100%;
+    position: absolute;
+    top: 0;
+    width: 300%;
+  }
+
+  &:after {
+    background: rgba(color('white'), 0.1);
+    bottom: 3.5rem;
+    content: '';
+    height: calculate-rem(1px);
+    left: -50%;
+    position: absolute;
+    width: 200%;
+
+    // lg up
+    @include media-breakpoint-up(lg) {
+      display: none;
+    } // lg up
+  }
+}
+
+.tooltip {
+  display: block;
+  background: color('dark-blue');
+  height: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+  transition: height $tooltip-toggle-animation ease-in-out, margin-bottom $tooltip-toggle-animation ease-in-out;
+  will-change: height, margin-top;
+
+  &:before {
+    background: red;
+    content: '';
+    display: block;
+    height: calculate-rem(100px);
+    left: calculate-rem(-300px);
+    position: absolute;
+    top: 0;
+    width: calculate-rem(300px);
+  }
+
+  &.dimensions-check {
+    height: auto;
+    overflow: visible;
+  }
+
+  &.visible {
+    margin-bottom: calculate-rem(16px);
+  }
+
+  * {
+    color: $white;
+  }
+
+  &__text {
+    @include body-copy-text($size: 2, $breakpoint: 'mobile');
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // md up
+  @include media-breakpoint-up(md) {
+    @include body-copy-text($size: 2, $breakpoint: 'desktop');
+  } // md up
+
+  &__image {
+    @include border-radius(5px);
+    border: calculate-rem(2px) solid rgba($white, 0.15);
+    display: block;
+    margin-bottom: calculate-rem(16px);
+    width: 100%;
+
+    &--list {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  // md up
+  @include media-breakpoint-up(md) {
+    &__image {
+      margin-top: calculate-rem(40px);
+
+      &--list {
+        margin-top: calculate-rem(16px);
+      }
+    }
+  } // md up
+
+  &__inner {
+    padding-top: calculate-rem(16px);
+    overflow-y: hidden;
+
+    // md up
+    @include media-breakpoint-up(md) {
+      padding-top: calculate-rem(40px);
+    } // md up
+
+    > * {
+      margin-bottom: calculate-rem(16px);
+
+      // md up
+      @include media-breakpoint-up(md) {
+        margin-bottom: calculate-rem(32px);
+      } // md up
+    }
+
+    &--images {
+      -webkit-overflow-scrolling: touch;
+      margin-bottom: calculate-rem(16px);
+      overflow-x: scroll;
+      padding-bottom: 0;
+      width: 100%;
+
+      // md up
+      @include media-breakpoint-up(md) {
+        margin-bottom: calculate-rem(32px);
+      } // md up
+    }
+  }
+
+  &__images {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+
+    &__item {
+      margin-left: 10%;
+      max-width: 60%;
+      min-width: 60%;
+
+      // md up
+      @include media-breakpoint-up(md) {
+        margin-left: 5%;
+        max-width: 25%;
+        min-width: 25%;
+      } // md up
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &__heading,
+      &__text {
+        display: block;
+      }
+
+      &__heading {
+        margin-bottom: calculate-rem(16px);
+        text-transform: uppercase;
+      }
+
+      &__text {
+        margin-top: calculate-rem(16px);
+      }
+    }
+  }
+
+  &__close {
+    @include box-sizing;
+    color: color($white);
+    display: block;
+    margin-top: calculate-rem(16px);
+    padding: calculate-rem(16px);
+    text-align: center;
+    width: 100%;
+
+    // lg up
+    @include media-breakpoint-up(lg) {
+      display: none;
+    } // lg up
+
+    &__inner {
+      padding-left: calculate-rem(22px);
+      position: relative;
+
+      // lg up
+      @include media-breakpoint-up(lg) {
+        display: block;
+        height: 100%;
+        font-size: 0;
+        padding-left: 0;
+        width: 100%;
+      } // lg up
+
+      &:before {
+        @include css-svg-icon('cta_close_2', color('white'));
+        height: calculate-rem(14px);
+        left: 0;
+        position: absolute;
+        top: calculate-rem(4px);
+        width: calculate-rem(14px);
+
+        // lg up
+        @include media-breakpoint-up(lg) {
+          height: calculate-rem(20px);
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: calculate-rem(20px);
+        } // lg up
+      }
+    }
+
+    &:hover {
+      color: color($white);
+    }
+  }
+}
