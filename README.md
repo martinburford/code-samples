@@ -183,6 +183,32 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 .net Core, Babel, BEM, CSS3, ES6, Fetch, Flexbox, Grunt, HTML5, JSON, Node, NPM, RESTful API, SASS
 
 - - -
+
+<br />
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/tangent.png" width="300" alt="Tangent">
+
+**January 2018 - March 2018**
+
+### **Project title:** UK Power Networks
+
+- [View JavaScript code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2018-01-2018-03%20-%20Tangent%20(UKPN)/javascript)
+- [View Pug template code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2018-01-2018-03%20-%20Tangent%20(UKPN)/pug-templates)
+- [View SCSS code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2018-01-2018-03%20-%20Tangent%20(UKPN)/scss)
+
+I was hired by Tangent to help with the second phase of a digital project rollout for one of their largest clients. Whilst phase 1 was largely completed by the time I started working, phase 2 was built using a completely different development platform, so was essentially a greenfield project. The relationship with this particular client was based on Tangent providing static front-end pages/assets to a remotely located back-end integration company, responsible for integrating that code into Sitecore. Despite this, the front-end tech stack worked on the basis of JSON data generating HTML pages via Pug templates, running on Node, using Express. In the 3 months I was at Tangent, I'd say approximately 125 or so new components were built (ES6 JavaScript, Pug templates, SASS), across around a dozen separate page templates. The timings were tight on the project, however the front-end and testing teams put in place were fantastic, and I think alot of people were surprised at just how quickly work was produced.
+
+<p>
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-01-2018-03-tangent/screens/thumbnails/desktop/01-sample-global-page.png" width="200" /></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-01-2018-03-tangent/screens/thumbnails/desktop/03-static-global-components.png" width="200"/></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-01-2018-03-tangent/screens/thumbnails/desktop/05-calculators.png" width="200"/></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2018-01-2018-03-tangent/screens/thumbnails/desktop/06-conditional-forms.png" width="200"/></kbd>
+</p>
+
+### **Technologies used:** 
+
+Babel, BEM, Bootstrap Grid, CSS3, ES6, Flexbox, Gulp, HTML5, JSON, Node, Responsive front-end, SASS, Yarn
+
+- - -
 <br />
 
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/bond-and-coyne.png" width="300" alt="Bond & Coyne">
