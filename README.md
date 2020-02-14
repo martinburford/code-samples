@@ -231,6 +231,27 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 - - -
 <br />
 
+<img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/hsbc.png" width="300" alt="HSBC">
+
+**January 2017 - February 2017**
+
+I was hired via Mansion House Consultingfor HSBC, to bring to life a conceptual project, in the form of a fully working prototype. The project was an XHR driven interface, integrated alongside a fully functional API, built to be responsive across a number of breakpoints. Once the prototype was completed and the concept was successfully proven to the relevant business units, it was handed over to an existing development team to drive the longer-term piece of work forward.
+
+### **Project title:** Connect
+
+- [View JavaScript code samples](https://github.com/martinburford/code-samples/tree/master/filtered-by-contract/2017-01-2017-02%20-%20HSBC%20(Connect)/javascript/)
+- [View portfolio gallery](http://www.martinburford.co.uk/portfolio/gallery/2017-01-2017-02-hsbc/connect/index.html)
+
+<p>
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-01-2017-02-hsbc/screens/thumbnails/desktop/07-full-journey-connection-name.png" width="200" /></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-01-2017-02-hsbc/screens/thumbnails/desktop/08-full-journey-contact-details.png" width="200"/></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-01-2017-02-hsbc/screens/thumbnails/desktop/11-full-journey-server-details.png" width="200"/></kbd>&nbsp;
+    <kbd><img src="http://www.martinburford.co.uk/assets/images/portfolio/galleries/2017-01-2017-02-hsbc/screens/thumbnails/desktop/12-connection-details.png" width="200"/></kbd>
+</p>
+
+- - -
+<br />
+
 <img src="http://www.martinburford.co.uk/assets/images/portfolio/company-logos/edge-to-edge/sapient-nitro.png" width="300" alt="Sapient Nitro">
 
 **December 2016 - December 2016**
