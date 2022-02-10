@@ -1,0 +1,840 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+
+<!-- Components -->
+
+import CodeBlock from '.storybook/components/code-block';
+import Grid from 'components/ui/global/grid';
+import InformationPanel from 'components/ui/demo/information-panel';
+import Select from 'components/ui/atoms/select';
+import StoryHeading from '.storybook/components/story-heading';
+import Typography from 'components/ui/global/typography';
+
+<!-- Data -->
+
+import Data from './select.json';
+
+<Meta
+  parameters={{
+    controls: {
+      sort: 'alpha',
+    },
+  }}
+  title="Atoms/Select"
+/>
+
+# Select
+
+This component includes all variants available for providing lists to the user. It's been built around native HTML `label` and `select` tags, so users (particularly on mobile devices) will be accustomed to how an option is selectable, as this component inherits the default behaviour of whichever device / operating system is being used to view the component. For example, iPhone / iOS shows options as a barrell roll, positioned towards the bottom of the devices screen.
+
+<InformationPanel leadIn="Unique component id">select</InformationPanel>
+
+## Component props
+
+<Props of={Select} />
+
+<!-- Single select -->
+
+<Preview withSource="none">
+  <Story name="Single select">
+    {(args, { globals: { locale } }) => {
+      return (
+        <>
+          <StoryHeading
+            heading="Single select"
+            summary={
+              <>
+                In order to specify that a dropdown list allows only a single selection, pass a value of{' '}
+                <code>true</code> to the <code>singleSelect</code> prop.
+              </>
+            }
+          />
+          <Select
+            colour="gray"
+            id="single-select"
+            items={[
+              {
+                text: Data[locale].singleSelect.optionText.replace('{INDEX}', '1'),
+                value: 1,
+              },
+              {
+                text: Data[locale].singleSelect.optionText.replace('{INDEX}', '2'),
+                value: 2,
+              },
+              {
+                text: Data[locale].singleSelect.optionText.replace('{INDEX}', '3'),
+                value: 3,
+              },
+              {
+                text: Data[locale].singleSelect.optionText.replace('{INDEX}', '4'),
+                value: 4,
+              },
+              {
+                text: Data[locale].singleSelect.optionText.replace('{INDEX}', '5'),
+                value: 5,
+              },
+            ]}
+            label={Data[locale].singleSelect.label}
+            placeholder={Data[locale].placeholder}
+            singleSelect={true}
+          />
+          <CodeBlock language="jsx">{`<Select
+  colour="gray"
+  id="single-select"
+  items={[
+    {
+      text: "${Data[locale].singleSelect.optionText.replace('{INDEX}', '1')}",
+      value: 1,
+    },
+    ...
+  ]}
+  label="${Data[locale].singleSelect.label}"
+  placeholder="${Data[locale].placeholder}"
+  singleSelect={true}
+/>`}</CodeBlock>
+        </>
+      );
+    }}
+  </Story>
+</Preview>
+
+<!-- Multi-select -->
+
+<Preview withSource="none">
+  <Story name="Multi-select">
+    {(args, { globals: { locale } }) => {
+      return (
+        <>
+          <StoryHeading
+            heading="Multi-select"
+            summary={
+              <>
+                In order to specify that a dropdown list allows multiple selections, pass a value of <code>true</code>{' '}
+                to the <code>multiSelect</code> prop.
+              </>
+            }
+          />
+          <Select
+            colour="gray"
+            id="multi-select"
+            items={[
+              {
+                text: Data[locale].multiSelect.optionText.replace('{INDEX}', '1'),
+                value: 1,
+              },
+              {
+                text: Data[locale].multiSelect.optionText.replace('{INDEX}', '2'),
+                value: 2,
+              },
+              {
+                text: Data[locale].multiSelect.optionText.replace('{INDEX}', '3'),
+                value: 3,
+              },
+              {
+                text: Data[locale].multiSelect.optionText.replace('{INDEX}', '4'),
+                value: 4,
+              },
+              {
+                text: Data[locale].multiSelect.optionText.replace('{INDEX}', '5'),
+                value: 5,
+              },
+            ]}
+            label={Data[locale].multiSelect.label}
+            multiSelect={true}
+            placeholder={Data[locale].placeholder}
+          />
+          <CodeBlock language="jsx">{`<Select
+  colour="gray"
+  id="multi-select"
+  items={[
+    {
+      text: "${Data[locale].multiSelect.optionText.replace('{INDEX}', '1')}",
+      value: 1,
+    },
+    ...
+  ]}
+  label="${Data[locale].multiSelect.label}"
+  multiSelect={true}
+  placeholder="${Data[locale].placeholder}"
+/>`}</CodeBlock>
+        </>
+      );
+    }}
+  </Story>
+</Preview>
+
+<!-- Disabled -->
+
+<Preview withSource="none">
+  <Story name="Disabled">
+    {(args, { globals: { locale } }) => {
+      return (
+        <>
+          <StoryHeading
+            heading="Disabled"
+            summary={
+              <>
+                In order to specify that a dropdown list is disabled, pass a value of <code>true</code> to the{' '}
+                <code>disabled</code> prop.
+              </>
+            }
+          />
+          <Select
+            disabled={true}
+            id="disabled"
+            items={[
+              {
+                text: Data[locale].disabledSelect.optionText.replace('{INDEX}', '1'),
+                value: 1,
+              },
+              {
+                text: Data[locale].disabledSelect.optionText.replace('{INDEX}', '2'),
+                value: 2,
+              },
+              {
+                text: Data[locale].disabledSelect.optionText.replace('{INDEX}', '3'),
+                value: 3,
+              },
+              {
+                text: Data[locale].disabledSelect.optionText.replace('{INDEX}', '4'),
+                value: 4,
+              },
+              {
+                text: Data[locale].disabledSelect.optionText.replace('{INDEX}', '5'),
+                value: 5,
+              },
+            ]}
+            label={Data[locale].disabledSelect.label}
+            placeholder={Data[locale].placeholder}
+            singleSelect={true}
+          />
+          <CodeBlock language="jsx">{`<Select
+  disabled={true}
+  id="disabled"
+  items={[
+    {
+      text: "${Data[locale].disabledSelect.optionText.replace('{INDEX}', '1')}",
+      value: 1,
+    },
+    ...
+  ]}
+  label="${Data[locale].disabledSelect.label}"
+  placeholder="${Data[locale].placeholder}"
+  singleSelect={true}
+/>`}</CodeBlock>
+        </>
+      );
+    }}
+  </Story>
+</Preview>
+
+<!-- Auto-selected item(s) -->
+
+<Preview withSource="none">
+  <Story name="Auto-selected item(s)">
+    {(args, { globals: { locale } }) => {
+      return (
+        <>
+          <StoryHeading
+            heading="Auto-selected item(s)"
+            summary={
+              <>
+                It is possible to specify which options of a dropdown list should be selected by default. To do this,
+                pass a value of <code>true</code> to the <code>selected</code> property of each <code>item</code> that
+                is to be selected.
+                <br />
+                <br />
+                <strong>Please note:</strong> this feature is available, and should be specified in exactly the same way
+                whether a <code>singleSelect</code> or a <code>multiSelect</code> dropdown list is being defined.
+              </>
+            }
+          />
+          <Select
+            colour="gray"
+            id="auto-selected-items"
+            items={[
+              {
+                selected: true,
+                text: Data[locale].autoSelectedSelect.optionText.replace('{INDEX}', '1'),
+                value: 1,
+              },
+              {
+                selected: true,
+                text: Data[locale].autoSelectedSelect.optionText.replace('{INDEX}', '2'),
+                value: 2,
+              },
+              {
+                text: Data[locale].autoSelectedSelect.optionText.replace('{INDEX}', '3'),
+                value: 3,
+              },
+              {
+                text: Data[locale].autoSelectedSelect.optionText.replace('{INDEX}', '4'),
+                value: 4,
+              },
+              {
+                text: Data[locale].autoSelectedSelect.optionText.replace('{INDEX}', '5'),
+                value: 5,
+              },
+            ]}
+            label={Data[locale].autoSelectedSelect.label}
+            multiSelect={true}
+          />
+          <CodeBlock language="jsx">{`<Select
+  colour="gray"
+  id="auto-selected-items"
+  items={[
+    {
+      selected: true,
+      text: "${Data[locale].autoSelectedSelect.optionText.replace('{INDEX}', '1')}",
+      value: 1,
+    },
+    {
+      selected: true,
+      text: "${Data[locale].autoSelectedSelect.optionText.replace('{INDEX}', '2')}",
+      value: 2,
+    },
+    {
+      text: "${Data[locale].autoSelectedSelect.optionText.replace('{INDEX}', '3')}",
+      value: 3,
+    },
+    ...
+  ]}
+  label="${Data[locale].autoSelectedSelect.label}"
+  multiSelect={true}
+/>`}</CodeBlock>
+        </>
+      );
+    }}
+  </Story>
+</Preview>
+
+<!-- Colour variants -->
+
+<Preview withSource="none">
+  <Story name="Colour variants">
+    {(args, { globals: { locale } }) => {
+      return (
+        <>
+          <StoryHeading
+            heading="Colour variants"
+            summary={
+              <>
+                Any instance of <code>&lt;Select&gt;</code> can be themed with any of the base colours of the Alyasra
+                colour palette. In order to specify which theme to use, pass the colour to the <code>colour</code> prop.
+              </>
+            }
+          />
+          <CodeBlock language="jsx">{`<Select
+  colour="tan"
+  id="single-select"
+  items={[
+    {
+      text: "${Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '1')}",
+      value: 1,
+    },
+    ...
+  ]}
+  label="${Data[locale].colourVariants.singleLabel.replace('{COLOUR}', 'gray')}"
+  singleSelect={true}
+/>`}</CodeBlock>
+          <br />
+          <Typography.SubHeading colour="teal" type="subHeading" variant={2}>
+            Gray
+          </Typography.SubHeading>
+          <Grid.Row>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="gray"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-single-select-gray"
+                items={[
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].colourVariants.singleLabel.replace('{COLOUR}', 'gray')}
+                placeholder={Data[locale].placeholder}
+                singleSelect={true}
+              />
+            </Grid.Col>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="gray"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-multi-select-gray"
+                items={[
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'gray').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].multiSelect.label.replace('{COLOUR}', 'gray')}
+                multiSelect={true}
+              />
+            </Grid.Col>
+          </Grid.Row>
+          <br />
+          <Typography.SubHeading colour="teal" type="subHeading" variant={2}>
+            Green
+          </Typography.SubHeading>
+          <Grid.Row>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="green"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-single-select-green"
+                items={[
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].colourVariants.singleLabel.replace('{COLOUR}', 'green')}
+                placeholder={Data[locale].placeholder}
+                singleSelect={true}
+              />
+            </Grid.Col>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="green"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-multi-select-green"
+                items={[
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'green').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].multiSelect.label.replace('{COLOUR}', 'green')}
+                multiSelect={true}
+              />
+            </Grid.Col>
+          </Grid.Row>
+          <br />
+          <Typography.SubHeading colour="teal" type="subHeading" variant={2}>
+            Maroon
+          </Typography.SubHeading>
+          <Grid.Row>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="maroon"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-single-select-maroon"
+                items={[
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].colourVariants.singleLabel.replace('{COLOUR}', 'maroon')}
+                placeholder={Data[locale].placeholder}
+                singleSelect={true}
+              />
+            </Grid.Col>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="maroon"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-multi-select-maroon"
+                items={[
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'maroon').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].multiSelect.label.replace('{COLOUR}', 'maroon')}
+                multiSelect={true}
+              />
+            </Grid.Col>
+          </Grid.Row>
+          <br />
+          <Typography.SubHeading colour="teal" type="subHeading" variant={2}>
+            Orange
+          </Typography.SubHeading>
+          <Grid.Row>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="orange"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-single-select-orange"
+                items={[
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].colourVariants.singleLabel.replace('{COLOUR}', 'orange')}
+                placeholder={Data[locale].placeholder}
+                singleSelect={true}
+              />
+            </Grid.Col>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="orange"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-multi-select-orange"
+                items={[
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'orange').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].multiSelect.label.replace('{COLOUR}', 'orange')}
+                multiSelect={true}
+              />
+            </Grid.Col>
+          </Grid.Row>
+          <br />
+          <Typography.SubHeading colour="teal" type="subHeading" variant={2}>
+            Purple
+          </Typography.SubHeading>
+          <Grid.Row>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="purple"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-single-select-purple"
+                items={[
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].colourVariants.singleLabel.replace('{COLOUR}', 'purple')}
+                placeholder={Data[locale].placeholder}
+                singleSelect={true}
+              />
+            </Grid.Col>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="purple"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-multi-select-purple"
+                items={[
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'purple').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].multiSelect.label.replace('{COLOUR}', 'purple')}
+                multiSelect={true}
+              />
+            </Grid.Col>
+          </Grid.Row>
+          <br />
+          <Typography.SubHeading colour="teal" type="subHeading" variant={2}>
+            Tan
+          </Typography.SubHeading>
+          <Grid.Row>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="tan"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-single-select-tan"
+                items={[
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].colourVariants.singleLabel.replace('{COLOUR}', 'tan')}
+                placeholder={Data[locale].placeholder}
+                singleSelect={true}
+              />
+            </Grid.Col>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="tan"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-multi-select-tan"
+                items={[
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'tan').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].multiSelect.label.replace('{COLOUR}', 'tan')}
+                multiSelect={true}
+              />
+            </Grid.Col>
+          </Grid.Row>
+          <br />
+          <Typography.SubHeading colour="teal" type="subHeading" variant={2}>
+            Teal
+          </Typography.SubHeading>
+          <Grid.Row>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="teal"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-single-select-teal"
+                items={[
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].colourVariants.singleLabel.replace('{COLOUR}', 'teal')}
+                placeholder={Data[locale].placeholder}
+                singleSelect={true}
+              />
+            </Grid.Col>
+            <Grid.Col mobile={{ span: 12 }} tablet={{ span: 6 }}>
+              <Select
+                colour="teal"
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                id="colour-variants-multi-select-teal"
+                items={[
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '1'),
+                    value: 1,
+                  },
+                  {
+                    selected: true,
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '2'),
+                    value: 2,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '3'),
+                    value: 3,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '4'),
+                    value: 4,
+                  },
+                  {
+                    text: Data[locale].colourVariants.optionText.replace('{COLOUR}', 'teal').replace('{INDEX}', '5'),
+                    value: 5,
+                  },
+                ]}
+                label={Data[locale].multiSelect.label.replace('{COLOUR}', 'teal')}
+                multiSelect={true}
+              />
+            </Grid.Col>
+          </Grid.Row>
+        </>
+      );
+    }}
+  </Story>
+</Preview>

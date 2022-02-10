@@ -1,0 +1,75 @@
+@import 'styles/mixins';
+@import 'styles/placeholders';
+@import 'styles/variables';
+
+$stars-rating-icon-size-small: 16px;
+$stars-rating-icon-size-large: 24px;
+
+.stars-rating {
+  @extend %webkit-transparent-highlight;
+  align-items: center;
+  display: inline-flex;
+
+  &.small {
+    [data-component-id='icon'] {
+      height: $stars-rating-icon-size-small;
+      width: $stars-rating-icon-size-small;
+    }
+  }
+
+  &.large {
+    [data-component-id='icon'] {
+      height: $stars-rating-icon-size-large;
+      width: $stars-rating-icon-size-large;
+    }
+  }
+
+  &.static {
+    .stars {
+      @include hover() {
+        [data-component-id='icon'] {
+          cursor: default;
+        }
+      }
+    }
+  }
+
+  [data-component-id='icon'] {
+    margin-bottom: 0;
+  }
+}
+
+.votes {
+  @include font('rating');
+  color: $green-40;
+  margin-left: $spacing-xs;
+}
+
+.stars {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+
+  @include hover() {
+    [data-component-id='icon'] {
+      cursor: pointer;
+    }
+  }
+}
+
+// Right-to-left layout
+@include rtl() {
+  .stars-rating {
+    [data-component-id='icon'] {
+      // Flip half stars when switching to rtl
+      &[data-rotate-180] {
+        transform: scale(-1, 1);
+      }
+    }
+  }
+
+  .votes {
+    margin-left: initial;
+    margin-right: $spacing-xs;
+  }
+}

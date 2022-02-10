@@ -1,0 +1,138 @@
+// File: _components-config.scss
+// Author: Martin Burford (martin@martinburford.co.uk)
+
+$components-config: (
+  global: (
+    colors: (
+      focus: #4d90fe
+    ),
+    header: (
+      nav: (
+        underline-speed: 250ms,
+        nav-dropdown-trans-speed: 500ms
+      )
+    ),
+    wrapper: (
+      max-width: 1600px,
+      padding-top: 69px,
+      padding-top-xl: 91px
+    ),
+    component-wrapper: (
+      bar-background: #a2efdc,
+      start-text-color: $red,
+      end-text-color: #65a33e
+    ),
+    ask-a-question: (
+      icon-colour: $white,
+      icon-background: $dark-blue,
+      button-colour: color('red'),
+      fade: 350ms,
+      z-index-fixed: 2
+    ),
+    helpbox: (
+      toggle: 350ms
+    ),
+    cta-banner: (
+      content-background: $gray-100,
+      component-background: $white,
+      icon-color: $gray-300,
+      min-height: 320px
+    ),
+    slideout-panel: (
+      animation-duration: 500ms
+    ),
+    accordion: (
+      toggle-animation-duration: 250ms
+    ),
+    lightbox: (
+      background: $dark-blue,
+      fade: 250ms
+    ),
+    tabbed-content: (
+      content-animation: 500ms,
+      lg-width: 300
+    ),
+    carousel-content:(
+      text-animation-duration: 600ms,
+      nav-animation-duration: 3000ms
+    ),
+    partners-grid:(
+      grid-margin: 2px,
+      grid-margin-mobile: 2.5px,
+      grid-item-margin: 3px * 2,
+      item-width-mobile: 100/2 * 1%,
+      item-width-tablet: 100/3 * 1%,
+      item-width-desktop: 100/6 * 1%
+    )
+  ),
+  home: (
+    home-banner: (
+      image-transition-transform: 750ms,
+      image-transition-opacity: 500ms,
+      panel-transition-transform: 0ms,
+      panel-transition-opacity: 300ms,
+      panel-transition-height: 250ms,
+      scroll-button-animation: 3s
+    )
+  ),
+  homepage: (
+    what-service: (
+      slide: 500ms
+    ),
+    powercut-box: (
+      icon: (
+        background: #202528,
+        color: $dark-blue,
+        dimensions: 250px,
+        stroke-width: 0.4px
+      )
+    ),
+    cta-box-x2: (
+      icons: (
+        icon-size: 70px,
+        inner-border-margin: 14px,
+        outer-border-margin: 28px,
+        border-color: #e0e0e0,
+        gutter-to-content: 24px
+      )
+    ),
+    icon-grid-3x3: (
+      border-color: $gray-300,
+      rings-margin: 14,
+      icon-small-size: 64,
+      icon-large-size: 80
+    )
+  ),
+  landing-pages: (
+    option-selector: (
+      panel-animation: ease-in-out,
+      panel-animation-speed: 450ms,
+      zindex: $zindex-middle
+    )
+  ),
+  forms: (
+    datepicker: (
+      date-width: 250px,
+      font-size: 16px,
+      month-width: 200px,
+      zindex: $zindex-middle
+    ),
+    checkbox: (
+      tick-fade: 250ms
+    ),
+    multi-select: (
+      fade: 200ms
+    ),
+    progress-stepper: (
+      background: $dark-blue,
+      active-highlight: $white,
+      inactive-highlight: $gray-500
+    ),
+    radio-button: (
+      fade: 250ms
+    ),
+    tooltip: (
+      fade: 350ms
+    )
+  )
+);

@@ -1,0 +1,244 @@
+import { Meta, Preview, Props, Story } from '@storybook/addon-docs/blocks';
+
+<!-- Components -->
+
+import CodeBlock from '.storybook/components/code-block';
+import Grid from 'components/ui/global/grid';
+import InformationPanel from 'components/ui/demo/information-panel';
+import Slider from '../';
+import StoryHeading from '.storybook/components/story-heading';
+
+<!-- Data -->
+
+import Data from './slider.json';
+
+<Meta
+  parameters={{
+    controls: {
+      sort: 'alpha',
+    },
+  }}
+  title="Atoms/Slider"
+/>
+
+# Slider
+
+This component is an interactive slider, of which the fundamentals of it are from `rc-slider` https://slider-react-component.vercel.app.
+
+Theming has been built on top of the offering from `rc-slider`, along with the ability to add a custom title to the overall component.
+
+<InformationPanel leadIn="Unique component id">slider</InformationPanel>
+
+## Component props
+
+<Props of={Slider} />
+
+<!-- Example -->
+
+<Preview withSource="none">
+  <Story name="Example">
+    {(args, { globals: { locale } }) => {
+      return (
+        <>
+          <StoryHeading
+            heading="Example"
+            summary={
+              <>
+                This example demonstrates the base functionality of the slider. In addition to the <code>initial</code>{' '}
+                and <code>scale</code> values, there are 2x other important props: <code>rtl</code>, which specifies if
+                the slider is to render in <code>ltr</code> or <code>rtl</code> mode and <code>theme</code>. Examples of
+                the <code>theme</code> variants are shown in another example in this page.
+              </>
+            }
+          />
+          <Grid.Row withBorder={true} withColourColumns={true}>
+            <Grid.Col span={12}>
+              <Slider
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                initial={{
+                  min: 150,
+                  max: 500,
+                }}
+                rtl={locale === 'ar'}
+                scale={{
+                  min: 0,
+                  max: 650,
+                }}
+                theme="purple"
+                title={Data[locale].title}
+              />
+            </Grid.Col>
+          </Grid.Row>
+          <br />
+          <CodeBlock language="jsx">
+            {`<Slider 
+  initial={{
+    min: 150,
+    max: 500,
+  }}
+  rtl={locale === 'ar'}
+  scale={{ 
+    min: 0, 
+    max: 650 
+  }}
+  theme="purple"
+  title="${Data[locale].title}"
+/>`}
+          </CodeBlock>
+        </>
+      );
+    }}
+  </Story>
+</Preview>
+
+<!-- Colour variants -->
+
+<Preview withSource="none">
+  <Story name="Colour variants">
+    {(args, { globals: { locale } }) => {
+      return (
+        <>
+          <StoryHeading
+            heading="Colour variants"
+            summary={
+              <>
+                In order to switch the theme of the slider, the <code>theme</code> prop needs to be passed a value
+                matching one of the 7 base colours in the Alyasra colour palette.
+              </>
+            }
+          />
+          <CodeBlock language="jsx">
+            {`<Slider 
+  initial={{
+    min: 100,
+    max: 450,
+  }}
+  rtl={locale === 'ar'}
+  scale={{ 
+    min: 0, 
+    max: 650 
+  }}
+  theme="purple"
+  title="${Data[locale].title}"
+/>`}
+          </CodeBlock>
+          <br />
+          <Grid.Row withBorder={true} withColourColumns={true}>
+            <Grid.Col span={12}>
+              <Slider
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                initial={{
+                  min: 100,
+                  max: 250,
+                }}
+                rtl={locale === 'ar'}
+                scale={{
+                  min: 0,
+                  max: 650,
+                }}
+                theme="gray"
+                title={Data[locale].title}
+              />
+            </Grid.Col>
+            <Grid.Col span={12}>
+              <Slider
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                initial={{
+                  min: 100,
+                  max: 300,
+                }}
+                rtl={locale === 'ar'}
+                scale={{
+                  min: 0,
+                  max: 650,
+                }}
+                theme="green"
+                title={Data[locale].title}
+              />
+            </Grid.Col>
+            <Grid.Col span={12}>
+              <Slider
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                initial={{
+                  min: 100,
+                  max: 350,
+                }}
+                rtl={locale === 'ar'}
+                scale={{
+                  min: 0,
+                  max: 650,
+                }}
+                theme="maroon"
+                title={Data[locale].title}
+              />
+            </Grid.Col>
+            <Grid.Col span={12}>
+              <Slider
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                initial={{
+                  min: 100,
+                  max: 400,
+                }}
+                rtl={locale === 'ar'}
+                scale={{
+                  min: 0,
+                  max: 650,
+                }}
+                theme="orange"
+                title={Data[locale].title}
+              />
+            </Grid.Col>
+            <Grid.Col span={12}>
+              <Slider
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                initial={{
+                  min: 100,
+                  max: 450,
+                }}
+                rtl={locale === 'ar'}
+                scale={{
+                  min: 0,
+                  max: 650,
+                }}
+                theme="purple"
+                title={Data[locale].title}
+              />
+            </Grid.Col>
+            <Grid.Col span={12}>
+              <Slider
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                initial={{
+                  min: 100,
+                  max: 500,
+                }}
+                rtl={locale === 'ar'}
+                scale={{
+                  min: 0,
+                  max: 650,
+                }}
+                theme="tan"
+                title={Data[locale].title}
+              />
+            </Grid.Col>
+            <Grid.Col span={12}>
+              <Slider
+                dataAttributes={{ 'data-component-spacing': '0' }}
+                initial={{
+                  min: 100,
+                  max: 550,
+                }}
+                rtl={locale === 'ar'}
+                scale={{
+                  min: 0,
+                  max: 650,
+                }}
+                theme="teal"
+                title={Data[locale].title}
+              />
+            </Grid.Col>
+          </Grid.Row>
+        </>
+      );
+    }}
+  </Story>
+</Preview>

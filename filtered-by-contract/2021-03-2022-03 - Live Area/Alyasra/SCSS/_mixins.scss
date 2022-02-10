@@ -1,0 +1,78 @@
+@use 'sass:math';
+
+@import './placeholders';
+@import './variables';
+
+/// Add a box shadow to an element
+/// @mixin box-shadow
+/// @param {number} $horizontal - The horizontal offset of the shadow
+/// @param {number} $vertical - The vertical offset of the shadow
+/// @param {number} $blur - The blur radius of the shadow
+/// @param {string} $color - The hex / rgba of the shadow
+/// @sample: @include box-shadow(0, 0, $shadow-xxs, $gray);
+@mixin box-shadow($horizontal, $vertical, $blur, $color) {
+  box-shadow: $horizontal $vertical $blur $color;
+}
+
+/// @mixin font - Fetch the properties for the font requested and include them
+/// @param {string} $style - The map key for which fonts are to be returned for
+@mixin font($style) {
+  $props: map-get($fonts, $style);
+
+  @include map-to-props($props);
+}
+
+/// @mixin hover - Apply :hover CSS styles only to devices which support :hover
+@mixin hover() {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+/// Mixin printing a linear-gradient as well as a plain color fallback and the `-webkit-` prefixed declaration
+/// @param {string | List | Angle} $direction - Linear gradient direction
+/// @param {arglist} $color-stops - List of color-stops composing the gradient
+/// @sample: @include linear-gradient(#31b7d7, #edac7d);
+/// @sample: @include linear-gradient(to right, #e47d7d 0%, #c195d3 50%, #4fb4e8 100%);
+/// @sample: @include linear-gradient(42deg, #b58234 0%, #d2b545 50%, #d7c04d 50.01%, #ffffff 100%);
+@mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: ($direction, $color-stops);
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+
+  background: linear-gradient($direction, $color-stops);
+}
+
+/// @mixin map-to-props - Convert a Sass map into separate CSS properties
+/// @param {map} $map - The map keys to iterate over for conversion
+@mixin map-to-props($map) {
+  @if type-of($map) == map {
+    @each $prop, $value in $map {
+      @if type-of($value) != map {
+        #{inspect($prop)}: #{inspect($value)};
+      } @else {
+        @include map-to-props($value);
+      }
+    }
+  }
+}
+
+/// Centralized utility for how to handle right-to-left styles
+/// @mixin rtl
+@mixin rtl() {
+  body[style*='direction: rtl'],
+  [dir='rtl'] {
+    @content;
+  }
+}
+
+/// @mixin touch-device - Apply @content against any devices who DO NOT support :hover (ie: touch devices / mobiles)
+@mixin touch-device() {
+  @media (hover: none) {
+    @content;
+  }
+}
