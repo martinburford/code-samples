@@ -19,6 +19,7 @@ It's a little challenging to classify code samples so that they are available in
 The code samples provided contain examples coded in the following languages:
 
 * [Custom jQuery plugins](#Custom-jQuery-plugins)
+* [Cypress](#Cypress)
 * [Grunt](#Grunt)
 * [Gulp](#Gulp)
 * [HTML](#HTML)
@@ -54,6 +55,13 @@ Due to files being stored in a flat file hierarchy (eg: all JavaScript files fro
 It's rare that I'll get asked to code anything in jQuery nowadays. However, a few years ago, I was hired for a few contracts where it was the "in" technology, and was asked to create some fairly bespoke features for a number of websites. Due to the nature of these features, jQuery plugins lent themselves quite nicely to the desired output.
 
 [Click here to view **Custom jQuery plugins** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Custom%20jQuery%20plugins)
+
+- - -
+### **Cypress**
+
+I've used Cypress a little in a couple of contracts, but have never really pushed it that far in terms of what it's capable of.
+
+[Click here to view **Cypress** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Cypress)
 
 - - -
 ### **Grunt**
@@ -217,6 +225,22 @@ I was the sole Front-End Developer working on a Server-side rendered / re-hydrat
 ### **Technologies used:** 
 
 Ant Design System, Axios, CSS Modules, ES6, Flexbox, HTML, JSON, Mermaid, NPM, React, React Hooks, Redux, Sass, Storybook, TypeScript, Webpack
+
+- - -
+
+## **Somo Global**
+**December 2019 - February 2020**
+
+I was one of two Front-End Developers working on a Single Page Application build using both React and Redux. The application allowed for a website to be built and subsequently configured using a bespoke suite of components and templates. My involvement related to adjusting existing websites. This was achieved by accessing the configurable options of each component making up a websites page, getting both existing and setting new configuration values. On saving any configuration changes, the website was automatically updated, reflecting the changes made.
+
+### **Project title:** Mettrr
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-12-2020-02%20-%20Somo%20Global/Mettrr)
+- [View portfolio gallery (tbc)](#)
+
+### **Technologies used:** 
+
+Ant Design System, CSS Modules, ES6, Flexbox, HTML, JSON, NPM, PostCSS, React, React Hooks, Redux, Sass, TypeScript, Webpack
 
 - - -
 
