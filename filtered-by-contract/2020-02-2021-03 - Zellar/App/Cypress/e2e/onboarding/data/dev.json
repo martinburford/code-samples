@@ -1,0 +1,19 @@
+{
+  "onboarding": {
+    "businessSignUp": {
+      "companyName": "Zellar EC2Y 9DT",
+      "selectedCompanyName": "ZELLAR LTD"
+    },
+    "addressLookup": {
+      "address": "Test",
+      "selectedAddress": "Test, 215 Princess Parade High Street, West Bromwich, B70 7QZ"
+    },
+    "lookupSuccess": {
+      "companyName": "ZELLAR LTD",
+      "address": "Test, High Street, West Bromwich, West Midlands, B70 7QZ",
+      "supplier": "Opus Energy Renewables Limited",
+      "meterNumber2": "***0",
+      "checkDigit": "009"
+    }
+  }
+}
