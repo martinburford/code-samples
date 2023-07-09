@@ -1,0 +1,59 @@
+@use "sass:map";
+
+@import "styles/_functions";
+@import "styles/_mixins";
+@import "styles/_placeholders";
+@import "styles/_variables";
+
+$bubble-colours: "error" "gray" "primary" "success" "warning";
+$bubble-padding-x: 8px;
+$bubble-padding-y: 2px;
+
+.bubble {
+  @extend %border-box;
+  align-items: center;
+  border-radius: $radius-l;
+  display: inline-flex;
+  font-size: 1.2rem;
+  padding: $bubble-padding-y $bubble-padding-x;
+  white-space: nowrap;
+
+  [data-component-id="icon"] {
+    margin-bottom: 0;
+  }
+
+  // Dynamic colour theming
+  @each $colour-name in $bubble-colours {
+    $colour-hex: get-style-from-map("#{$colour-name}.500", $colours-map);
+
+    &.#{$colour-name} {
+      @include box-shadow(0, 0, $shadow-xs, rgba($colour-hex, 0.5));
+      background: rgba($colour-hex, 0.1);
+      color: $colour-hex;
+
+      [data-component-id="icon"] {
+        path {
+          stroke: $colour-hex;
+        }
+      }
+    }
+  }
+
+  // Format Bubbles correctly within AG Grid
+  :global(.ag-grid-deals-plus) & {
+    line-height: 1.6rem;
+  }
+}
+
+.prefix-icon {
+  margin-right: $spacing-xxs;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+}
+
+.suffix-icon {
+  margin-left: $spacing-xxs;
+}

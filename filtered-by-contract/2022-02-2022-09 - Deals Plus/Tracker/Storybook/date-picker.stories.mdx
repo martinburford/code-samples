@@ -1,0 +1,529 @@
+<!-- Components -->
+
+import CodeBlock from ".storybook/components/code-block";
+import DatePicker from "components/molecules/date-picker";
+import InformationPanel from ".storybook/components/information-panel";
+import StoryHeading from ".storybook/components/story-heading";
+
+<!-- NPM imports -->
+
+import { DateObject } from "react-multi-date-picker";
+
+<!-- Storybook imports -->
+
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs";
+
+<Meta
+  parameters={{
+    controls: {
+      sort: "alpha",
+    },
+  }}
+  title="Components/Molecules/Date Picker"
+/>
+
+# Date Picker
+
+<InformationPanel leadIn="Date Picker (new)">
+  The DatePicker uses <code>react-multi-date-picker</code> as its core. There have however been significant layers
+  of logic added to make this library look and function correctly whilst linking it to use the existing
+  <code>&lt;Textfield&gt;</code> component
+</InformationPanel>
+
+## Component props
+
+<Props of={DatePicker} />
+
+<!-- Single month -->
+
+<Preview withSource="none">
+  <Story name="Single month">
+    <>
+      <StoryHeading
+        heading="Single month"
+        summary={
+          <>
+            Both <code>datepicker</code> and <code>calendar</code> types show 1 month by default.
+          </>
+        }
+      />
+      <DatePicker
+        label="Single month (datepicker)"
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        type="datepicker"
+      />
+      <DatePicker
+        label="Single month (calendar)"
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        type="calendar"
+      />
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  label="Single month (datepicker)"
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  type="datepicker"
+/>`}
+        </CodeBlock>
+      </div>
+      <CodeBlock language="jsx">{`<DatePicker
+  label="Label text" 
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  type="calendar" 
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Multiple months -->
+
+<Preview withSource="none">
+  <Story name="Multiple months">
+    <>
+      <StoryHeading
+        heading="Multiple months"
+        summary={
+          <>
+            To render either <code>datepicker</code> or <code>calendar</code> with 2 months, pass a value of{" "}
+            <code>2</code> to the <code>numberOfMonths</code> prop.
+          </>
+        }
+      />
+      <DatePicker
+        label="Multiple months (datepicker)"
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        type="datepicker"
+      />
+      <DatePicker
+        label="Multiple months (calendar)"
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        type="calendar"
+      />
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  label="Multiple months (datepicker)"
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  type="datepicker"
+/>`}
+        </CodeBlock>
+      </div>
+      <CodeBlock language="jsx">{`<DatePicker 
+  label="Label text"
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  type="calendar"
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Themes -->
+
+<Preview withSource="none">
+  <Story name="Themes">
+    <>
+      <StoryHeading
+        heading="Themes"
+        summary={
+          <>
+            Full support has been added to have different themes for the calendars. Whilst the default has been created
+            as a <code>Deals Plus</code> theme, there is a second one, for the moment, purely for demonstration purposes.
+          </>
+        }
+      />
+      <DatePicker
+        label="Deals Plus"
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        theme="deals-plus"
+        type="calendar"
+      />
+      <DatePicker
+        label="Theme-2"
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        theme="theme-2"
+        type="calendar"
+      />
+      <div className="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  label="Deals Plus"
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  theme="deals-plus"
+  type="calendar"
+/>`}
+        </CodeBlock>
+      </div>
+      <CodeBlock language="jsx">{`<DatePicker 
+  label="Theme 2"
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  theme="theme-2"
+  type="calendar"
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Disabled -->
+
+<Preview withSource="none">
+  <Story name="Disabled">
+    <>
+      <StoryHeading
+        heading="Disabled"
+        summary={
+          <>
+            To disable a date picker, pass a value of <code>true</code> to the <code>disabled</code> prop. For classic
+            date pickers, providing this value restrits the dates from even showing.
+          </>
+        }
+      />
+      <DatePicker disabled={true} label="Datepicker (single month)" type="datepicker" />
+      <DatePicker disabled={true} label="Calendar (single month)" type="calendar" />
+      <DatePicker disabled={true} label="Calendar (multiple months)" numberOfMonths={2} type="calendar" />
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  disabled={true}
+  label="Datepicker (single month)"
+  type="datepicker"
+/>`}
+        </CodeBlock>
+      </div>
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  disabled={true}
+  label="Calendar (single month)"
+  type="calendar" 
+/>`}
+        </CodeBlock>
+      </div>
+      <CodeBlock language="jsx">{`<DatePicker 
+  disabled={true}
+  label="Calendar (multiple months)"
+  numberOfMonths={2}
+  type="calendar"
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Weekends enabled -->
+
+<Preview withSource="none">
+  <Story name="Weekends enabled">
+    <>
+      <StoryHeading
+        heading="Weekends enabled"
+        summary={
+          <>
+            Whilst the selection of weekend days is disabled by default, it is possible to enable this by providing a
+            value of <code>false</code> to the <code>weekendsDisabled</code> prop.
+          </>
+        }
+      />
+      <DatePicker
+        label="Label text"
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        type="calendar"
+        weekendsDisabled={false}
+      />
+      <CodeBlock language="jsx">{`<DatePicker 
+  label="Label text"
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  type="calendar"
+  weekendsDisabled={false}
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Pre-population -->
+
+<Preview withSource="none">
+  <Story name="Pre-population">
+    <>
+      <StoryHeading
+        heading="Pre-population"
+        summary={
+          <>
+            To pass a date into the datepicker for pre-population, pass a date into the <code>value</code> prop. That
+            date should be in the format of <code>new Date(year, month, day)</code>.
+          </>
+        }
+      />
+      <DatePicker
+        label="Datepicker (single month)"
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        type="datepicker"
+        value={new DateObject({ year: 2022, month: 3, day: 17 })}
+      />
+      <DatePicker
+        label="Datepicker (multiple months)"
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        type="datepicker"
+        value={[new DateObject({ year: 2022, month: 3, day: 17 }), new DateObject({ year: 2022, month: 3, day: 31 })]}
+      />
+      <DatePicker
+        label="Calendar (single month)"
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        type="calendar"
+        value={new DateObject({ year: 2022, month: 3, day: 17 })}
+      />
+      <DatePicker
+        label="Calendar (multiple months)"
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Dates selected: ${dates}`)}
+        type="calendar"
+        value={[new DateObject({ year: 2022, month: 3, day: 17 }), new DateObject({ year: 2022, month: 3, day: 31 })]}
+      />
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  label="Datepicker (single month)"
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  type="calendar"
+  value={new DateObject({ year: 2022, month: 3, day: 17 })}
+/>`}
+        </CodeBlock>
+      </div>
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker
+  label="Datepicker (multiple months)"
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  type="datepicker"
+  value={[new DateObject({ year: 2022, month: 3, day: 17 }), new DateObject({ year: 2022, month: 3, day: 31 })]}
+/>`}
+        </CodeBlock>
+      </div>
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker
+  label="Calendar (single month)"
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  type="calendar"
+  value={new DateObject({ year: 2022, month: 3, day: 17 })}
+/>`}
+        </CodeBlock>
+      </div>
+      <CodeBlock language="jsx">
+        {`<DatePicker
+  label="Calendar (multiple months)"
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Dates selected: " + dates)}
+  type="calendar"
+  value={[new DateObject({ year: 2022, month: 3, day: 17 }), new DateObject({ year: 2022, month: 3, day: 31 })]}
+/>`}
+      </CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Restricted dates -->
+
+<Preview withSource="none">
+  <Story name="Restricted dates">
+    <>
+      <StoryHeading
+        heading="Restricted dates"
+        summary={
+          <>
+            These examples restricts the following dates from being selected:
+            <ul>
+              <li>Any dates before 17th November 2022</li>
+              <li>Any dates after 15th December 2022</li>
+            </ul>
+          </>
+        }
+      />
+      <DatePicker
+        label="Datepicker (single month)"
+        maxDate={new DateObject({ day: 15, month: 12, year: 2022 })}
+        minDate={new DateObject({ day: 17, month: 11, year: 2022 })}
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        type="datepicker"
+        value={new DateObject({ year: 2022, month: 12, day: 1 })}
+      />
+      <DatePicker
+        label="Datepicker (multiple months)"
+        maxDate={new DateObject({ day: 15, month: 12, year: 2022 })}
+        minDate={new DateObject({ day: 17, month: 11, year: 2022 })}
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        type="datepicker"
+        value={[new DateObject({ year: 2022, month: 12, day: 1 }), new DateObject({ year: 2022, month: 12, day: 8 })]}
+      />
+      <DatePicker
+        label="Calendar (single month)"
+        maxDate={new DateObject({ day: 15, month: 12, year: 2022 })}
+        minDate={new DateObject({ day: 17, month: 11, year: 2022 })}
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        type="calendar"
+        value={new DateObject({ year: 2022, month: 12, day: 1 })}
+      />
+      <DatePicker
+        label="Calendar (single month)"
+        maxDate={new DateObject({ day: 15, month: 12, year: 2022 })}
+        minDate={new DateObject({ day: 17, month: 11, year: 2022 })}
+        numberOfMonths={2}
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        type="calendar"
+        value={[new DateObject({ year: 2022, month: 12, day: 1 }), new DateObject({ year: 2022, month: 12, day: 8 })]}
+      />
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  label="Datepicker (single month)"
+  maxDate={new DateObject({day: 15, month: 12, year: 2022 })}
+  minDate={new DateObject({day: 17, month: 11, year: 2022 })}
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  type="datepicker"
+  value={new DateObject({ year: 2022, month: 12, day: 1 })}
+/>`}
+        </CodeBlock>
+      </div>
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker
+  label="Datepicker (multiple months)"
+  maxDate={new DateObject({ day: 15, month: 12, year: 2022 })}
+  minDate={new DateObject({ day: 17, month: 11, year: 2022 })}
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  type="datepicker"
+  value={[new DateObject({ year: 2022, month: 12, day: 1 }), new DateObject({ year: 2022, month: 12, day: 8 })]}
+/>`}
+        </CodeBlock>
+      </div>
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker
+  label="Calendar (single month)"
+  maxDate={new DateObject({ day: 15, month: 12, year: 2022 })}
+  minDate={new DateObject({ day: 17, month: 11, year: 2022 })}
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  type="calendar"
+  value={new DateObject({ year: 2022, month: 12, day: 1 }), new DateObject({ year: 2022, month: 12, day: 8 })}
+/>`}
+        </CodeBlock>
+      </div>
+      <CodeBlock language="jsx">
+        {`<DatePicker
+  label="Calendar (multiple months)"
+  maxDate={new DateObject({ day: 15, month: 12, year: 2022 })}
+  minDate={new DateObject({ day: 17, month: 11, year: 2022 })}
+  numberOfMonths={2}
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  type="calendar"
+  value={new DateObject({ year: 2022, month: 12, day: 1 }), new DateObject({ year: 2022, month: 12, day: 8 })}
+/>`}
+      </CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Required -->
+
+<Preview withSource="none">
+  <Story name="Required">
+    <>
+      <StoryHeading
+        heading="Required"
+        summary={
+          <>
+            If a Datepicker is required, this can be specified by providing a value of <code>true</code> to the{" "}
+            <code>required</code> prop.
+          </>
+        }
+      />
+      <DatePicker
+        label="Single month (datepicker)"
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        required={true}
+        type="datepicker"
+      />
+      <DatePicker
+        label="Single month (calendar)"
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        required={true}
+        type="calendar"
+      />
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  label="Single month (datepicker)"
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  required={true}
+  type="datepicker"
+/>`}
+        </CodeBlock>
+      </div>
+      <CodeBlock language="jsx">{`<DatePicker
+  label="Label text" 
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  required={true}
+  type="calendar" 
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Has error -->
+
+<Preview withSource="none">
+  <Story name="Has error">
+    <>
+      <StoryHeading
+        heading="Has error"
+        summary={
+          <>
+            To indicate that an error message is attributed against the datepicker, provide a value of <code>true</code>{" "}
+            to the <code>hasError</code> prop.
+          </>
+        }
+      />
+      <DatePicker
+        hasError={true}
+        label="Single month (datepicker)"
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        type="datepicker"
+      />
+      <DatePicker
+        hasError={true}
+        label="Single month (calendar)"
+        onChange={(dates) => console.log(`Date selected: ${dates}`)}
+        type="calendar"
+      />
+      <div class="mb-xxs">
+        <CodeBlock language="jsx">
+          {`<DatePicker 
+  hasError={true}
+  label="Single month (datepicker)"
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  type="datepicker"
+/>`}
+        </CodeBlock>
+      </div>
+      <CodeBlock language="jsx">{`<DatePicker
+  hasError={true}
+  label="Label text" 
+  onChange={(dates) => console.log("Date selected: " + dates)}
+  type="calendar" 
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>

@@ -1,0 +1,104 @@
+@use "sass:math";
+
+@import "styles/_mixins";
+@import "styles/_placeholders";
+@import "styles/_variables";
+
+$document-list-document-icon-size-mobile: 12px;
+$document-list-document-icon-size-tabket-portrait-up: 16px;
+$document-list-document-gutter: $spacing-xs;
+$document-list-document-row-gutter: $spacing-xs;
+
+/// @mixin responsive-rows - Which percentage width should individual items be?
+/// @param {string} $breakpoint-name - Which breakpoint should the CSS being applied against?
+@mixin responsive-rows($breakpoint-name) {
+  $column-breaks: 1, 2;
+
+  @each $column-break in $column-breaks {
+    &.#{$breakpoint-name}-per-row-#{$column-break} .document {
+      width: calc(#{math.div(100%, $column-break)} - #{$document-list-document-gutter});
+
+      // Remove gutters and borders from the first row of items
+      &:nth-of-type(-n+#{$column-break}) {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+.document-list {
+  [data-component-id="heading"] {
+    @include get-font("label");
+    @include get-colour("color", "gray.400");
+    margin-bottom: $spacing-xs;
+  }
+
+  [data-component-id="icon"],
+  [data-component-id="link"] {
+    margin-bottom: 0;
+  }
+
+  @include responsive-rows("mobile");
+
+  @include breakpoint($tablet-portrait-up) {
+    @include responsive-rows("tablet");
+  }
+
+  @include breakpoint($desktop-up) {
+    @include responsive-rows("desktop");
+  }
+}
+
+.documents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: -$document-list-document-gutter;
+}
+
+.document {
+  @extend %border-box, %glow;
+  align-items: center;
+  display: flex;
+  margin-left: $document-list-document-gutter;
+  margin-top: $document-list-document-row-gutter;
+  padding: $spacing-xxs;
+
+  @include breakpoint($tablet-portrait-up) {
+    padding: $spacing-xs;
+  }
+}
+
+.document-icon {
+  @include get-colour("border-color", "primary.50");
+  border-radius: 50%;
+  border-style: solid;
+  border-width: $border-l;
+  display: inline-flex;
+  margin-right: $spacing-xs;
+
+  [data-icon-id="document"] {
+    height: $document-list-document-icon-size-mobile;
+    margin-bottom: 0;
+    width: $document-list-document-icon-size-mobile;
+
+    @include breakpoint($tablet-portrait-up) {
+      height: $document-list-document-icon-size-tabket-portrait-up;
+      width: $document-list-document-icon-size-tabket-portrait-up;
+    }
+  }
+}
+
+.filename {
+  display: block;
+}
+
+.filesize {
+  @include get-colour("color", "gray.400");
+}
+
+.download {
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}

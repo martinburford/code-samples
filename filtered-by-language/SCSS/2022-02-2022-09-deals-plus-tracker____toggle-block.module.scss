@@ -1,0 +1,109 @@
+@use "sass:map";
+
+@import "styles/_mixins";
+@import "styles/_placeholders.scss";
+@import "styles/_variables";
+
+@mixin toggle-block-stroke($stroke-colour) {
+  background-color: rgba($stroke-colour, 0.25);
+  border-color: $stroke-colour;
+  border-style: solid;
+  border-width: $border-xxs;
+
+  .header {
+    padding-left: $spacing-xs;
+    padding-right: $spacing-xs;
+  }
+
+  .content {
+    padding-left: $spacing-xs;
+    padding-right: $spacing-xs;
+  }
+}
+
+.toggle-block {
+  border-radius: $radius-m;
+  overflow: hidden;
+  position: relative;
+
+  &.toggle-sideDown { 
+    &.expanded {
+      [data-icon-id="arrowRight"] {
+        transform: rotate(90deg);
+      }
+    }
+  }
+  
+  &.toggle-upDown { 
+    &.expanded {
+      [data-icon-id="arrowDown"] {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &.theme-default {
+    border-radius: 0;
+    margin-bottom: $spacing-xs;
+  }
+
+  &.theme-stroke {
+    @include toggle-block-stroke(get-style-from-map("gray.200", $colours-map));
+  }
+
+  &.theme-stroke-red {
+    @include toggle-block-stroke(get-style-from-map("error.200", $colours-map));
+  }
+}
+
+.header {
+  padding-bottom: $spacing-xs;
+  padding-top: $spacing-xs;
+
+  @include hover(){
+    &:hover {      
+      cursor: pointer;
+    }
+  }
+
+  [data-component-id="content-justified"],
+  [data-component-id="icon"] {
+    margin-bottom: 0;
+  }
+
+  [data-component-id="content-justified"] {
+    > div {
+      margin-bottom: 0;
+    }
+
+    [data-icon-id="arrowDown"],
+    [data-icon-id="arrowRight"] {
+      margin-top: 0;
+    }
+  } 
+
+  [data-icon-id="arrowDown"],
+  [data-icon-id="arrowRight"] {
+    margin-top: $spacing-xxs;
+    transition-property: transform;
+    transition-timing-function: ease-in-out;
+
+    .toggle-slow & {
+      transition-duration: $transition-slow;
+    }
+
+    .toggle-medium & {
+      transition-duration: $transition-medium;
+    }
+
+    .toggle-fast & {
+      transition-duration: $transition-fast;
+    }
+  }
+}
+
+.content {
+  border-bottom-left-radius: $radius-s;
+  border-bottom-right-radius: $radius-s;
+  padding-bottom: $spacing-xs;
+}

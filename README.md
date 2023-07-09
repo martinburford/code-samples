@@ -191,15 +191,29 @@ From 2019 onwards, I've been working on projects using React + TypeScript. This 
 
 # Filtered by contract
 
+## **Deals Plus**
+**February 2022 - September 2022**
+
+I worked as the sole Front-End Developer, working on a complete re-write of a platform, which focused on offering a dashboard-style set of screens showing complex datasets for investment portfolios for both individuals and companies. The nature of the data involved was often complex, as a result leaning on comprehensive use of AG Grid for tabular data, along with close to 100 bespoke written React components, utilising both Sass and TypeScript. Also of note within this project was the inclusion of react-hook-form, since there were around 50 forms, enabling authenticated users to add, edit and delete a whole host of data attached to their individual investments.
+
+### **Project title:** Tracker
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2022-02-2022-09%20-%20Deals%20Plus/Tracker)
+
+### **Technologies used:** 
+
+AG Grid, Axios, Lo-dash, MermaidJS, NextJS, React, React hook form, Redux Toolkit, Sass, Storybook, Typescript
+
+- - -
+
 ## **LiveArea**
-**March 2021 - March 2022**
+**March 2021 - February 2022**
 
 I was the sole Front-End Developer working on a UI component library, consisting of approximately 120 components, built from the ground up using React, TypeScript and Sass, in an Atomic Design pattern. I built a fully interactive headless eCommerce site, demonstrating all of the UI components via a NextJS app. I also built a comprehensive Storybook, helping to demonstrate all components rendered in a number of different ways, eg: different colour themes, different locales, left-to-right and right-to-left rendering. All components were fully responsive.
 
 ### **Project title:** Alyasra
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2021-03-2022-03%20-%20Live%20Area/Alyasra)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -215,12 +229,10 @@ I was the sole Front-End Developer working on a Server-side rendered / re-hydrat
 ### **Project title:** App
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2020-02-2021-03%20-%20Zellar/App)
-- [View portfolio gallery (tbc)](#)
 
 ### **Project title:** Flowcharts
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2020-02-2021-03%20-%20Zellar/Flowcharts)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -236,7 +248,6 @@ I was one of two Front-End Developers working on a Single Page Application build
 ### **Project title:** Mettrr
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-12-2020-02%20-%20Somo%20Global/Mettrr)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -252,7 +263,6 @@ I spent close to a month at Rehab, helping out on a project which provided walkt
 ### **Project title:** Ripple
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-09-2019-09%20-%20Rehab/Ripple)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -268,7 +278,6 @@ My role at Lloyds was based on Strong Customer Authentication. Due to regulatory
 ### **Project title:** Lloyds
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-01-2019-07%20-%20Lloyds%20Bank/Lloyds)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -284,7 +293,6 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 ### **Project title:** CXODB
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2018-05-2018-10%20-%20Biglight/CXODB)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -301,7 +309,6 @@ I was hired by Tangent to help with the second phase of a digital project rollou
 ### **Project title:** UK Power Networks
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2018-01-2018-03%20-%20Tangent/UK%20Power%20Networks)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -317,7 +324,6 @@ I spent a few months at Bond & Coyne, working on a website build for their large
 ### **Project title:** Pearson
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2017-08-2017-11%20-%20Bond%20%26%20Coyne/Pearson)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -333,7 +339,6 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 ### **Project title:** Portfolio
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio/Portfolio)
-- [View portfolio gallery (tbc)](#)
 
 - - -
 
@@ -345,7 +350,6 @@ I was hired via Mansion House Consultingfor HSBC, to bring to life a conceptual 
 ### **Project title:** Connect
 
 - [View JavaScript code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2017-01-2017-02%20-%20HSBC/Connect)
-- [View portfolio gallery (tbc)](#)
 
 - - -
 
@@ -357,7 +361,6 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 ### **Project title:** Good News Feed
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2016-12-2016-12%20-%20Sapient%20Nitro/Good%20News%20Feed)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -373,7 +376,6 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 ### **Project title:** Chameleon
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2015-08-2016-11%20-%20Trinity%20Mirror/Chameleon)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -389,7 +391,6 @@ I worked at Barclays on a front and back-end component library, built via a comb
 ### **Project title:** Account Opening
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2014-08-2015-08%20-%20Barclays/Account%20Opening)
-- [View portfolio gallery (tbc)](#)
 
 ### **Project title:** Design Language
 
@@ -409,22 +410,18 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 ### **Project title:** Animated Gauges
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror/Animated%20Gauges)
-- [View portfolio gallery (tbc)](#)
 
 ### **Project title:** Data Visualization
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror/Data%20Visualization)
-- [View portfolio gallery (tbc)](#)
 
 ### **Project title:** Heatmaps
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror/Heatmaps)
-- [View portfolio gallery (tbc)](#)
 
 ### **Project title:** Particle fireworks
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror/Particle%20fireworks)
-- [View portfolio gallery (tbc)](#)
 
 ### **Project title:** Premier League
 
@@ -433,7 +430,6 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 ### **Project title:** Vote slider
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror/Vote%20Slider)
-- [View portfolio gallery (tbc)](#)
 
 ### **Technologies used:** 
 
@@ -449,7 +445,6 @@ I worked on 2 fairly similar projects during my 4 months at Profero. Both were e
 ### **Project title:** Accenture
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2012-12-2013-03%20-%20Profero/Accenture)
-- [View portfolio gallery (tbc)](#)
 
 - - -
 
@@ -461,4 +456,3 @@ I worked at AKQA on a large project for one of their biggest clients, Nike, focu
 ### **Project title:** Nike
 
 - [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2011-10-2011-12%20-%20AKQA/Nike)
-- [View portfolio gallery (tbc)](#)

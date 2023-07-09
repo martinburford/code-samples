@@ -1,0 +1,126 @@
+@use "sass:map";
+
+@import "styles/_mixins";
+@import "styles/_placeholders";
+@import "styles/_variables";
+
+$data-room-glow-indent: 2px;
+$data-room-treeview-width: 400px;
+
+%data-room-scrollbar {
+  @include scrollbar(
+    get-style-from-map("gray.400", $colours-map),
+    get-style-from-map("gray.200", $colours-map),
+    5px
+  );
+}
+
+.data-room {
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.outer {
+  display: flex;
+  height: 100%;
+}
+
+.treeview {  
+  display: flex;
+  flex-direction: column;
+  width: $data-room-treeview-width;
+
+  [data-component-id="checkbox"] {
+    @extend %border-box;
+    @include get-colour("background", "gray.100");
+    @include get-colour("border-bottom-color", "gray.200");
+    border-bottom-style: solid;
+    border-bottom-width: $border-xxs;
+    margin-left: -$spacing-m;
+    margin-top: -$spacing-m;
+    padding: $spacing-xs $spacing-m;
+    width: calc(100% + #{$spacing-m * 2})
+  }
+
+  [data-component-id="card"] {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: $data-room-glow-indent;
+  }
+
+  [data-selector="card-content"] {
+    @extend %data-room-scrollbar;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  [data-component-id="treeview"] {
+    margin-bottom: 0;
+  }
+}
+
+.document-viewer {
+  @extend %glow;
+  @include get-colour("background", "primary.25");
+  flex: 1;
+  margin-left: $spacing-m;
+  margin-bottom: $data-room-glow-indent;
+  margin-right: $data-room-glow-indent;
+  margin-top: $data-room-glow-indent;
+  overflow-y: hidden;
+}
+
+.document-viewer-inner {
+  @extend %border-box, %data-room-scrollbar;
+  border-radius: $radius-m;
+  height: 100%;
+
+  [data-component-id="card"] {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  [data-selector="card-header"] {
+    [data-component-id="icon"] {
+      @extend %glow;
+      @include get-colour("background", "base.white");
+    }
+
+    [data-component-id="heading"] {
+      span {
+        font-weight: inherit;
+      }
+      
+      em {
+        @include get-colour("color", "error.500");
+        @include get-font("text.xs");
+        font-style: normal;
+      }
+    }
+  }
+
+  [data-selector="card-content"] {
+    flex: 1;
+    padding: 0;
+  }
+
+  [data-component-id="checkbox"] {
+    margin-bottom: 0;
+  }
+
+  :global(.ag-header),
+  :global(.ag-root-wrapper) {
+    border-radius: 0;
+  }
+}
+
+.items-selected {
+  @include get-colour("color", "gray.400");
+  @include get-font("text.xs");
+}

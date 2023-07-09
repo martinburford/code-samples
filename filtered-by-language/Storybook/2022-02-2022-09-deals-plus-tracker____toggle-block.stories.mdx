@@ -1,0 +1,482 @@
+<!-- Components -->
+
+import CodeBlock from ".storybook/components/code-block";
+import Grid from "components/global/grid";
+import InformationPanel from ".storybook/components/information-panel";
+import Mermaid from "components/atoms/mermaid";
+import StoryHeading from ".storybook/components/story-heading";
+import ToggleBlock from "components/widgets/toggle-block";
+
+<!-- Storybook imports -->
+
+import { Meta, Preview, Props, Story } from "@storybook/addon-docs";
+
+<Meta
+  parameters={{
+    controls: {
+      sort: "alpha",
+    },
+  }}
+  title="Components/Widgets/Toggle Block"
+/>
+
+# Toggle Block
+
+<InformationPanel leadIn="Toggle Block">
+  This component allows for a header element (when clicked), to show related
+  content in an area directly below
+</InformationPanel>
+
+## Component props
+
+<Props of={ToggleBlock} />
+
+<!-- Basic -->
+
+<Preview withSource="none">
+  <Story name="Basic">
+    <>
+      <StoryHeading
+        heading="Basic"
+        summary={
+          <>
+            The simplest implementation of this component is for the{" "}
+            <code>content</code> block to contain plain text
+          </>
+        }
+      />
+      <ToggleBlock
+        content={
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        }
+        header={
+          <>
+            <strong>Header: </strong>click to see content
+          </>
+        }
+        theme="stroke"
+      />
+      <CodeBlock language="jsx">{`<ToggleBlock
+  content={
+    <span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </span>
+  }
+  header={
+    <>
+      <strong>Header: </strong>click to see content
+    </>
+  }
+  theme="stroke"
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Custom toggle speed -->
+
+<Preview withSource="none">
+  <Story name="Custom toggle speed">
+    <>
+      <StoryHeading
+        heading="Custom toggle speed"
+        summary={
+          <>
+            There are 3x speeds at which the animation of the content can take
+            place ... <code>slow (1000ms)</code>, <code>medium (500ms)</code>{" "}
+            and <code>fast (250ms)</code>. To specify this, pass a value of{" "}
+            <code>slow</code>, <code>medium</code> or <code>fast</code> to the{" "}
+            <code>toggleSpeed</code> prop
+          </>
+        }
+      />
+      <ToggleBlock
+        content={
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        }
+        header={
+          <>
+            <strong>Header: </strong>click to see content
+          </>
+        }
+        theme="stroke"
+        toggleSpeed="slow"
+      />
+      <CodeBlock language="jsx">{`<ToggleBlock
+  content={
+    <span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </span>
+  }
+  header={
+    <>
+      <strong>Header: </strong>click to see content
+    </>
+  }
+  theme="stroke"
+  toggleSpeed="slow"
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Expanded on load -->
+
+<Preview withSource="none">
+  <Story name="Expanded on load">
+    <>
+      <StoryHeading
+        heading="Expanded on load"
+        summary={
+          <>
+            To auto-expand the content of the component when it first loads,
+            pass a value of <code>true</code> to the <code>expanded</code> prop
+          </>
+        }
+      />
+      <ToggleBlock
+        content={
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </span>
+        }
+        expanded={true}
+        header={
+          <>
+            <strong>Header: </strong>click to see content
+          </>
+        }
+        theme="stroke"
+      />
+      <CodeBlock language="jsx">{`<ToggleBlock
+  content={
+    <span>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </span>
+  }
+  expanded={true}
+  header={
+    <>
+      <strong>Header: </strong>click to see content
+    </>
+  }
+  theme="stroke"
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- With rich content -->
+
+<Preview withSource="none">
+  <Story name="With rich content">
+    <>
+      <StoryHeading
+        heading="With rich content"
+        summary={
+          <>
+            The internal content of the component can be anything, for example
+            single or multiple React component
+          </>
+        }
+      />
+      <ToggleBlock
+        content={
+          <Mermaid
+            containerId="chart3"
+            data={`flowchart TD
+              L1_PERSON_1[Level 1: Person 1]:::level-1 --> L2_PERSON_1[Level 2: Person 1]:::level-2
+              L1_PERSON_2[Level 1: Person 2]:::level-1 --> L2_PERSON_1
+              L1_PERSON_3[Level 1: Person 3]:::level-1 --> L2_PERSON_1
+              L2_PERSON_1 --> L3_PERSON_1[Level 3: Person 1]:::level-3
+              L2_PERSON_1 --> L3_PERSON_2[Level 3: Person 2]:::level-3
+              L3_PERSON_1 --> L4_PERSON_1[Level 4: Person 1]:::level-4
+              L3_PERSON_2 --> L4_PERSON_1[Level 4: Person 1]:::level-4
+              L4_PERSON_1 --> L5_PERSON_1[Level 5: Person 1]:::level-5
+              L5_PERSON_1 --> L6_PERSON_1[Level 6: Person 1]:::level-6
+              L6_PERSON_1 --> L7_PERSON_1[Level 7: Person 1]:::level-7
+              L6_PERSON_1 --> L7_PERSON_2[Level 7: Person 2]:::level-7
+              
+              %% Custom style definitions
+              classDef level-1 color: #729dc3, fill: #dae6f0, stroke: #729dc3, stroke-width: 1px
+              classDef level-2 color: #999, fill: #efefef,stroke: #999, stroke-width: 1px
+              classDef level-3 color: #057500, fill: #8fc58e, stroke: #057500, stroke-width: 1px
+              classDef level-4 color: #ffe1e1, fill: #ff7474, stroke: #ff0000, stroke-width:1px
+              classDef level-5 color: #8800c1, fill: #e7ccf3, stroke: #8800c1, stroke-width:1px
+              classDef level-6 color: #e76d00, fill: #fae2cc, stroke: #e76d00, stroke-width:1px
+              classDef level-7 color: #00a29c, fill: #cceceb, stroke: #00a29c, stroke-width:1px`}
+            dataAttributes={{ "data-component-spacing": "0" }}
+          />
+        }
+        header={
+          <>
+            <strong>Header: </strong>click to see content
+          </>
+        }
+        theme="stroke"
+        toggleSpeed="slow"
+      />
+      <CodeBlock language="jsx">{`<ToggleBlock
+  content={
+    <Mermaid
+      containerId="chart1"
+      data="flowchart TD
+        L1_PERSON_1[Level 1: Person 1]:::level-1 --> L2_PERSON_1[Level 2: Person 1]:::level-2
+        L1_PERSON_2[Level 1: Person 2]:::level-1 --> L2_PERSON_1
+        L1_PERSON_3[Level 1: Person 3]:::level-1 --> L2_PERSON_1
+        L2_PERSON_1 --> L3_PERSON_1[Level 3: Person 1]:::level-3
+        L2_PERSON_1 --> L3_PERSON_2[Level 3: Person 2]:::level-3
+        L3_PERSON_1 --> L4_PERSON_1[Level 4: Person 1]:::level-4
+        L3_PERSON_2 --> L4_PERSON_1[Level 4: Person 1]:::level-4
+        L4_PERSON_1 --> L5_PERSON_1[Level 5: Person 1]:::level-5
+        L5_PERSON_1 --> L6_PERSON_1[Level 6: Person 1]:::level-6
+        L6_PERSON_1 --> L7_PERSON_1[Level 7: Person 1]:::level-7
+        L6_PERSON_1 --> L7_PERSON_2[Level 7: Person 2]:::level-7
+        
+        %% Custom style definitions
+        classDef level-1 color: #729dc3, fill: #dae6f0, stroke: #729dc3, stroke-width: 1px
+        classDef level-2 color: #999, fill: #efefef,stroke: #999, stroke-width: 1px
+        classDef level-3 color: #057500, fill: #8fc58e, stroke: #057500, stroke-width: 1px
+        classDef level-4 color: #ffe1e1, fill: #ff7474, stroke: #ff0000, stroke-width:1px
+        classDef level-5 color: #8800c1, fill: #e7ccf3, stroke: #8800c1, stroke-width:1px
+        classDef level-6 color: #e76d00, fill: #fae2cc, stroke: #e76d00, stroke-width:1px
+        classDef level-7 color: #00a29c, fill: #cceceb, stroke: #00a29c, stroke-width:1px"
+      dataAttributes={{ "data-component-spacing": "0" }}
+    />
+  }
+  header={
+    <>
+      <strong>Header: </strong>click to see content
+    </>
+  }
+  theme="stroke"
+  toggleSpeed="slow"
+/>`}</CodeBlock>
+    </>
+  </Story>
+</Preview>
+
+<!-- Themes -->
+
+<Preview withSource="none">
+  <Story name="Themes">
+    <>
+      <StoryHeading
+        heading="Themes"
+        summary={
+          <>
+            There are 3x different types of themed <code>toggleBlock</code>{" "}
+            components:
+            <br />
+            <br />
+            <strong>default</strong>: this will render the main component without
+            any borders and with compressed internal paddings. Since this is the
+            default mode, a prop value does not need to be specified to render the
+            component this way. A value of <code>default</code> can however be passed
+            to the <code>theme</code> prop for clarity if desired.
+            <br />
+            <br />
+            <strong>stroke</strong>: by passing a value of <code>stroke</code>{" "}
+            to the <code>theme</code> prop, this will add a gray stroke around
+            the outer bounds of the component, along with additional internal
+            padding.
+            <br />
+            <br />
+            <strong>stroke-red</strong>: by passing a value of <code>
+              stroke-red
+            </code> to the <code>theme</code> prop, this will add a red stroke around
+            the outer bounds of the component, along with additional internal padding.
+          </>
+        }
+      />
+      <Grid.Row>
+        <Grid.Col
+          mobile={{ span: 12 }}
+          desktop={{ span: 4 }}
+        >
+          <CodeBlock language="jsx">{`<ToggleBlock
+  content={...}
+  expanded={true}
+  header={...}
+  theme="default"
+/>`}</CodeBlock>
+          <br />
+          <ToggleBlock
+            content={
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </span>
+            }
+            dataAttributes={{ "data-component-spacing": "0" }}
+            expanded={true}
+            header={
+              <>
+                <strong>Header: </strong>default theme
+              </>
+            }
+            theme="default"
+          />
+        </Grid.Col>
+        <Grid.Col
+          mobile={{ span: 12 }}
+          desktop={{ span: 4 }}
+        >
+          <CodeBlock language="jsx">{`<ToggleBlock
+  content={...}
+  expanded={true}
+  header={...}
+  theme="stroke"
+/>`}</CodeBlock>
+          <br />
+          <ToggleBlock
+            content={
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </span>
+            }
+            dataAttributes={{ "data-component-spacing": "0" }}
+            expanded={true}
+            header={
+              <>
+                <strong>Header: </strong>stroke theme
+              </>
+            }
+            theme="stroke"
+          />
+        </Grid.Col>
+        <Grid.Col
+          mobile={{ span: 12 }}
+          desktop={{ span: 4 }}
+        >
+          <CodeBlock language="jsx">{`<ToggleBlock
+  content={...}
+  expanded={true}
+  header={...}
+  theme="stroke-red"
+/>`}</CodeBlock>
+          <br />
+          <ToggleBlock
+            content={
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </span>
+            }
+            dataAttributes={{ "data-component-spacing": "0" }}
+            expanded={true}
+            header={
+              <>
+                <strong>Header: </strong>stroke-red theme
+              </>
+            }
+            theme="stroke-red"
+          />
+        </Grid.Col>
+      </Grid.Row>
+    </>
+  </Story>
+</Preview>
+
+<!-- Toggle mode -->
+
+<Preview withSource="none">
+  <Story name="Toggle mode">
+    <>
+      <StoryHeading
+        heading="Toggle mode"
+        summary={
+          <>
+            The icons which are used for the toggle mechanism can be changed via providing a value of either <code>sideDown</code> or <code>upDown</code> to the <code>toggleMode</code> prop.
+            <br />
+            <br />
+            <strong>sideDown</strong>: the contracted icon is <code>arrowRight</code> and the expanded state rotates this by 90 degrees
+            <br />
+            <strong>upDown</strong>: the contracted icon is <code>arrowDown</code> and the expanded state rotates this by 180 degrees
+          </>
+        }
+      />
+      <Grid.Row>
+        <Grid.Col
+          mobile={{ span: 12 }}
+          tabletPortrait={{ span: 6 }}
+        >
+          <CodeBlock language="jsx">{`<ToggleBlock
+  content={...}
+  header={...}
+  theme="stroke"
+  toggleMode="sideDown"
+/>`}</CodeBlock>
+          <br />
+          <ToggleBlock
+            content={
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </span>
+            }
+            dataAttributes={{ "data-component-spacing": "0" }}
+            header={
+              <>
+                <strong>Header: </strong>sideDown
+              </>
+            }
+            theme="stroke"
+            toggleMode="sideDown"
+          />
+        </Grid.Col>
+        <Grid.Col
+          mobile={{ span: 12 }}
+          tabletPortrait={{ span: 6 }}
+        >
+          <CodeBlock language="jsx">{`<ToggleBlock
+  content={...}
+  header={...}
+  theme="stroke"
+  toggleMode="upDown"
+/>`}</CodeBlock>
+          <br />
+          <ToggleBlock
+            content={
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </span>
+            }
+            dataAttributes={{ "data-component-spacing": "0" }}
+            header={
+              <>
+                <strong>Header: </strong>upDown
+              </>
+            }
+            theme="stroke"
+            toggleMode="upDown"
+          />
+        </Grid.Col>
+      </Grid.Row>
+    </>
+  </Story>
+</Preview>
