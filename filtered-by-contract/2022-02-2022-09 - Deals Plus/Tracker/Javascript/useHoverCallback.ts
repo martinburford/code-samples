@@ -10,7 +10,7 @@ export const useHoverCallback = () => {
 
   // Hooks (refs)
   const [value, setValue] = useState(false);
-	const ref = useRef(); // Keep track of the last node passed to callbackRef so its event listeners can be removed
+  const ref = useRef(); // Keep track of the last node passed to callbackRef so its event listeners can be removed
   
   // Use a callback ref instead of useEffect so that event listeners
   // get changed in the case that the returned ref gets added to

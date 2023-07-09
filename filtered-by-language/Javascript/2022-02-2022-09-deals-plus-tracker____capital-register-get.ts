@@ -46,7 +46,6 @@ const generateCapitalRegister: TGenerateCapitalRegister = (total) => {
         name: "Ben",
         time: generateRandomTime(),
       },
-      // notes: Math.random() < 0.5 ? `Notes ${prefixedIndex}` : "",
       notes: `Notes ${prefixedIndex}`,
       shareholder: `Shareholder ${prefixedIndex}`,
       typeOfTransaction,

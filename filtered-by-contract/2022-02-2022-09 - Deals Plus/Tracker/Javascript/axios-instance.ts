@@ -21,7 +21,6 @@ const sleep = (ms = 1): Promise<void> => {
 // Add a request interceptor
 axiosClient.interceptors.request.use(function (config) {
   // Do something before request is sent
-  console.log("Before request is sent to the API");
 
   // Data fetching is starting
   store.dispatch(toggleAPICallBeingMade(true));
@@ -36,7 +35,6 @@ axiosClient.interceptors.request.use(function (config) {
 axiosClient.interceptors.response.use(async (response) => {
   // Any status code that lie within the range of 2xx cause this function to trigger
   // Do something with response data
-  console.log("Before response is sent to the browser");
 
   // Data fetching is ending
   store.dispatch(toggleAPICallBeingMade(false));
