@@ -18,28 +18,28 @@ It's a little challenging to classify code samples so that they are available in
 
 The code samples provided contain examples coded in the following languages:
 
-* [Custom jQuery plugins](#Custom-jQuery-plugins)
-* [Cypress](#Cypress)
-* [GraphQL](#GraphQL)
-* [Grunt](#Grunt)
-* [Gulp](#Gulp)
-* [HTML](#HTML)
-* [JavaScript](#JavaScript)
-* [JSON](#JSON)
-* [JSX components](#JSX-components)
-* [JSX pages](#JSX-pages)
-* [MermaidJS](#MermaidJS)
-* [NodeJS](#NodeJS)
-* [PHP](#PHP)
-* [Pug templates](#Pug-templates)
-* [Redux](#Redux)
-* [SCSS](#SCSS)
-* [Storybook](#Storybook)
-* [Test scripts](#Test-scripts)
-* [TSX components](#TSX-components)
-* [TSX pages](#TSX-pages)
-* [Type definitions](#Type-definitions)
-* [Utilities](#Utilities)
+* [Custom jQuery plugins](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Custom%20jQuery%20plugins)
+* [Cypress](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Cypress)
+* [GraphQL](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/GraphQL)
+* [Grunt](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Grunt)
+* [Gulp](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Gulp)
+* [HTML](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/HTML)
+* [JavaScript](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Javascript)
+* [JSON](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/JSON)
+* [JSX components](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/JSX%20components)
+* [JSX pages](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/JSX%20pages)
+* [MermaidJS](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/MermaidJS)
+* [NodeJS](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/NodeJS)
+* [PHP](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/PHP)
+* [Pug templates](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Pug%20templates)
+* [Redux](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Redux)
+* [SCSS](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/SCSS)
+* [Storybook](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Storybook)
+* [Test scripts](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Test%20scripts)
+* [TSX components](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/TSX%20components)
+* [TSX pages](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/TSX%20pages)
+* [Type definitions](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Type%20definitions)
+* [Utilities](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Utilities)
 
 In the case of all of these files, a specific file naming convention has been used:
 
@@ -211,6 +211,14 @@ Every project I work on has a number of centralized utility functions, which can
 **September 2022 - August 2023**
 
 I led a team of 3x Front-End Developers, working on a greenfield HR platform that aims to provide the features of solutions such as Workday, in terms of Leave Requests, Payroll, Timesheets etc, but in a way whereby the control is put in the fingers of the users. The idea being that much of the need to depend on a HR team can therefore be removed, resulting in the increases to the speed and efficiency of the tasks needing to be done.
+
+### **Project title:** App
+
+- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2022-09-2023-08%20-%20Aigence/App)
+
+### **Technologies used:** 
+
+Apollo, Chromatic, GraphQL, Lo-dash, NextAuth, NextJS, React hook form, Redux toolkit, Sass, Storybook, Typescript
 
 ## **Deals Plus**
 **February 2022 - September 2022**
