@@ -131,7 +131,7 @@ There are SO many ways to code pages within React. As a contractor, sometimes I 
 [Click here to view **MermaidJS** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/MermaidJS)
 
 - - -
-### **NextKS Mock APIs**
+### **NextJS Mock APIs**
 
 Whilst the majority of projects I work on include a back-end, I often create a mock API layer using NextJS, so that I can progress with front-end development without being reliant on a back-end being written at the same time.
 
