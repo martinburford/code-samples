@@ -1,0 +1,173 @@
+@import "./_functions";
+@import "./_variables";
+
+/// @mixin box-shadow - Add a box shadow to an element
+/// @param {number} $horizontal - The horizontal offset of the shadow
+/// @param {number} $vertical - The vertical offset of the shadow
+/// @param {number} $blur - The blur radius of the shadow
+/// @param {string} $color - The hex / rgba of the shadow
+/// @param {boolean} $important - Whether !important is required (in case of inline styles applied by JavaScript, and therefore out of CSS context)
+/// @sample: @include box-shadow(0, 0, $shadow-xxs, $gray);
+@mixin box-shadow($horizontal, $vertical, $blur, $color, $inset: false, $important: false) {
+  box-shadow: if($inset, inset, null) $horizontal $vertical $blur $color if($important, !important, null);
+}
+
+/// @mixin custom-spacings - Custom data attribute margin overrides (useful for bespoke layouts, beyond the realm of a components internals)
+/// @param {string} $marginType - The type of margin ("margin-left" || "margin-right" || "margin-bottom" || "margin-left"
+/// @sample: @include custom-spacings("margin-left")
+@mixin custom-spacings($marginType) {
+  [data-#{$marginType}="xxs"] {
+    #{$marginType}: $spacing-xxs;
+  }
+  [data-#{$marginType}="xs"] {
+    #{$marginType}: $spacing-xs;
+  }
+  [data-#{$marginType}="s"] {
+    #{$marginType}: $spacing-s;
+  }
+  [data-#{$marginType}="m"] {
+    #{$marginType}: $spacing-m;
+  }
+  [data-#{$marginType}="l"] {
+    #{$marginType}: $spacing-l;
+  }
+  [data-#{$marginType}="xl"] {
+    #{$marginType}: $spacing-xl;
+  }
+  [data-#{$marginType}="xxl"] {
+    #{$marginType}: $spacing-xxl;
+  }
+}
+
+/// @mixin - Fetch the font styles for a specific font
+/// @param {string} $key - The key to look for within the $fonts map
+/// @sample: @include get-font("header.m);
+@mixin get-font($key, $weight: 400) {
+  $font-styles: get-style-from-map($key, $fonts);
+
+  @each $property, $value in $font-styles {
+    & {
+      #{$property}: $value;
+    }
+  }
+
+  & {
+    font-weight: $weight;
+  }
+}
+
+/// @mixin gradient-background - Add a linear gradient to an element
+/// @param {hex} $hex - The hex code to use in the linear gradient stops
+/// @param {number} $light - The lighter opacity in the gradient
+/// @param {number} $dark - The darker opacity in the gradient
+/// @param {hex} $rgba-background - The background color to convert the rgba to rgb
+/// @sample: @include gradient-background(#c00000)
+@mixin gradient-background($hex, $light: 0.05, $dark: 0.15, $rgba-background: #fff) {
+  @include linear-gradient(
+    45deg,
+    rgba-to-rgb(rgba($hex, $light), $rgba-background) 0%,
+    rgba-to-rgb(rgba($hex, $dark), $rgba-background) 100%
+  );
+}
+
+/// @mixin hover - Apply :hover CSS styles only to devices which support :hover
+@mixin hover() {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+/// @mixin linear-gradient - Mixin printing a linear-gradient as well as a plain color fallback and the `-webkit-` prefixed declaration
+/// @param {string | List | Angle} $direction - Linear gradient direction
+/// @param {arglist} $color-stops - List of color-stops composing the gradient
+/// @sample: @include linear-gradient(#31b7d7, #edac7d);
+/// @sample: @include linear-gradient(to right, #e47d7d 0%, #c195d3 50%, #4fb4e8 100%);
+/// @sample: @include linear-gradient(42deg, #b58234 0%, #d2b545 50%, #d7c04d 50.01%, #ffffff 100%);
+@mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: ($direction, $color-stops);
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+
+  background: linear-gradient($direction, $color-stops);
+}
+
+/// @mixin map-to-props - Convert a Sass map into separate CSS properties
+/// @param {map} $map - The map keys to iterate over for conversion
+@mixin map-to-props($map) {
+  @if type-of($map) == map {
+    @each $prop, $value in $map {
+      @if type-of($value) != map {
+        #{inspect($prop)}: #{inspect($value)};
+      } @else {
+        @include map-to-props($value);
+      }
+    }
+  }
+}
+
+/// @mixin scrollbar - Attached a themed scrollbar to a specific DOM element
+@mixin scrollbar($thumb-background, $track-background, $width, $height: 10px, $radius: null) {
+  $border-radius: if($radius, $radius, 0);
+
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-background;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $track-background;
+    border-radius: $border-radius;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: $height;
+  }
+}
+
+/// @mixin - Apply specific styles to an element for each available site theme
+/// @param {string} - The CSS property to apply the map lookup return against
+/// @param {string} - The themes map key to lookup
+@mixin theme($property, $key, $assign-to: null) {
+  @if $assign-to {
+    // Generate CSS for ONLY the @assign-to theme
+    [data-theme="#{$assign-to}"] & {
+      #{$property}: get-style($assign-to + "." + $key);
+    }
+  } @else {
+    // Generate CSS for EVERY theme
+    @each $theme-name, $theme-props in $themes {
+      // &[data-theme=#{$theme-name}],
+      [data-theme="#{$theme-name}"] & {
+        #{$property}: get-style($theme-name + "." + $key);
+      }
+    }
+  }
+}
+
+/// @mixin - Apply specific styles to an element for each available site theme
+///        - This mixin exists because just for the body, styles are attached to itself
+///        - If running this through theme(), that would result in ALOT of unnecessary code being created
+/// @param {string} - The CSS property to apply the map lookup return against
+/// @param {string} - The themes map key to lookup
+@mixin theme-root-node($property, $key) {
+  @each $theme-name, $theme-props in $themes {
+    &[data-theme="#{$theme-name}"] {
+      #{$property}: get-style($theme-name + "." + $key);
+    }
+  }
+}
+
+/// @mixin touch-device - Apply @content against any devices who DO NOT support :hover (ie: touch devices / mobiles)
+@mixin touch-device() {
+  @media (hover: none) {
+    @content;
+  }
+}

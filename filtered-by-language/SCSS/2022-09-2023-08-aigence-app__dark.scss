@@ -1,0 +1,272 @@
+@use "sass:map";
+
+@import "@aigence/styles/_functions";
+
+$theme-dark-base: map.get($colours-map, "black");
+
+// These colours determine what background an rgba alpha is merged with when creating the corresponding (non-alpha) flat hex
+$rgba-background-base: map.get($colours-map, "neutral-8");
+$rgba-background-components: map.get($colours-map, "black");
+
+$theme-dark-5: rgba-to-rgb(rgba($theme-dark-base, 0.05), $rgba-background-base);
+$theme-dark-10: rgba-to-rgb(rgba($theme-dark-base, 0.1), $rgba-background-base);
+$theme-dark-20: rgba-to-rgb(rgba($theme-dark-base, 0.2), $rgba-background-base);
+$theme-dark-30: rgba-to-rgb(rgba($theme-dark-base, 0.3), $rgba-background-base);
+$theme-dark-40: rgba-to-rgb(rgba($theme-dark-base, 0.4), $rgba-background-base);
+$theme-dark-50: rgba-to-rgb(rgba($theme-dark-base, 0.5), $rgba-background-base);
+$theme-dark-60: rgba-to-rgb(rgba($theme-dark-base, 0.6), $rgba-background-base);
+$theme-dark-70: rgba-to-rgb(rgba($theme-dark-base, 0.7), $rgba-background-base);
+$theme-dark-80: rgba-to-rgb(rgba($theme-dark-base, 0.8), $rgba-background-base);
+$theme-dark-90: rgba-to-rgb(rgba($theme-dark-base, 0.9), $rgba-background-base);
+
+$theme-dark-highlight: map.get($colours-map, "coral");
+
+$theme-dark: (
+  "base": $theme-dark-base,
+  "base-5": $theme-dark-5,
+  "base-10": $theme-dark-10,
+  "base-20": $theme-dark-20,
+  "base-30": $theme-dark-30,
+  "base-40": $theme-dark-40,
+  "base-50": $theme-dark-50,
+  "base-60": $theme-dark-60,
+  "base-70": $theme-dark-70,
+  "base-80": $theme-dark-80,
+  "base-90": $theme-dark-90,
+  // Components
+  accordion:
+    (
+      "border-colour": $theme-dark-70,
+      "header-background": $theme-dark-80,
+    ),
+  "bar-chart": (
+    "axis-colour": $theme-dark-60,
+  ),
+  breadcrumb: (
+    "arrow-colour": map.get($colours-map, "white"),
+  ),
+  bubble: (
+    background: $theme-dark-90,
+  ),
+  button: (
+    "secondary-background": map.get($colours-map, "violet"),
+  ),
+  card: (
+    background: $theme-dark-80,
+    "background-opacity-dark": 0.75,
+    "background-opacity-light": 1,
+  ),
+  "contact-card": (
+    "hover-background": $theme-dark-90,
+    "separator-colour": $theme-dark-70,
+  ),
+  "data-table": (
+    "alternating-row-background": $theme-dark-70,
+    background: $theme-dark-80,
+    "border-colour": $theme-dark-70,
+    "edit-column-background": $theme-dark-70,
+    "header-background": $theme-dark-90,
+    "icons-for-mobile": (
+      fill: map.get($colours-map, "white"),
+    ),
+    "suffix-row-arrow-stroke": $theme-dark-10,
+  ),
+  datepicker: (
+    background: $theme-dark-90,
+    "border-colour": $theme-dark-70,
+    "centre-separator-colour": $theme-dark-70,
+    "day-colour": $theme-dark-10,
+    "header-background": $theme-dark-90,
+    "header-colour": $theme-dark-10,
+    "header-prefix-colour": $theme-dark-40,
+    "inside-fieldset-background": $theme-dark-70,
+    "range-background": $theme-dark-70,
+    shadow: $theme-dark-base,
+    "weekend-background": rgba($theme-dark-base, 0.75),
+    "weekend-font-colour": $theme-dark-70,
+    "weekend-shadow": $theme-dark-60,
+  ),
+  debug: (
+    "arrow-colour": $theme-dark-20,
+    background: $theme-dark-80,
+    "border-colour": $theme-dark-70,
+    "content-font-colour": $theme-dark-20,
+    "scrollbar-thumb-background": map.get($colours-map, "violet"),
+    "scrollbar-track-background": map.get($colours-map, "neutral-6"),
+    "toggle-background": $theme-dark-70,
+    "toggle-background-header": $theme-dark-60,
+  ),
+  demos: (
+    "border-colour": $theme-dark-60,
+    "header-background": $theme-dark-90,
+    "header-separator-colour": $theme-dark-highlight,
+    "page-background": $theme-dark-70,
+  ),
+  "disabled-fieldset": (
+    "background": rgba($theme-dark-80, 0.9),
+  ),
+  "document-review": (
+    background: $theme-dark-90,
+    "icon-colour": $theme-dark-20,
+    "icon-gradient-dark": $theme-dark-80,
+    "icon-gradient-light": $theme-dark-70,
+    "icons-background": $theme-dark-70,
+    "icons-separator": $theme-dark-40,
+  ),
+  "employee-card": (
+    "background": $theme-dark-90,
+    "separator-colour": $theme-dark-70,
+  ),
+  expandable: (
+    "border-colour": $theme-dark-70,
+    "header-background": $theme-dark-80,
+  ),
+  fieldset: (
+    background: $theme-dark-80,
+    "border-colour": $theme-dark-50,
+    "heading-background": $theme-dark-90,
+    "hover-background": $theme-dark-20,
+    "hover-font-colour": $theme-dark-90,
+  ),
+  "filter-bar": (
+    background: $theme-dark-80,
+  ),
+  "form-help": (
+    "background": $theme-dark-70,
+  ),
+  grid: (
+    "column-background": $theme-dark-50,
+    "column-background-mute": rgba($theme-dark-50, 0.3),
+    "column-border": $theme-dark-10,
+  ),
+  global: (
+    "blocker-overlay-background": rgba($theme-dark-base, 0.9),
+    "font-colour": map.get($colours-map, "white"),
+    "formfield-background": $theme-dark-60,
+    "formfield-disabled-background": $theme-dark-80,
+    "formfield-font-colour": $theme-dark-20,
+    "formfield-placeholder-colour": $theme-dark-30,
+    "formfield-transparent-background": transparent,
+    "highlight-colour": $theme-dark-highlight,
+    "rgba-background-base": map.get($colours-map, "black"),
+    "rgba-background-components": $rgba-background-components,
+    "site-background": $theme-dark-90,
+  ),
+  heading: (
+    "font-colour": $theme-dark-highlight,
+  ),
+  "icon-list": (
+    "animated-hover-background": $theme-dark-90,
+    "animated-hover-colour": map.get($colours-map, "white"),
+  ),
+  "image-upload": (
+    background: $theme-dark-80,
+    "border-colour": $theme-dark-60,
+    "icon-colour": $theme-dark-20,
+  ),
+  "initials-in-circle": (
+    background: $theme-dark-70,
+  ),
+  "leave-calendar": (
+    "avatar-icon-colour": map.get($colours-map, "white"),
+    "background": $theme-dark-80,
+    "day-background": $theme-dark-60,
+    "day-colour": $theme-dark-90,
+    "filters-background": $theme-dark-90,
+  ),
+  "leave-calendar-list": (
+    "bar-background": rgba($theme-dark-highlight, 0.75),
+    "border-colour": $theme-dark-60,
+    "cell-background": $theme-dark-80,
+    "cell-hover-background": rgba($theme-dark-highlight, 0.2),
+    "employee-icon-colour": $theme-dark-30,
+    "weekend-cell-background": $theme-dark-70,
+  ),
+  "leave-request-summary": (
+    "active-text-colour": $theme-dark-20,
+    "inactive-text-colour": $theme-dark-60,
+  ),
+  modal: (
+    "header-background": $theme-dark-base,
+    "footer-background": $theme-dark-base,
+    "header-colour": $theme-dark-highlight,
+    "outer-background": $theme-dark-90,
+    "separator-colour": $theme-dark-80,
+  ),
+  notification: (
+    "background-opacity": 1,
+  ),
+  notifications: (
+    "separator-colour": $theme-dark-70,
+  ),
+  "payslip-breakdown": (
+    "background": $theme-dark-80,
+    "divider-colour": $theme-dark-50,
+    "icon-colour": $theme-dark-highlight,
+    "itemisation-list-divider-colour": $theme-dark-70,
+  ),
+  "progress-stepper": (
+    "step-background": $theme-dark-60,
+    "step-background-disabled": $theme-dark-70,
+    "step-border-colour-active": $theme-dark-30,
+    "step-border-colour-disabled": $theme-dark-60,
+    "surround-background": $theme-dark-90,
+    "tram-line-colour": $theme-dark-70,
+  ),
+  scrollbar: (
+    "track-background": $theme-dark-30,
+  ),
+  sidebar: (
+    "background-dark": $theme-dark-base,
+    "background-light": $theme-dark-90,
+    "border-right-colour": $theme-dark-60,
+    "icon-colour": map.get($colours-map, "white"),
+  ),
+  "signed-in": (
+    "background": $theme-dark-80,
+    "border-colour": $theme-dark-70,
+    "heading-background": $theme-dark-90,
+  ),
+  statistic: (
+    "number-colour": $theme-dark-highlight,
+  ),
+  tabs: (
+    "active-background": $theme-dark-20,
+    "active-colour": $theme-dark-base,
+    background: $theme-dark-90,
+    "border-colour": $theme-dark-70,
+    "number-active-background": $theme-dark-70,
+    "number-active-colour": map.get($colours-map, "white"),
+    "number-inactive-background": map.get($colours-map, "white"),
+    "number-inactive-colour": $theme-dark-70,
+  ),
+  "tax-breakdown": (
+    "list-background": $theme-dark-70,
+    "list-border": $theme-dark-80,
+    "totals-list-background": $theme-dark-50,
+    "totals-list-border": $theme-dark-90,
+  ),
+  "text-in-circle": (
+    background: map.get($colours-map, "white"),
+    colour: $theme-dark-70,
+  ),
+  "three-dots": (
+    "dot-colour": map.get($colours-map, "white"),
+    "icon-colour": map.get($colours-map, "white"),
+    "icon-disabled-colour": $theme-dark-60
+  ),
+  "toggle-block": (
+    "border-colour": $theme-dark-70,
+    "header-background": $theme-dark-80,
+  ),
+  tooltip: (
+    background: rgba(map.get($colours-map, "white"), 0.9),
+    colour: $theme-dark-base,
+  ),
+  "user-profile": (
+    initials: (
+      background: map.get($colours-map, "white"),
+      "font-colour": map.get($colours-map, "black"),
+    ),
+  ),
+);
