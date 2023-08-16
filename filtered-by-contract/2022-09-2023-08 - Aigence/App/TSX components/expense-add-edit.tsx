@@ -5,7 +5,6 @@ import Grid from "@aigence/components/global/grid";
 import Icon from "@aigence/components/atoms/icon";
 import ImageZoom from "@aigence/components/molecules/image-zoom";
 import ImageUpload from "@aigence/components/molecules/image-upload";
-// import Notification from "@aigence/components/molecules/notification";
 import Select from "@aigence/components/atoms/select";
 import Textarea from "@aigence/components/atoms/textarea";
 import Textfield from "@aigence/components/atoms/textfield";
