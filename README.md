@@ -20,6 +20,7 @@ The code samples provided contain examples coded in the following languages:
 
 * [Custom jQuery plugins](#Custom-jQuery-plugins)
 * [Cypress](#Cypress)
+* [GraphQL](#GraphQL)
 * [Grunt](#Grunt)
 * [Gulp](#Gulp)
 * [HTML](#HTML)
@@ -38,6 +39,7 @@ The code samples provided contain examples coded in the following languages:
 * [TSX components](#TSX-components)
 * [TSX pages](#TSX-pages)
 * [Type definitions](#Type-definitions)
+* [Utilities](#Utilities)
 
 In the case of all of these files, a specific file naming convention has been used:
 
@@ -62,6 +64,13 @@ It's rare that I'll get asked to code anything in jQuery nowadays. However, a fe
 I've used Cypress a little in a couple of contracts, but have never really pushed it that far in terms of what it's capable of.
 
 [Click here to view **Cypress** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Cypress)
+
+- - -
+### **GraphQL**
+
+I started using GraphQL in 2023, so am relatively new to the technology. I have however used it alongside Apollo, and with caching, polling, so have a good understanding of some of its main features.
+
+[Click here to view **GraphQL** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/GraphQL)
 
 - - -
 ### **Grunt**
@@ -189,7 +198,19 @@ From 2019 onwards, I've been working on projects using React + TypeScript. This 
 
 [Click here to view **Type definitions** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Type%20definitions)
 
+- - -
+### **Utilities**
+
+Every project I work on has a number of centralized utility functions, which can be accessed from anywhere in the code.
+
+[Click here to view **Utilities** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Utilities)
+
 # Filtered by contract
+
+## **Aigence**
+**September 2022 - August 2023**
+
+I led a team of 3x Front-End Developers, working on a greenfield HR platform that aims to provide the features of solutions such as Workday, in terms of Leave Requests, Payroll, Timesheets etc, but in a way whereby the control is put in the fingers of the users. The idea being that much of the need to depend on a HR team can therefore be removed, resulting in the increases to the speed and efficiency of the tasks needing to be done.
 
 ## **Deals Plus**
 **February 2022 - September 2022**
