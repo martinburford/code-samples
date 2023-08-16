@@ -29,7 +29,7 @@ The code samples provided contain examples coded in the following languages:
 * [JSX components](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/JSX%20components)
 * [JSX pages](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/JSX%20pages)
 * [MermaidJS](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/MermaidJS)
-* [NextJS mock APIs](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/NextJS%20Mock%20APIs)
+* [NextJS mock APIs](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/NextJS%20mock%20APIs)
 * [NodeJS](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/NodeJS)
 * [PHP](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/PHP)
 * [Pug templates](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/Pug%20templates)
@@ -135,7 +135,7 @@ There are SO many ways to code pages within React. As a contractor, sometimes I 
 
 Whilst the majority of projects I work on include a back-end, I often create a mock API layer using NextJS, so that I can progress with front-end development without being reliant on a back-end being written at the same time.
 
-[Click here to view **NextJS Mock APIs** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/NextJS%20Mock%20APIs)
+[Click here to view **NextJS Mock APIs** code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-language/NextJS%20mock%20APIs)
 
 - - -
 ### **NodeJS**
