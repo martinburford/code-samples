@@ -1,0 +1,214 @@
+@import "styles/_functions";
+@import "styles/_mixins";
+
+$theme-light-base: get-style-from-map("primary.400", $colours-map);
+
+// Semi-opaque
+$theme-light-alpha-5: rgba($theme-light-base, 0.05);
+$theme-light-alpha-10: rgba($theme-light-base, 0.1);
+$theme-light-alpha-20: rgba($theme-light-base, 0.2);
+$theme-light-alpha-30: rgba($theme-light-base, 0.3);
+$theme-light-alpha-40: rgba($theme-light-base, 0.4);
+$theme-light-alpha-50: rgba($theme-light-base, 0.5);
+$theme-light-alpha-60: rgba($theme-light-base, 0.6);
+$theme-light-alpha-70: rgba($theme-light-base, 0.7);
+$theme-light-alpha-80: rgba($theme-light-base, 0.8);
+$theme-light-alpha-90: rgba($theme-light-base, 0.9);
+
+// Flat hexes
+$theme-light-flat-5: lighten($theme-light-base, 40%);
+$theme-light-flat-10: lighten($theme-light-base, 36%);
+$theme-light-flat-20: lighten($theme-light-base, 32%);
+$theme-light-flat-30: lighten($theme-light-base, 28%);
+$theme-light-flat-40: lighten($theme-light-base, 24%);
+$theme-light-flat-50: lighten($theme-light-base, 20%);
+$theme-light-flat-60: lighten($theme-light-base, 16%);
+$theme-light-flat-70: lighten($theme-light-base, 12%);
+$theme-light-flat-80: lighten($theme-light-base, 8%);
+$theme-light-flat-90: lighten($theme-light-base, 4%);
+
+$theme-light-box-background: $white-alpha-30;
+$theme-light-box-background-hover: $white-alpha-40;
+
+$theme-light-highlight: get-style-from-map("primary.600", $colours-map);
+
+$theme-light: (
+  // Components
+  button:
+    (
+      background: get-style-from-map("primary.500", $colours-map),
+      "icon-background": get-style-from-map("gray.200", $colours-map),
+      "text-colour": $base-white,
+    ),
+  card: (
+    background: $theme-light-box-background,
+  ),
+  chip: (
+    "icon-background-opacity": 0.75,
+  ),
+  "code-samples": (
+    background: $theme-light-box-background,
+    "background-hover": $theme-light-box-background-hover,
+  ),
+  "cv-download": (
+    "arrow-stroke": $theme-light-highlight,
+    "mobile-background": $theme-light-box-background,
+    "mobile-hover-background": $theme-light-box-background-hover,
+    "updated-font-colour": $base-black,
+  ),
+  "data-table": (
+    background: $theme-light-box-background,
+    "header-background": $theme-light-alpha-20,
+    "row-hover-background": $theme-light-box-background-hover,
+  ),
+  debug: (
+    background: $theme-light-box-background,
+    "content-font-color": green,
+    "scrollbar-thumb-background": blue,
+    "scrollbar-track-background": indigo,
+  ),
+  divider: (
+    background:  get-style-from-map("gray.300", $colours-map),
+  ),
+  global: (
+    "central-background-colour": $white-alpha-20,
+    "component-rgba-background": $base-white,
+    "font-colour": $black-alpha-70,
+    "glow-colour": get-style-from-map("gray.400", $colours-map),
+    "glow-colour-highlight": $base-black,
+    "gradient-separator-colour": lighten(get-style-from-map("gray.400", $colours-map), 10%),
+    "highlight-colour": $theme-light-highlight,
+    "link-colour": get-style-from-map("primary.500", $colours-map),
+    "link-colour-hover": get-style-from-map("base.black", $colours-map),
+    "page-background": $theme-light-flat-30,
+    "page-grid-colour": $white-alpha-10,
+    "scrollbar-border-colour": get-style-from-map("gray.300", $colours-map),
+    "scrollbar-thumb-background": get-style-from-map("gray.400", $colours-map),
+    "scrollbar-track-background": get-style-from-map("gray.50", $colours-map),
+    "separator-colour": rgba(get-style-from-map("primary.200", $colours-map), 0.75),
+  ),
+  grid: (
+    "column-background": $theme-light-alpha-10,
+    "column-background-muted": $theme-light-alpha-5,
+  ),
+  hamburger: (
+    "border-colour": $black-alpha-10,
+    "line-colour": $base-white,
+    "line-colour-active": $theme-light-highlight,
+  ),
+  header: (
+    background: get-style-from-map("primary.700", $colours-map),
+    "cv-link-background": $white-alpha-10,
+    "cv-link-background-hover": $white-alpha-80,
+    "cv-link-colour": $base-white,
+    "primary-heading-colour": $white-alpha-90,
+    "secondary-heading-colour": $white-alpha-70,
+  ),
+  heading: (
+    "font-colour": get-style-from-map("base.black", $colours-map),
+  ),
+  icon: (
+    colour: $base-black,
+  ),
+  "icon-list": (
+    "background-hover": rgba($theme-light-highlight, 0.2),
+  ),
+  navigation: (
+    "home-icon-colour": get-style-from-map("primary.600", $colours-map),
+    "icon-background": $white-alpha-80,
+    "single-link-background": $white-alpha-50,
+    "single-link-background-hover": rgba($theme-light-highlight, 0.2),
+  ),
+  outer: (
+    "border-colour": get-style-from-map("primary.200", $colours-map),
+  ),
+  "portfolio-listing": (
+    background: $theme-light-box-background,
+    "background-hover": $theme-light-box-background-hover,
+    "role-type-background": $theme-light-highlight,
+    "role-type-colour": $base-white,
+  ),
+  quicklinks: (
+    "background-active": $white-alpha-20,
+    "background-hover": $white-alpha-10,
+    "border-colour": rgba($theme-light-highlight, 0.75),
+    "border-colour-active": $white-alpha-20,
+    "tooltip-background": $base-white
+  ),
+  recommendation: (
+    background: none,
+    "content-background": $white-alpha-60,
+    "header-background": $white-alpha-90,
+    "header-font-colour": $black-alpha-70,
+    "image-background": $black-alpha-10,
+    "quote-colour": get-style-from-map("gray.400", $colours-map),
+  ),
+  recommendations: (
+    "toggle-background": $white-alpha-80,
+    "toggle-hover-background": $base-white,
+  ),
+  "role-summary": (
+    background: $white-alpha-50,
+    "header-suffix-font-colour": $black-alpha-70,
+    "logo-background": $white-alpha-90,
+    "within-box": (
+      "gradient-end": 0.9,
+      "gradient-start": 1,
+      "header-background": $theme-light-highlight,
+      "header-dates-background": $black-alpha-10,
+      "header-font-colour": $base-white,
+    )
+  ),
+  "summary": (
+    background: $theme-light-box-background,
+    "icon-background": $white-alpha-40,
+    "icon-colour": $theme-light-highlight,
+    "separator-colour": $theme-light-flat-30,
+  ),
+  "tag-cloud": (
+    background: $theme-light-box-background,
+    "tag-top-font-colour": get-style-from-map("base.black", $colours-map),
+    "tag-font-colour": get-style-from-map("gray.600", $colours-map),
+  ),
+  "toggle-block": (
+    "content-background": $theme-light-box-background,
+    "embedded-accordion-header-background-highlight": rgba($theme-light-highlight, 0.085),
+    "header-background": $white-alpha-50,
+    "header-background-highlight": rgba($theme-light-highlight, 0.2)
+  ),
+  // Storybook
+  storybook:
+    (
+      argstable: (
+        background: $base-white,
+        "code-background": get-style-from-map("gray.50", $colours-map),
+        "code-colour": $theme-light-highlight,
+        "header-row-background": $theme-light-highlight,
+        "separator-colour": get-style-from-map("gray.200", $colours-map),
+      ),
+      "code-block": (
+        background: get-style-from-map("gray.100", $colours-map),
+        "footer-background": $base-white,
+      ),
+      "content-justified": (
+        "slot-background": $theme-light-alpha-10,
+      ),
+      quicklinks: (
+        background: $theme-light-alpha-10,
+      ),
+      story: (
+        background: $base-white,
+      ),
+      "story-heading": (
+        background: get-style-from-map("gray.100", $colours-map),
+        "heading-colour": $theme-light-highlight,
+      ),
+      summary: (
+        background: $theme-light-alpha-10,
+        "icon-colour": $theme-light-highlight,
+      ),
+      typography: (
+        "font-sizes-background": get-style-from-map("gray.50", $colours-map),
+      ),
+    )
+);

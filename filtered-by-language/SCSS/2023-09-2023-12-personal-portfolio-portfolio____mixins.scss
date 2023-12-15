@@ -1,0 +1,199 @@
+@import "./functions";
+@import "./variables/_fonts";
+@import "./variables/_shadows";
+
+/// @mixin box-shadow - Add a box shadow to an element
+/// @param {number} $horizontal - The horizontal offset of the shadow
+/// @param {number} $vertical - The vertical offset of the shadow
+/// @param {number} $blur - The blur radius of the shadow
+/// @param {string} $color - The hex / rgba of the shadow
+/// @param {boolean} $important - Whether !important is required (in case of inline styles applied by JavaScript, and therefore out of CSS context)
+/// @sample: @include box-shadow(0, 0, $shadow-xxs, $gray);
+@mixin box-shadow($horizontal, $vertical, $blur, $color, $inset: false, $important: false) {
+  box-shadow: if($inset, inset, null) $horizontal $vertical $blur $color if($important, !important, null);
+}
+
+/// @mixin custom-spacings - Custom data attribute margin overrides (useful for bespoke layouts, beyond the realm of a components internals)
+/// @param {string} $marginType - The type of margin ("margin-left" || "margin-right" || "margin-bottom" || "margin-left"
+/// @sample: @include custom-spacings("margin-left")
+@mixin custom-spacings($marginType) {
+  [data-#{$marginType}="xxs"] {
+    #{$marginType}: $spacing-xxs;
+  }
+  [data-#{$marginType}="xs"] {
+    #{$marginType}: $spacing-xs;
+  }
+  [data-#{$marginType}="s"] {
+    #{$marginType}: $spacing-s;
+  }
+  [data-#{$marginType}="m"] {
+    #{$marginType}: $spacing-m;
+  }
+  [data-#{$marginType}="l"] {
+    #{$marginType}: $spacing-l;
+  }
+  [data-#{$marginType}="xl"] {
+    #{$marginType}: $spacing-xl;
+  }
+  [data-#{$marginType}="xxl"] {
+    #{$marginType}: $spacing-xxl;
+  }
+}
+
+/// @mixin - Fetch the colour styles for a specific colour palette name
+/// @param {string} $property - The CSS property that the returned colour will be assigned to (eg: "background", "color")
+/// @param {string} $key - The key to look for within the $colours-map map
+/// @sample: @include get-colour("background", "base.black);
+@mixin get-colour($property, $key) {
+  & {
+    #{$property}: get-style-from-map($key, $colours-map);
+  }
+}
+
+/// @mixin - Fetch the font styles for a specific font
+/// @param {string} $key - The key to look for within the $fonts map
+/// @sample: @include get-font("header.m);
+@mixin get-font($key, $weight: 400) {
+  $font-styles: get-style-from-map($key, $fonts);
+
+  @each $property, $value in $font-styles {
+    & {
+      #{$property}: $value;
+    }
+  }
+
+  & {
+    font-weight: $weight;
+  }
+}
+
+/// @mixin - Apply a glow to an element, specific to a theme type
+/// @param {string} $theme-name - "dark" | "light"
+/// @sample: @include glow("dark");
+@mixin glow($theme-name) {
+  [data-theme="#{$theme-name}"] & {
+    @include box-shadow(0, 0, $shadow-xs, get-style-from-map($theme-name + ".global.glow-colour", $themes));
+  }
+}
+
+/// @mixin gradient-background - Add a linear gradient to an element
+/// @param {hex} $hex - The hex code to use in the linear gradient stops
+/// @param {number} $light - The lighter opacity in the gradient
+/// @param {number} $dark - The darker opacity in the gradient
+/// @param {hex} $rgba-background - The background color to convert the rgba to rgb
+/// @param {string} $degrees - The degree to perform the gradient at
+/// @sample: @include gradient-background(#c00000)
+@mixin gradient-background($hex, $light: 0.05, $dark: 0.15, $rgba-background: #fff, $degrees: 180deg) {
+  @include linear-gradient(
+    $degrees,
+    rgba-to-rgb(rgba($hex, $light), $rgba-background) 0%,
+    rgba-to-rgb(rgba($hex, $dark), $rgba-background) 100%
+  );
+}
+
+/// @mixin hover - Apply :hover CSS styles only to devices which support :hover
+@mixin hover() {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+/// @mixin linear-gradient - Mixin printing a linear-gradient as well as a plain color fallback and the `-webkit-` prefixed declaration
+/// @param {string | List | Angle} $direction - Linear gradient direction
+/// @param {arglist} $color-stops - List of color-stops composing the gradient
+/// @sample: @include linear-gradient(#31b7d7, #edac7d);
+/// @sample: @include linear-gradient(to right, #e47d7d 0%, #c195d3 50%, #4fb4e8 100%);
+/// @sample: @include linear-gradient(42deg, #b58234 0%, #d2b545 50%, #d7c04d 50.01%, #ffffff 100%);
+@mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: ($direction, $color-stops);
+    $direction: 180deg;
+  }
+
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+
+  background: linear-gradient($direction, $color-stops);
+}
+
+/// @mixin scrollbar - Attach a themed scrollbar to a specific DOM element
+/// @param {string} $thumb-background - The background of the thumb of the scrollbar
+/// @param {string} $track-background - The background of the track of the scrollbar
+/// @param {string} $border-colour - The border colour of the thumb and track of the scrollbar
+/// @param {string} $width - The width in pixels of the scrollbar
+/// @param {string} $height - The width in pixels of the scrollbar
+/// @sample @include scrollbar(#cccccc, #dedede, 10px, 10px);
+@mixin scrollbar($thumb-background, $track-background, $border-colour, $width, $height: 10px) {
+  &::-webkit-scrollbar {
+    height: $height;
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: $border-xxs solid tint($border-colour, 15%);
+    background: $thumb-background;
+    border-radius: $global-border-radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    border: $border-xxs solid $border-colour;
+    background: $track-background;
+    border-radius: $global-border-radius;
+  }
+}
+
+/// @mixin - Apply specific styles to an element for each available site theme
+/// @param {string} - The CSS property to apply the map lookup return against
+/// @param {string} - The themes map key to lookup
+/// @sample @include theme("background", "component-name.key");
+/// @sample @include theme("background", "header.background");
+/// @sample @include theme("background", "header.background", "dark");
+@mixin theme($property, $key, $assign-to: null) {
+  @if $assign-to {
+    // Generate CSS for ONLY the @assign-to theme
+    [data-theme="#{$assign-to}"] & {
+      #{$property}: get-theme-style($assign-to + "." + $key);
+    }
+  } @else {
+    // Generate CSS for EVERY theme
+    @each $theme-name, $theme-props in $themes {
+      [data-theme="#{$theme-name}"] & {
+        #{$property}: get-theme-style($theme-name + "." + $key);
+      }
+    }
+  }
+}
+
+/// @mixin - Apply a vertical gradient separator bar to an element
+/// @param {string} - The breakpoint type to show generate the bar for
+/// @param {string} - "before" || "after"
+/// @sample @include vertical-gradient-separator($tablet-portrait-up, "before");
+/// @sample @include vertical-gradient-separator($desktop-up, "after");
+@mixin vertical-gradient-separator($breakpoint, $pseudo-position) {
+  // Dynamic values based on the pseudo element positioning passed to the mixin
+  $paddingType: if($pseudo-position == "before", "left", "right");
+  $leftPosition: if($pseudo-position == "before", 0, 100%);
+
+  @include breakpoint($breakpoint) {
+    margin-top: 0;
+    position: relative;
+    padding-#{$paddingType}: $spacing-m;
+
+    &:#{$pseudo-position} {
+      content: "";
+      height: 100%;
+      left: $leftPosition;
+      position: absolute;
+      top: 0;
+      width: $border-xxs;
+
+      @each $theme-name, $theme-props in $themes {
+        $background: get-style-from-map($theme-name + ".global.gradient-separator-colour", $themes);
+
+        [data-theme="#{$theme-name}"] & {
+          @include linear-gradient(180deg, transparent 0%, $background 10%, 90%, transparent 100%);
+        }
+      }
+    }
+  }
+}

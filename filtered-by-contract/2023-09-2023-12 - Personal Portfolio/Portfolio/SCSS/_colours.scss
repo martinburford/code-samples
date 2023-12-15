@@ -1,0 +1,180 @@
+@import "styles/_functions";
+
+$colours-map: (
+  "base": (
+    "black": #000000,
+    "white": #ffffff,
+  ),
+  "gray": (
+    "25": #fcfcfd,
+    "50": #f9fafb,
+    "100": #f2f4f7,
+    "200": #eaecf0,
+    "300": #d0d5dd,
+    "400": #98a2b3,
+    "500": #667085,
+    "600": #475467,
+    "700": #344054,
+    "800": #1d2939,
+    "900": #101828,
+  ),
+  "primary": (
+    "25": #edf6fd,
+    "50": #dbeefb,
+    "100": #a4d4f4,
+    "200": #80c3ef,
+    "300": #49a9e9,
+    "400": #2598e4,
+    "500": #187cc0,
+    "600": #146aa3,
+    "700": #10537f,
+    "800": #0b3b5b,
+    "900": #072336,
+  ),
+  "error": (
+    "25": #fffbfa,
+    "50": #fef3f2,
+    "100": #fee4e2,
+    "200": #fecdca,
+    "300": #fda29b,
+    "400": #f97066,
+    "500": #f04438,
+    "600": #d92d20,
+    "700": #b42318,
+    "800": #912018,
+    "900": #7a271a,
+  ),
+  "warning": (
+    "25": #fffcf5,
+    "50": #fffaeb,
+    "100": #fef0c7,
+    "200": #fedf89,
+    "300": #fec84b,
+    "400": #fdb022,
+    "500": #f79009,
+    "600": #dc6803,
+    "700": #b54708,
+    "800": #93370d,
+    "900": #7a2e0e,
+  ),
+  "success": (
+    "25": #f6fef9,
+    "50": #ecfdf3,
+    "100": #d1fadf,
+    "200": #a6f4c5,
+    "300": #6ce9a6,
+    "400": #32d583,
+    "500": #12b76a,
+    "600": #039855,
+    "700": #027a48,
+    "800": #05603a,
+    "900": #054f31,
+  ),
+  "technologies": (
+    "ajaxXhr": #f0db4f,
+    "agGrid": #55b4c8,
+    "amCharts": #5b5b6c,
+    "antDesign": #2f6af6,
+    "apollo": #3e26b4,
+    "asyncAwait": #f0db4f,
+    "axios": #7952b3,
+    "babel": #efd564,
+    "bem": #000000,
+    "bootstrap": #7952b3,
+    "browserify": #47688e,
+    "chai": #921f19,
+    "chromatic": #ea5f36,
+    "css": #2f6db3,
+    "cypress": #000000,
+    "dotNetCore": #633d92,
+    "enzyme": #d05f5f,
+    "es6": #e16e37,
+    "escenic": #606dab,
+    "expressJS": #000000,
+    "fetch": #f0db4f,
+    "flexbox": #2f6db3,
+    "github": #000000,
+    "googleMaps": #35a85b,
+    "graphql": #e535ab,
+    "grunt": #eead42,
+    "gulp": #be4f4d,
+    "heatmap": #e91e63,
+    "html": #ef652a,
+    "icoMoon": #000000,
+    "jade": #b23533,
+    "jasmine": #8a4182,
+    "javascript": #f0db4f,
+    "jest": #8e475b,
+    "jquery": #2d66a7,
+    "json": #000000,
+    "karma": #74c2a8,
+    "less": #214674,
+    "loDash": #5190f7,
+    "lottieJS": #64dab5,
+    "mermaidJS": #eb4a72,
+    "mocha": #87694d,
+    "nextAuth": #8e39ee,
+    "nextJS": #000000,
+    "nodeJS": #4f8543,
+    "npm": #bb453f,
+    "phantomJS": #4caaf9,
+    "php": #777bb3,
+    "postCSS": #cc463e,
+    "pug": #51352d,
+    "puppeteer": #60d0a1,
+    "pusherJS": #000000,
+    "react": #7ed7f9,
+    "reactContext": #7ed7f9,
+    "reactHookForm": #db628f,
+    "redux": #704cb6,
+    "reduxToolkit": #704cb6,
+    "responsive": #70b7e5,
+    "restAPI": #2c67bc,
+    "sass": #c16a98,
+    "sinon": #327093,
+    "snapshotTesting": #bdbf6d,
+    "storybook": #eb5685,
+    "styledComponents": #ff87af,
+    "styleguidist": #62d5fa,
+    "typescript": #3376c9,
+    "vercel": #000000,
+    "webpack": #3b76bb,
+    "websockets": #000000,
+    "yarn": #5096be
+  )
+);
+
+// Colours shared by both "dark" and "light" modes
+$base-black: get-style-from-map("base.black", $colours-map);
+$base-white: get-style-from-map("base.white", $colours-map);
+
+$black-alpha-5: rgba(get-style-from-map("base.black", $colours-map), 0.05);
+$black-alpha-10: rgba(get-style-from-map("base.black", $colours-map), 0.1);
+$black-alpha-20: rgba(get-style-from-map("base.black", $colours-map), 0.2);
+$black-alpha-30: rgba(get-style-from-map("base.black", $colours-map), 0.3);
+$black-alpha-40: rgba(get-style-from-map("base.black", $colours-map), 0.4);
+$black-alpha-50: rgba(get-style-from-map("base.black", $colours-map), 0.5);
+$black-alpha-60: rgba(get-style-from-map("base.black", $colours-map), 0.6);
+$black-alpha-70: rgba(get-style-from-map("base.black", $colours-map), 0.7);
+$black-alpha-80: rgba(get-style-from-map("base.black", $colours-map), 0.8);
+$black-alpha-90: rgba(get-style-from-map("base.black", $colours-map), 0.9);
+
+$white-alpha-5: rgba(get-style-from-map("base.white", $colours-map), 0.05);
+$white-alpha-10: rgba(get-style-from-map("base.white", $colours-map), 0.1);
+$white-alpha-20: rgba(get-style-from-map("base.white", $colours-map), 0.2);
+$white-alpha-30: rgba(get-style-from-map("base.white", $colours-map), 0.3);
+$white-alpha-40: rgba(get-style-from-map("base.white", $colours-map), 0.4);
+$white-alpha-50: rgba(get-style-from-map("base.white", $colours-map), 0.5);
+$white-alpha-60: rgba(get-style-from-map("base.white", $colours-map), 0.6);
+$white-alpha-70: rgba(get-style-from-map("base.white", $colours-map), 0.7);
+$white-alpha-80: rgba(get-style-from-map("base.white", $colours-map), 0.8);
+$white-alpha-90: rgba(get-style-from-map("base.white", $colours-map), 0.9);
+
+// Themes
+@import "styles/variables/themes/_dark";
+@import "styles/variables/themes/_light";
+
+$themes: (
+  "dark": $theme-dark,
+  "light": $theme-light,
+);

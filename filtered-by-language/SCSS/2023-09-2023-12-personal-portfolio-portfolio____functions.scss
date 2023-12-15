@@ -1,0 +1,133 @@
+/// @function deep-map-check - Check if a nested map has a value by the keys
+/// @param {map} $map - The input map
+/// @param {list} $keys - The list to check against
+/// @return {boolean} - Whether the nested map has a value by keys reference
+@function deep-map-check($map, $keys...) {
+  @if type-of($map) != "map" {
+    @error 'The argument $map: `#{$map}` is of incorrect type: `#{type-of($map)}`. Type of `Map` is required!';
+  }
+
+  @each $key in $keys {
+    @if not map-has-key($map, $key) {
+      @return false;
+    }
+
+    $map: map-get($map, $key);
+  }
+
+  @return true;
+}
+
+/// @function deep-map-get - Fetch a value from a nested map, by the keys specified
+/// @param {map} $map - The map to fetch the value from
+/// @param {list} $keys - The key(s) to fetch the value from
+/// @return {any} - The value(s) found at the desired path of the map
+@function deep-map-get($map, $keys...) {
+  @if type-of($map) != "map" {
+    @error 'The argument $map: `#{$map}` is of incorrect type: `#{type-of($map)}`. Type of `Map` is required!';
+  }
+
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+
+  @return $map;
+}
+
+/// @function get-theme-style - Access a nested map property and return it's value
+/// @param {string} $key - The key name
+/// @return {any} - The retrieved map key value
+@function get-theme-style($key, $map: $themes) {
+  $keys: str-explode($key, ".");
+
+  @if not deep-map-check($map, $keys...) {
+    @error 'The argument $map: `#{$map}` doesn\'t have some of the $keys: `#{$keys}`!';
+  }
+
+  @return deep-map-get($map, $keys...);
+}
+
+/// @function get-style-from-map - Access a nested map property and return it's value
+/// @param {string} $key - The key name
+/// @param {map} $map - The map to search through
+/// @return {any} - The retrieved map key value
+/// @sample get-style-from-map("primary.600", $colours-map);
+@function get-style-from-map($key, $map) {
+  $keys: str-explode($key, ".");
+
+  @if not deep-map-check($map, $keys...) {
+    @error 'The argument $map: #{$map} doesn\'t have some of the $keys: #{$keys}';
+  }
+
+  @return deep-map-get($map, $keys...);
+}
+
+/// @function rgba-to-rgb - Convert rgba to its rgb look-alike
+/// @param {color} $rgba - The alpha origin color (to convert)
+/// @param {color} $background - The color to use as a mix to generate the rgb
+/// @return {color} - The converted to rgb color code
+/// @sample: background-color: rgba-to-rgb(rgba(#c00000, 0.25);
+@function rgba-to-rgb($rgba, $background: #fff) {
+  @return mix(rgb(red($rgba), green($rgba), blue($rgba)), $background, alpha($rgba) * 100%);
+}
+
+/// @function str-explode - Split a string by a delimiter
+/// @param {string} $string - The string to split
+/// @param {string} $delimiter - The delimiter to split the string by
+/// @return {list} - The list compiled from the splitting
+@function str-explode($string, $delimiter: "") {
+  @if type-of($string) != "string" {
+    @error 'The argument $string: `#{$string}` is of incorrect type: `#{type-of($string)}`. Type of `String` is required!';
+  } @else if type-of($delimiter) != "string" {
+    @error 'The argument $string: `#{$string}` is of incorrect type: `#{type-of($string)}`. Type of `String` is required!';
+  }
+
+  $result: ();
+  $running: true;
+
+  @if str-length($delimiter) == 0 {
+    @for $i from 1 through str-length($string) {
+      $result: append($result, str-slice($string, $i, $i));
+    }
+
+    @return $result;
+  }
+
+  @while $running {
+    $index: str-index($string, $delimiter);
+
+    @if $index != null {
+      $item: str-slice($string, 1, ($index - 1));
+      $result: append($result, $item);
+      $string: str-slice($string, ($index + str-length($delimiter)));
+    } @else {
+      $running: false;
+    }
+  }
+
+  @return append($result, $string);
+}
+
+/// @function shade - Slightly darken a color
+/// @param {color} $color - color to shade
+/// @param {number} $percentage - percentage of $color in returned color
+/// @return {color} - The darkened colour
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+/// @function tint - Slightly lighten a color
+/// @param {color} $color - color to tint
+/// @param {number} $percentage - percentage of $color in returned color
+/// @return {color} - The lightened colour
+@function tint($color, $percentage) {
+  @return mix(white, $color, $percentage);
+}
+
+/// @function toRem - Convert a pixel value to rem
+/// @param {number} $pxValue - The pixel value to convert
+/// @return {string} - The converted pixel value to rem
+@function toRem($pxValue) {
+  $remValue: ($pxValue / 16) + rem; 
+  @return $remValue;
+}
