@@ -6,9 +6,9 @@
       "galleries": true,
       "github": {
         "projects": {
-          "portfolio": "https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio/Portfolio"
+          "portfolio": "https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2023-09-2023-12%20-%20Personal%20Portfolio/Portfolio"
         },
-        "role": "https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio"
+        "role": "https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2023-09-2023-12%20-%20Personal%20Portfolio"
       },
       "linkedProject": "portfolio",
       "responsive": true,
@@ -117,6 +117,7 @@
         "Sass (modules)",
         "Storybook",
         "TypeScript",
+        "Vercel",
         "Yarn"
       ]
     },
