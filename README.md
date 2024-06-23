@@ -123,7 +123,7 @@ I spent close to a month at Rehab, helping out on a project which provided walkt
 
 Axios, Babel, BEM, ES6, Flexbox, HTML, JSON, NPM, React, React hooks, Redux, Routing, Sass, Webpack
 
-> # Creative Technologist / React Developer @ Lloyds Bank**
+> # Creative Technologist / React Developer @ Lloyds Bank
 **January 2019 - July 2019**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/lloyds-bank-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
