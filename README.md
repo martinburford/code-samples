@@ -39,11 +39,12 @@ Apollo, Async / Await, Axios, Chromatic, ES6, Flexbox, GraphQL, HTML, Lo-dash, N
 ## **Deals Plus**
 **February 2022 - September 2022**
 
+<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/deals-plus-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
 I worked as the sole Front-End Developer, working on a complete re-write of a platform, which focused on offering a dashboard-style set of screens showing complex datasets for investment portfolios for both individuals and companies. The nature of the data involved was often complex, as a result leaning on comprehensive use of AG Grid for tabular data, along with close to 100 bespoke written React components, utilising both Sass and TypeScript. Also of note within this project was the inclusion of react-hook-form, since there were around 50 forms, enabling authenticated users to add, edit and delete a whole host of data attached to their individual investments.
 
 ### **Project title:** Tracker
 
-- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2022-02-2022-09%20-%20Deals%20Plus/Tracker)
+> [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2022-02-2022-09%20-%20Deals%20Plus/Tracker)
 
 ### **Technologies used:** 
 
