@@ -9,7 +9,7 @@ I've been a Front-End Developer for approximately 25 years. Technology has chang
 
 Within the samples provided in this repository, I've included what I see as a reasonable cross-section of the work I am often involved in. It is however only a small illustration of the type of work I have done. I've worked on over 150 websites in my career, ranging from white-label platforms, through to multi-lingual sites, arabic sites, right-to-left reading sites, device-only sites, responsive web development, single-page applications, real-time websocket sites. The list goes on and on!
 
-## **Personal Portfolio**
+# **Personal Portfolio**
 **September 2023 - December 2023**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -22,7 +22,7 @@ Whilst I was looking for work in late 2023, I decided to be productive alongside
 
 AM Charts, Async / Await, ES6, Fetch, Flexbox, JSON, Lo-dash, Next JS, NPM, React, React Context, React hooks, Responsive, Sass (modules), Storybook, TypeScript, Vercel
 
-## **Aigence**
+# **Aigence**
 **September 2022 - August 2023**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/aigence-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -36,9 +36,7 @@ I led a team of 3x Front-End Developers, working on a greenfield HR platform tha
 
 Apollo, Async / Await, Axios, Chromatic, ES6, Flexbox, GraphQL, HTML, Lo-dash, Next Auth, Next JS, React, React Hook Form, React hooks, Redux Toolkit, Responsive, Sass (modules), Storybook, TypeScript, Yarn
 
-- - -
-
-## **Deals Plus**
+# **Deals Plus**
 **February 2022 - September 2022**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/deals-plus-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -52,9 +50,7 @@ I worked as the sole Front-End Developer, working on a complete re-write of a pl
 
 AG Grid, Async/Await, Axios, Chromatic, ES6, Flexbox, HTML, Lo-dash, Mermaid JS, Next JS, NPM, React, React Hook Form, React hooks, Redux, Responsive, Sass (modules), Storybook, TypeScript
 
-- - -
-
-## **LiveArea**
+# **LiveArea**
 **March 2021 - February 2022**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/live-area-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -68,9 +64,7 @@ I was the sole Front-End Developer working on a UI component library, consisting
 
 Async/Await, ES6, Flexbox, HTML, Next JS, NPM, React, React hooks, Responsive, Sass (modules), Storybook, TypeScript
 
-- - -
-
-## **Zellar**
+# **Zellar**
 **February 2020 - March 2021**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/zellar-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -88,9 +82,7 @@ I was the sole Front-End Developer working on a Server-side rendered / re-hydrat
 
 Ant Design, Axios,, ES6, Flexbox, HTML, JSON, Mermaid JS, NPM, React, React hooks, Redux, Responsive, Sass (modules), Storybook, TypeScript, Webpack
 
-- - -
-
-## **Somo Global**
+# **Somo Global**
 **December 2019 - February 2020**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/somo-global-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -104,9 +96,7 @@ I was one of two Front-End Developers working on a Single Page Application build
 
 Ant Design, CSS modules, ES6, Flexbox, HTML, JSON, NPM, Post CSS, React, React hooks, Redux, Responsive, Sass, TypeScript, Webpack
 
-- - -
-
-## **Rehab**
+# **Rehab**
 **September 2019 - September 2019**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/rehab-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -120,9 +110,7 @@ I spent close to a month at Rehab, helping out on a project which provided walkt
 
 Axios, Babel, BEM, ES6, Flexbox, HTML, JSON, NPM, React, React hooks, Redux, Routing, Sass, Webpack
 
-- - -
-
-## **Lloyds Bank**
+# **Lloyds Bank**
 **January 2019 - July 2019**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/lloyds-bank-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -136,9 +124,7 @@ My role at Lloyds was based on Strong Customer Authentication. Due to regulatory
 
 Babel, BEM, CSS, Enzyme, ES6, Flexbox, HTML, Jest, JSON, Lottie JS, Mermaid JS, Node JS, NPM, Puppeteer, React, Redux, Responsive, Snapshot testing, Styleguidist, Webpack
 
-- - -
-
-## **Biglight**
+# **Biglight**
 **May 2018 - October 2018**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/biglight-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -152,9 +138,7 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 .net Core, Babel, BEM, CSS, ES6, Fetch, Flexbox, Grunt, HTML, JSON, Node JS, NPM, REST API, Sass
 
-- - -
-
-## **Tangent**
+# **Tangent**
 **January 2018 - March 2018**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/tangent-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -169,9 +153,7 @@ I was hired by Tangent to help with the second phase of a digital project rollou
 
 Babel, BEM, Bootstrap, CSS, ES6, Flexbox, Gulp, HTML, JSON, Node JS, Responsive, Sass, Yarn
 
-- - -
-
-## **Bond & Coyne**
+# **Bond & Coyne**
 **August 2017 - November 2017**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/bond-and-coyne-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -185,9 +167,7 @@ I spent a few months at Bond & Coyne, working on a website build for their large
 
 AM Charts, Babel, Browserify, CSS, ES6, Grunt, HTML, Icomoon, Javascript, JSON, Node JS, NPM, Responsive, Sass
 
-- - -
-
-## **Personal portfolio**
+# **Personal portfolio**
 **April 2017 - June 2017**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -201,9 +181,7 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 
 CSS, Express JS, Grunt, Gulp, HTML, Icomoon, JavaScript, JSON, Node JS, Pug, NPM, Pug, Responsive, Sass
 
-- - -
-
-## **HSBC**
+# **HSBC**
 **January 2017 - February 2017**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/hsbc-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -213,9 +191,7 @@ I was hired via Mansion House Consultingfor HSBC, to bring to life a conceptual 
 
 > [View JavaScript code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2017-01-2017-02%20-%20HSBC/Connect)
 
-- - -
-
-## **Sapient Nitro**
+# **Sapient Nitro**
 **December 2016 - December 2016**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/sapient-nitro-2.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -229,9 +205,7 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 
 CSS, HTML, Icomoon, JavaScript, JSON, NPM, Responsive
 
-- - -
-
-## **Trinity Mirror**
+# **Trinity Mirror**
 **August 2015 - November 2016**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/trinity-mirror-2.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -245,9 +219,7 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 
 Chai, CSS, Escenic, Express JS, Grunt, HTML, Icomoon, Jade, JavaScript, JSON, Karma, Mocha, Node JS, NPM, PhantomJS, Responsive, Sass, Sinon
 
-- - -
-
-## **Barclays**
+# **Barclays**
 **August 2014 - August 2015**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/barclays-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -265,9 +237,7 @@ I worked at Barclays on a front and back-end component library, built via a comb
 
 CSS, Grunt, HTML, JavaScript, JQuery, JSON, Lo-dash, Responsive, Sass
 
-- - -
-
-## **Trinity Mirror**
+# **Trinity Mirror**
 **July 2013 - August 2014**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/trinity-mirror-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -301,9 +271,7 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 
 Adapt.js, AM Charts, CSS, HTML, JavaScript, JQuery, JSON, Lo-dash, Pusher JS, Responsive, Sass, Websockets
 
-- - -
-
-## **Profero**
+# **Profero**
 **December 2012 - March 2013**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/profero-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
@@ -313,9 +281,7 @@ I worked on 2 fairly similar projects during my 4 months at Profero. Both were e
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2012-12-2013-03%20-%20Profero/Accenture)
 
-- - -
-
-## **AKQA**
+# **AKQA**
 **October 2011 - December 2011**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/akqa-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
