@@ -12,7 +12,7 @@ Within the samples provided in this repository, I've included what I see as a re
 ## **Personal Portfolio**
 **September 2023 - December 2023**
 
-<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png" align="right" style="display: block; margin: 0 0 20px 20px" width="200" />
+<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png" align="right" style="margin: 0 0 20px 20px" width="200" />
 Whilst I was looking for work in late 2023, I decided to be productive alongside job-hunting, by re-writing my portfolio for the first time in 7 years. It's often the case that a Developers (particularly a Front-End Developers) website is never that representative of what they do for work. So I thought it was the perfect time to give things a refresh and a complete overhaul.
 
 ### **Project title:** Portfolio
@@ -25,11 +25,12 @@ AM Charts, Async / Await, ES6, Fetch, Flexbox, JSON, Lo-dash, Next JS, NPM, Reac
 ## **Aigence**
 **September 2022 - August 2023**
 
+<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/aigence-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
 I led a team of 3x Front-End Developers, working on a greenfield HR platform that aims to provide the features of solutions such as Workday, in terms of Leave Requests, Payroll, Timesheets etc, but in a way whereby the control is put in the fingers of the users. The idea being that much of the need to depend on a HR team can therefore be removed, resulting in the increases to the speed and efficiency of the tasks needing to be done.
 
 ### **Project title:** App
 
-- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2022-09-2023-08%20-%20Aigence/App)
+> [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2022-09-2023-08%20-%20Aigence/App)
 
 ### **Technologies used:** 
 
