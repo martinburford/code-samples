@@ -13,8 +13,8 @@ Within the samples provided in this repository, I've included what I see as a re
 **September 2023 - December 2023**
 
 
-| Image | Description |
-|------------|-------------|
+| Image | Description  |
+|------------|:-------------|
 | <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png" width="200" /> | Whilst I was looking for work in late 2023, I decided to be productive alongside job-hunting, by re-writing my portfolio for the first time in 7 years. It's often the case that a Developers (particularly a Front-End Developers) website is never that representative of what they do for work. So I thought it was the perfect time to give things a refresh and a complete overhaul.
 
 ### **Project title:** Portfolio
