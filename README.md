@@ -95,11 +95,12 @@ Ant Design, Axios,, ES6, Flexbox, HTML, JSON, Mermaid JS, NPM, React, React hook
 ## **Somo Global**
 **December 2019 - February 2020**
 
+<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/somo-global-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
 I was one of two Front-End Developers working on a Single Page Application build using both React and Redux. The application allowed for a website to be built and subsequently configured using a bespoke suite of components and templates. My involvement related to adjusting existing websites. This was achieved by accessing the configurable options of each component making up a websites page, getting both existing and setting new configuration values. On saving any configuration changes, the website was automatically updated, reflecting the changes made.
 
 ### **Project title:** Mettrr
 
-- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-12-2020-02%20-%20Somo%20Global/Mettrr)
+> [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-12-2020-02%20-%20Somo%20Global/Mettrr)
 
 ### **Technologies used:** 
 
