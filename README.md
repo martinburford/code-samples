@@ -75,15 +75,16 @@ Async/Await, ES6, Flexbox, HTML, Next JS, NPM, React, React hooks, Responsive, S
 ## **Zellar**
 **February 2020 - March 2021**
 
+<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/zellar-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
 I was the sole Front-End Developer working on a Server-side rendered / re-hydrated React application built using React, Redux, TypeScript and Sass. The application provides the ability for companies to register and become part of a wider online community related to energy consumption, carbon emissions and ultimately, energy switching. The Front-End was built to work hand-in-hand with a custom built back-end, providing around 50 endpoints, catering for Authentication through to Registration, Signin in, Account playback etc. Extensive documentation of the project was built via a heavily customised Storybook, which I built from the ground up.
 
 ### **Project title:** App
 
-- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2020-02-2021-03%20-%20Zellar/App)
+> [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2020-02-2021-03%20-%20Zellar/App)
 
 ### **Project title:** Flowcharts
 
-- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2020-02-2021-03%20-%20Zellar/Flowcharts)
+> [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2020-02-2021-03%20-%20Zellar/Flowcharts)
 
 ### **Technologies used:** 
 
