@@ -22,8 +22,6 @@ Whilst I was looking for work in late 2023, I decided to be productive alongside
 
 AM Charts, Async / Await, ES6, Fetch, Flexbox, JSON, Lo-dash, Next JS, NPM, React, React Context, React hooks, Responsive, Sass (modules), Storybook, TypeScript, Vercel
 
-- - -
-
 ## **Aigence**
 **September 2022 - August 2023**
 
