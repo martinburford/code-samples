@@ -1,0 +1,80 @@
+@import "styles/_mixins";
+@import "styles/variables/_borders";
+@import "styles/variables/_breakpoints";
+@import "styles/variables/_colours";
+@import "styles/variables/_spacing";
+
+$image-card-list-separator-mobile-only-y-offset: -8px;
+
+%border-box {
+  box-sizing: border-box;
+}
+
+%component-border {
+  border: $border-xxs solid $gray-25;
+}
+
+%ellipsis-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+%formfield-label-outer {
+  margin-bottom: $spacing-xxs;
+
+  .label {
+    cursor: pointer;
+    display: inline-block;
+  }
+}
+
+%formfield-disabled {
+  background: $gray-25;
+}
+
+%formfield-element-text-colour {
+  color: $gray-900;
+}
+
+%formfield-placeholder {
+  &::placeholder {
+    color: $gray-300;
+  }
+}
+
+%glow {
+  @include box-shadow(0, 0, $shadow-xs, $gray-400);
+}
+
+%glow-highlight {
+  @include box-shadow(0, 0, $shadow-xs, $gray-600);
+}
+
+%image-card-list-non-desktop-separator-line-fix {
+  [data-component-id="image-card-list"] {
+    @include breakpoint($desktop-down) {
+      li:first-of-type {
+        border-top-color: $gray-25;
+        border-top-style: solid;
+        border-top-width: $border-xxs;
+        margin-top: $image-card-list-separator-mobile-only-y-offset;
+        padding-top: $spacing-xs;
+      }
+    }
+  }
+}
+
+%link {
+  color: $base-blue-dark;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    color: $base-blue-light;
+  }
+}
+
+%webkit-transparent-highlight {
+  -webkit-tap-highlight-color: transparent;
+}

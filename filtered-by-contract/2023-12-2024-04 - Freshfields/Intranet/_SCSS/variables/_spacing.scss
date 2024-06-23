@@ -1,0 +1,23 @@
+// Spacing
+$spacing-xxs: 5px;
+$spacing-xs: 10px;
+$spacing-s: 15px;
+$spacing-m: 20px;
+$spacing-l: 25px;
+$spacing-xl: 30px;
+$spacing-xxl: 35px;
+
+// Handles for iteration over the spacing collection
+$spacing-list: "xxs" "xs" "s" "m" "l" "xl" "xxl";
+$spacing-map: (
+  "xxs": $spacing-xxs,
+  "xs": $spacing-xs,
+  "s": $spacing-s,
+  "m": $spacing-m,
+  "l": $spacing-l,
+  "xl": $spacing-xl,
+  "xxl": $spacing-xxl
+);
+
+$global-component-gutter: $spacing-xs;
+$global-grid-gutter: $spacing-l;

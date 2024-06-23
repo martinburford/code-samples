@@ -1,0 +1,84 @@
+// Import Montserrat font, for use within Storybook AND when being used for external component imports
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "styles/_functions";
+@import "styles/_placeholders";
+@import "styles/_reset";
+@import "styles/variables/_breakpoints";
+@import "styles/variables/_colours";
+@import "styles/variables/_icons";
+@import "styles/variables/_spacing";
+
+// Global styles
+html {
+  -webkit-text-size-adjust: 100%; // Force fonts to render the same size when in both portrait AND landscape orientations when viewed on iOS
+
+  // 10px: 62.5%  ... ((10/16) * 100) = 62.5%
+  // 11px: 68.75% ... ((11/16) * 100) = 68.75%
+  // 12px: 75%    ... ((12/16) * 100) = 75%
+  // 13px: 81.25% ... ((13/16) * 100) = 81.25%
+  // 14px: 87.5%  ... ((14/16) * 100) = 87.5%
+  // 15px: 93.75% ... ((15/16) * 100) = 93.75%
+  // 16px: 100%   ... ((16/16) * 100) = 100%
+  font-size: 75%; // 12px
+
+  @include breakpoint($tablet-portrait-up) {
+    font-size: 87.5%; // 14px
+  }
+
+  @include breakpoint($desktop-up) {
+    font-size: 87.5%; // 14px
+  }
+}
+
+* {
+  font-family: "montserrat";
+  line-height: 1.5rem;
+}
+
+a {
+  @extend %link;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+p {
+  margin-bottom: $global-component-gutter;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+// Component gutter / spacing
+@each $property, $value in $spacing-map {
+  $valueAsNumber: strip-unit($value);
+
+  .mb-#{$valueAsNumber} {
+    margin-bottom: $value;
+  }
+
+  .ml-#{$valueAsNumber} {
+    margin-left: $value;
+  }
+
+  .mr-#{$valueAsNumber} {
+    margin-right: $value;
+  }
+
+  .mt-#{$valueAsNumber} {
+    margin-top: $value;
+  }
+}
+
+// CKEditor fonts override
+.rte-webpart * {
+  font-family: "montserrat";
+}

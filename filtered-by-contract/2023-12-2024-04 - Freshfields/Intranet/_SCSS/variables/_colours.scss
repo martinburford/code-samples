@@ -1,0 +1,211 @@
+@use "sass:map";
+
+@import "styles/_functions";
+
+// Core colours
+$base-black: #000000;
+$base-blue-dark: #1d2b4d;
+$base-blue-light: #57c9e8;
+$base-blue-mid: #4a5571;
+$base-gray: #999999;
+$base-green: #00c18b;
+$base-red: red;
+$base-salmon: #ff5271;
+$base-success: green;
+$base-violet: #cd8bda;
+$base-white: #ffffff;
+$base-yellow: #dddb00;
+
+$shading-alpha-step-darken: 0.1; // 10%
+$shading-alpha-step-lighten: 0.15; // 15%
+
+@function alpha-convert($base-colour, $steps, $mode) {
+  @return rgba-to-rgb(
+    rgba($base-colour, 1 - ($steps * if($mode == "lighten", $shading-alpha-step-lighten, $shading-alpha-step-darken))),
+    if($mode == "lighten", #ffffff, #000000)
+  );
+}
+
+// Blue
+$blue-25: alpha-convert($base-blue-mid, 5, "lighten");
+$blue-50: alpha-convert($base-blue-mid, 4, "lighten");
+$blue-100: alpha-convert($base-blue-mid, 3, "lighten");
+$blue-200: alpha-convert($base-blue-mid, 2, "lighten");
+$blue-300: alpha-convert($base-blue-mid, 1, "lighten");
+$blue-400: $base-blue-mid;
+$blue-500: alpha-convert($base-blue-mid, 1, "darken");
+$blue-600: alpha-convert($base-blue-mid, 2, "darken");
+$blue-700: alpha-convert($base-blue-mid, 3, "darken");
+$blue-800: alpha-convert($base-blue-mid, 4, "darken");
+$blue-900: alpha-convert($base-blue-mid, 5, "darken");
+
+// Gray
+$gray-25: alpha-convert($base-gray, 5, "lighten");
+$gray-50: alpha-convert($base-gray, 4, "lighten");
+$gray-100: alpha-convert($base-gray, 3, "lighten");
+$gray-200: alpha-convert($base-gray, 2, "lighten");
+$gray-300: alpha-convert($base-gray, 1, "lighten");
+$gray-400: $base-gray;
+$gray-500: alpha-convert($base-gray, 1, "darken");
+$gray-600: alpha-convert($base-gray, 2, "darken");
+$gray-700: alpha-convert($base-gray, 3, "darken");
+$gray-800: alpha-convert($base-gray, 4, "darken");
+$gray-900: alpha-convert($base-gray, 5, "darken");
+
+// Green
+$green-25: alpha-convert($base-green, 5, "lighten");
+$green-50: alpha-convert($base-green, 4, "lighten");
+$green-100: alpha-convert($base-green, 3, "lighten");
+$green-200: alpha-convert($base-green, 2, "lighten");
+$green-300: alpha-convert($base-green, 1, "lighten");
+$green-400: $base-green;
+$green-500: alpha-convert($base-green, 1, "darken");
+$green-600: alpha-convert($base-green, 2, "darken");
+$green-700: alpha-convert($base-green, 3, "darken");
+$green-800: alpha-convert($base-green, 4, "darken");
+$green-900: alpha-convert($base-green, 5, "darken");
+
+// Salmon
+$salmon-25: alpha-convert($base-salmon, 5, "lighten");
+$salmon-50: alpha-convert($base-salmon, 4, "lighten");
+$salmon-100: alpha-convert($base-salmon, 3, "lighten");
+$salmon-200: alpha-convert($base-salmon, 2, "lighten");
+$salmon-300: alpha-convert($base-salmon, 1, "lighten");
+$salmon-400: $base-salmon;
+$salmon-500: alpha-convert($base-salmon, 1, "darken");
+$salmon-600: alpha-convert($base-salmon, 2, "darken");
+$salmon-700: alpha-convert($base-salmon, 3, "darken");
+$salmon-800: alpha-convert($base-salmon, 4, "darken");
+$salmon-900: alpha-convert($base-salmon, 5, "darken");
+
+// Violet
+$violet-25: alpha-convert($base-violet, 5, "lighten");
+$violet-50: alpha-convert($base-violet, 4, "lighten");
+$violet-100: alpha-convert($base-violet, 3, "lighten");
+$violet-200: alpha-convert($base-violet, 2, "lighten");
+$violet-300: alpha-convert($base-violet, 1, "lighten");
+$violet-400: $base-violet;
+$violet-500: alpha-convert($base-violet, 1, "darken");
+$violet-600: alpha-convert($base-violet, 2, "darken");
+$violet-700: alpha-convert($base-violet, 3, "darken");
+$violet-800: alpha-convert($base-violet, 4, "darken");
+$violet-900: alpha-convert($base-violet, 5, "darken");
+
+// Yellow
+$yellow-25: alpha-convert($base-yellow, 5, "lighten");
+$yellow-50: alpha-convert($base-yellow, 4, "lighten");
+$yellow-100: alpha-convert($base-yellow, 3, "lighten");
+$yellow-200: alpha-convert($base-yellow, 2, "lighten");
+$yellow-300: alpha-convert($base-yellow, 1, "lighten");
+$yellow-400: $base-yellow;
+$yellow-500: alpha-convert($base-yellow, 1, "darken");
+$yellow-600: alpha-convert($base-yellow, 2, "darken");
+$yellow-700: alpha-convert($base-yellow, 3, "darken");
+$yellow-800: alpha-convert($base-yellow, 4, "darken");
+$yellow-900: alpha-convert($base-yellow, 5, "darken");
+
+$colours-map: (
+  // Core colours
+  "base-black": $base-black,
+  "base-blue-dark": $base-blue-dark,
+  "base-blue-light": $base-blue-light,
+  "base-blue-mid": $base-blue-mid,
+  "base-gray": $base-gray,
+  "base-green": $base-green,
+  "base-red": $base-red,
+  "base-salmon": $base-salmon,
+  "base-success": $base-success,
+  "base-violet": $base-violet,
+  "base-white": $base-white,
+  "base-yellow": $base-yellow,
+
+  // Blue
+  "blue-25": $blue-25,
+  "blue-50": $blue-50,
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-300": $blue-300,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "blue-800": $blue-800,
+  "blue-900": $blue-900,
+
+  // Gray
+  "gray-25": $gray-25,
+  "gray-50": $gray-50,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+
+  // Green
+  "green-25": $green-25,
+  "green-50": $green-50,
+  "green-100": $green-100,
+  "green-200": $green-200,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  "green-500": $green-500,
+  "green-600": $green-600,
+  "green-700": $green-700,
+  "green-800": $green-800,
+  "green-900": $green-900,
+
+  // Salmon
+  "salmon-25": $salmon-25,
+  "salmon-50": $salmon-50,
+  "salmon-100": $salmon-100,
+  "salmon-200": $salmon-200,
+  "salmon-300": $salmon-300,
+  "salmon-400": $salmon-400,
+  "salmon-500": $salmon-500,
+  "salmon-600": $salmon-600,
+  "salmon-700": $salmon-700,
+  "salmon-800": $salmon-800,
+  "salmon-900": $salmon-900,
+
+  // Violet
+  "violet-25": $violet-25,
+  "violet-50": $violet-50,
+  "violet-100": $violet-100,
+  "violet-200": $violet-200,
+  "violet-300": $violet-300,
+  "violet-400": $violet-400,
+  "violet-500": $violet-500,
+  "violet-600": $violet-600,
+  "violet-700": $violet-700,
+  "violet-800": $violet-800,
+  "violet-900": $violet-900,
+
+  // Yellow
+  "yellow-25": $yellow-25,
+  "yellow-50": $yellow-50,
+  "yellow-100": $yellow-100,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
+  "yellow-400": $yellow-400,
+  "yellow-500": $yellow-500,
+  "yellow-600": $yellow-600,
+  "yellow-700": $yellow-700,
+  "yellow-800": $yellow-800,
+  "yellow-900": $yellow-900,
+);
+
+// If needing to theme components (for colours which come with shade variants only)
+$colours-variants-map: (
+  "blue": $base-blue-mid,
+  "gray": $base-gray,
+  "green": $base-green,
+  "salmon": $base-salmon,
+  "violet": $base-violet,
+  "yellow": $base-yellow,
+);
+
+$global-form-element-colour: $gray-400;
