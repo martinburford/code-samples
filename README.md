@@ -31,7 +31,7 @@ Within the samples provided in this repository, I've included what I see as a re
   <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png" width="200" />
 </div>
 
-- [View code samples](https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png)
+- ![View code samples](https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png)
 
 ## **Aigence**
 
