@@ -9,6 +9,19 @@ I've been a Front-End Developer for approximately 25 years. Technology has chang
 
 Within the samples provided in this repository, I've included what I see as a reasonable cross-section of the work I am often involved in. It is however only a small illustration of the type of work I have done. I've worked on over 150 websites in my career, ranging from white-label platforms, through to multi-lingual sites, arabic sites, right-to-left reading sites, device-only sites, responsive web development, single-page applications, real-time websocket sites. The list goes on and on!
 
+> # **Freshfields**
+**December 2023 - April 2024**
+
+<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/freshfields-bruckhaus-deringer-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
+I led all aspects of the front-end development of a project which required an existing Sharepoint instance (consisting of over 1,500 sites) to be completely re-skinned. Microsoft try so incredibly hard to get you to not do this. So, this project required a very delicate touch, to make sure that what was bespoke built wouldn't interfere with the bits of Sharepoint that were important to the business and needed to remain ... and there were MANY! To do this, I built a comprehensive set of React components, using Sass and TypeScript, which were then published as a component library to a privately scoped NPM package. This was then imported into Sharepoint, and via SPFX, was used to create custom Sharepoint Webparts, which were then fed data from the Sharepoint graph. This ultimately led to having a largely headless Sharepoint instance to play with, which was absolutely what the client had asked for ... and they weren't actually sure if it could technically be done. The project was a huge success, as it allowed what had become an ageing (Sharepoint) intranet from the past few years to be given a new lease of life.
+
+### **Project title:** Intranet
+- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2023-12-2024-04%20-%20Freshfields/Intranet)
+
+##### **Technologies used:** 
+
+Azure DevOps, Babel, CSS, ES6, Flexbox, HTML, JavaScript, NPM, React, React hooks, Responsive, Rollup, Sass, Sharepoint, SPFX, Storybook, TypeScript, Yarn
+
 > # **Personal Portfolio**
 **September 2023 - December 2023**
 
