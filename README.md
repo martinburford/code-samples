@@ -10,6 +10,7 @@ I've been a Front-End Developer for approximately 25 years. Technology has chang
 Within the samples provided in this repository, I've included what I see as a reasonable cross-section of the work I am often involved in. It is however only a small illustration of the type of work I have done. I've worked on over 150 websites in my career, ranging from white-label platforms, through to multi-lingual sites, arabic sites, right-to-left reading sites, device-only sites, responsive web development, single-page applications, real-time websocket sites. The list goes on and on!
 
 > # **Freshfields**
+### Lead React Developer
 **December 2023 - April 2024**
 
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/freshfields-bruckhaus-deringer-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
