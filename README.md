@@ -1,10 +1,3 @@
-<style type="text/css">
-  .image {
-    margin: 0 auto 20px; 
-    max-width: 500px;
-  }
-</style>
-
 ### **Please note:**
 I am often asked by companies who hire me to sign Non-Disclosure Agreements which restrict me from publishing code samples to my GitHub account. I do of course have MANY code samples beyond the contents of this public repository. Should you wish to see anything beyond what this repository contains (such as some of my more recent React code), please [get in touch with me](mailto:martin@martinburford.co.uk).
 
@@ -19,9 +12,7 @@ Within the samples provided in this repository, I've included what I see as a re
 ## **Personal Portfolio**
 **September 2023 - December 2023**
 
-<div class="image">
-  <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png" />
-</div>
+<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png" style="display: block; margin: 0 auto 20px; max-width: 500px;" />
 
 Whilst I was looking for work in late 2023, I decided to be productive alongside job-hunting, by re-writing my portfolio for the first time in 7 years. It's often the case that a Developers (particularly a Front-End Developers) website is never that representative of what they do for work. So I thought it was the perfect time to give things a refresh and a complete overhaul.
 
