@@ -55,11 +55,12 @@ AG Grid, Async/Await, Axios, Chromatic, ES6, Flexbox, HTML, Lo-dash, Mermaid JS,
 ## **LiveArea**
 **March 2021 - February 2022**
 
+<img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/live-area-1.png" align="right" style="margin: 0 0 20px 20px" width="200" />
 I was the sole Front-End Developer working on a UI component library, consisting of approximately 120 components, built from the ground up using React, TypeScript and Sass, in an Atomic Design pattern. I built a fully interactive headless eCommerce site, demonstrating all of the UI components via a NextJS app. I also built a comprehensive Storybook, helping to demonstrate all components rendered in a number of different ways, eg: different colour themes, different locales, left-to-right and right-to-left rendering. All components were fully responsive.
 
 ### **Project title:** Alyasra
 
-- [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2021-03-2022-03%20-%20Live%20Area/Alyasra)
+> [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2021-03-2022-03%20-%20Live%20Area/Alyasra)
 
 ### **Technologies used:** 
 
