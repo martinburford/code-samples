@@ -15,10 +15,10 @@ Within the samples provided in this repository, I've included what I see as a re
 <img src="https://www.martinburford.co.uk/assets/portfolio/listing-thumbnails/personal-portfolio-2.png" align="right" style="margin: 0 0 20px 20px" width="200" />
 Whilst I was looking for work in late 2023, I decided to be productive alongside job-hunting, by re-writing my portfolio for the first time in 7 years. It's often the case that a Developers (particularly a Front-End Developers) website is never that representative of what they do for work. So I thought it was the perfect time to give things a refresh and a complete overhaul.
 
-#### **Project title:** Portfolio
+### **Project title:** Portfolio
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2023-09-2023-12%20-%20Personal%20Portfolio/Portfolio)
 
-#### **Technologies used:** 
+##### **Technologies used:** 
 
 AM Charts, Async / Await, ES6, Fetch, Flexbox, JSON, Lo-dash, Next JS, NPM, React, React Context, React hooks, Responsive, Sass (modules), Storybook, TypeScript, Vercel
 
@@ -34,7 +34,7 @@ I led a team of 3x Front-End Developers, working on a greenfield HR platform tha
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2022-09-2023-08%20-%20Aigence/App)
 
-### **Technologies used:** 
+##### **Technologies used:** 
 
 Apollo, Async / Await, Axios, Chromatic, ES6, Flexbox, GraphQL, HTML, Lo-dash, Next Auth, Next JS, React, React Hook Form, React hooks, Redux Toolkit, Responsive, Sass (modules), Storybook, TypeScript, Yarn
 
@@ -50,7 +50,7 @@ I worked as the sole Front-End Developer, working on a complete re-write of a pl
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2022-02-2022-09%20-%20Deals%20Plus/Tracker)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 AG Grid, Async/Await, Axios, Chromatic, ES6, Flexbox, HTML, Lo-dash, Mermaid JS, Next JS, NPM, React, React Hook Form, React hooks, Redux, Responsive, Sass (modules), Storybook, TypeScript
 
@@ -66,7 +66,7 @@ I was the sole Front-End Developer working on a UI component library, consisting
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2021-03-2022-03%20-%20Live%20Area/Alyasra)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 Async/Await, ES6, Flexbox, HTML, Next JS, NPM, React, React hooks, Responsive, Sass (modules), Storybook, TypeScript
 
@@ -86,7 +86,7 @@ I was the sole Front-End Developer working on a Server-side rendered / re-hydrat
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2020-02-2021-03%20-%20Zellar/Flowcharts)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 Ant Design, Axios,, ES6, Flexbox, HTML, JSON, Mermaid JS, NPM, React, React hooks, Redux, Responsive, Sass (modules), Storybook, TypeScript, Webpack
 
@@ -102,7 +102,7 @@ I was one of two Front-End Developers working on a Single Page Application build
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-12-2020-02%20-%20Somo%20Global/Mettrr)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 Ant Design, CSS modules, ES6, Flexbox, HTML, JSON, NPM, Post CSS, React, React hooks, Redux, Responsive, Sass, TypeScript, Webpack
 
@@ -118,7 +118,7 @@ I spent close to a month at Rehab, helping out on a project which provided walkt
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-09-2019-09%20-%20Rehab/Ripple)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 Axios, Babel, BEM, ES6, Flexbox, HTML, JSON, NPM, React, React hooks, Redux, Routing, Sass, Webpack
 
@@ -134,7 +134,7 @@ My role at Lloyds was based on Strong Customer Authentication. Due to regulatory
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2019-01-2019-07%20-%20Lloyds%20Bank/Lloyds)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 Babel, BEM, CSS, Enzyme, ES6, Flexbox, HTML, Jest, JSON, Lottie JS, Mermaid JS, Node JS, NPM, Puppeteer, React, Redux, Responsive, Snapshot testing, Styleguidist, Webpack
 
@@ -150,7 +150,7 @@ Biglight hired me as the only Front-End Developer to work on an internal project
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2018-05-2018-10%20-%20Biglight/CXODB)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 .net Core, Babel, BEM, CSS, ES6, Fetch, Flexbox, Grunt, HTML, JSON, Node JS, NPM, REST API, Sass
 
@@ -167,7 +167,7 @@ I was hired by Tangent to help with the second phase of a digital project rollou
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2018-01-2018-03%20-%20Tangent/UK%20Power%20Networks)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 Babel, BEM, Bootstrap, CSS, ES6, Flexbox, Gulp, HTML, JSON, Node JS, Responsive, Sass, Yarn
 
@@ -183,7 +183,7 @@ I spent a few months at Bond & Coyne, working on a website build for their large
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2017-08-2017-11%20-%20Bond%20%26%20Coyne/Pearson)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 AM Charts, Babel, Browserify, CSS, ES6, Grunt, HTML, Icomoon, Javascript, JSON, Node JS, NPM, Responsive, Sass
 
@@ -199,7 +199,7 @@ My portfolio was completely re-written in May/June 2017, written using Node, Exp
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2017-04-2017-06%20-%20Personal%20Portfolio/Portfolio)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 CSS, Express JS, Grunt, Gulp, HTML, Icomoon, JavaScript, JSON, Node JS, Pug, NPM, Pug, Responsive, Sass
 
@@ -227,7 +227,7 @@ I was hired by Sapient to work on the front-end element of an internal Christmas
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2016-12-2016-12%20-%20Sapient%20Nitro/Good%20News%20Feed)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 CSS, HTML, Icomoon, JavaScript, JSON, NPM, Responsive
 
@@ -243,7 +243,7 @@ I returned to Trinity Mirror to work on a huge greenfield project (circa 60+ sit
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2015-08-2016-11%20-%20Trinity%20Mirror/Chameleon)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 Chai, CSS, Escenic, Express JS, Grunt, HTML, Icomoon, Jade, JavaScript, JSON, Karma, Mocha, Node JS, NPM, PhantomJS, Responsive, Sass, Sinon
 
@@ -263,7 +263,7 @@ I worked at Barclays on a front and back-end component library, built via a comb
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2014-08-2015-08%20-%20Barclays/Design%20Language)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 CSS, Grunt, HTML, JavaScript, JQuery, JSON, Lo-dash, Responsive, Sass
 
@@ -299,7 +299,7 @@ I was originally hired by Trinity Mirror to bring to life several complex protot
 
 > [View code samples](https://github.com/martinburford/code-samples/tree/main/filtered-by-contract/2013-07-2014-08%20-%20Trinity%20Mirror/Vote%20Slider)
 
-### **Technologies used:** 
+#### **Technologies used:** 
 
 Adapt.js, AM Charts, CSS, HTML, JavaScript, JQuery, JSON, Lo-dash, Pusher JS, Responsive, Sass, Websockets
 
